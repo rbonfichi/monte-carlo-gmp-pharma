@@ -1,4 +1,4 @@
-# Block 6 — Analysis of Results
+# Chapter 6 — Analysis of Results
 
 - Descriptives (mean, SD, quantiles)
 - %OOS vs specs
@@ -12,3 +12,6 @@ p_OOS <- mean(C<LSL | C>USL)
 Cp  <- (USL-LSL)/(6*s)
 Cpk <- min(USL-mu, mu-LSL)/(3*s)
 ```
+
+---
+[← Previous: A Complete Simulation in R](chapter05_full-simulation.md) | [▲ back to top](../#table-of-contents) | [Next → Pharmaceutical Case Study](chapter07_case-pharma.md)
