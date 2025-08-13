@@ -1,4 +1,4 @@
-# Block 3 — Simple Distributions
+# Chapter 3 — Simple Distributions
 
 ## Uniform(a,b)
 Transform: `X = a + (b-a)U`.
@@ -19,3 +19,5 @@ Let `Fc=(c-a)/(b-a)`. Piecewise inverse:
 if (U < Fc)  X = a + sqrt(U*(b-a)*(c-a))
 else         X = b - sqrt((1-U)*(b-a)*(b-c))
 ```
+---
+[← Previous: Random Numbers vs. Random Variates](chapter02_random-variates.md) | [▲ back to top](../#table-of-contents) | [Next → The Transfer Equation](chapter04_transfer-equation.md)
