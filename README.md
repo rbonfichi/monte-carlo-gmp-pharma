@@ -24,16 +24,18 @@ It is not a purely theoretical treatise — the emphasis is on **real-world appl
 ---
 
 ## Course Structure
+The course follows 8 progressive modules:
 
-- [Chapter 1 – Introduction](docs/chapter01_intro.md)
-- [Chapter 2 – Random Numbers vs. Random Variates](docs/chapter02_random-variates.md)
-- [Chapter 3 – Simple Distributions](docs/chapter03_distributions.md)
-- [Chapter 4 – The Transfer Equation](docs/chapter04_transfer-equation.md)
-- [Chapter 5 – A Complete Simulation in R](docs/chapter05_full-simulation.md)
-- [Chapter 6 – Analysis of Results](docs/chapter06_analysis.md)
-- [Chapter 7 – Pharmaceutical Case Study](docs/chapter07_case-pharma.md)
-- [Chapter 8 – Decision and Risk](docs/chapter08_decision-risk.md)
-
+| Block | Topic                              | Objective                                         |
+| ----- | ---------------------------------- | ------------------------------------------------- |
+| **1** | What is the Monte Carlo Method     | Understand the core idea: repetition + randomness |
+| **2** | Random Numbers vs. Random Variates | Learn the difference and why it matters           |
+| **3** | Basic Distributions                | Uniform, Normal, Exponential, Triangular          |
+| **4** | Transfer Equation                  | Building models with uncertain inputs             |
+| **5** | Full Simulation in R               | Step-by-step execution                            |
+| **6** | Result Analysis                    | Histograms, mean, variance, confidence intervals  |
+| **7** | Pharmaceutical Case Study          | OOS, process capability, dose delivery            |
+| **8** | Decision & Risk                    | Using Monte Carlo for decision-making             |
 
 [▲ back to top](#table-of-contents)
 
@@ -68,15 +70,15 @@ It is not a purely theoretical treatise — the emphasis is on **real-world appl
 ---
 
 ## Course Modules
-Each block will be provided as a Markdown file in the /chapters folder, including:
 
-- Step-by-step explanations
-
-- R code
-
-- Numerical examples
-
-- Plots & figures
+- [Chapter 1 – Introduction](docs/chapter01_intro.md)
+- [Chapter 2 – Random Numbers vs. Random Variates](docs/chapter02_random-variates.md)
+- [Chapter 3 – Simple Distributions](docs/chapter03_distributions.md)
+- [Chapter 4 – The Transfer Equation](docs/chapter04_transfer-equation.md)
+- [Chapter 5 – A Complete Simulation in R](docs/chapter05_full-simulation.md)
+- [Chapter 6 – Analysis of Results](docs/chapter06_analysis.md)
+- [Chapter 7 – Pharmaceutical Case Study](docs/chapter07_case-pharma.md)
+- [Chapter 8 – Decision and Risk](docs/chapter08_decision-risk.md)
 
 [▲ back to top](#table-of-contents)
 
