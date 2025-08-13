@@ -50,56 +50,66 @@ The course follows 8 progressive modules:
   install.packages(c("ggplot2", "dplyr", "parallel"))
 [▲ back to top](#table-of-contents)
 
-Monte Carlo in Pharma: Why It Matters
-Monte Carlo methods can:
+---
 
-Estimate process capability with uncertainty
+## Monte Carlo in Pharma: Why It Matters
+**Monte Carlo methods can:**
 
-Quantify risk of OOS before release
+- Estimate process capability with uncertainty
 
-Support GMP decisions with quantitative evidence
+- Quantify risk of OOS before release
 
-Model measurement uncertainty in QC labs
+- Support GMP decisions with quantitative evidence
 
-Evaluate sampling plans and acceptance criteria
+- Model measurement uncertainty in QC labs
+
+- Evaluate sampling plans and acceptance criteria
 
 [▲ back to top](#table-of-contents)
 
-Course Modules
+---
+
+## Course Modules
 Each block will be provided as a Markdown file in the /chapters folder, including:
 
-Step-by-step explanations
+- Step-by-step explanations
 
-R code
+- R code
 
-Numerical examples
+- Numerical examples
 
-Plots & figures
-
-[▲ back to top](#table-of-contents)
-
-How to Use This Repository
-Read the README to get the big picture
-
-Explore the /chapters folder for each module
-
-Run the R scripts locally to replicate results
-
-Apply the methodology to your own GMP-related problems
+- Plots & figures
 
 [▲ back to top](#table-of-contents)
 
-Next Steps
-Add individual .md files for each course block
+---
 
-Add figures and diagrams
+## How to Use This Repository
+- Read the README to get the big picture
 
-Create an index page for GitHub Pages navigation
+- Explore the /chapters folder for each module
+
+- Run the R scripts locally to replicate results
+
+- Apply the methodology to your own GMP-related problems
 
 [▲ back to top](#table-of-contents)
 
-Author
-Riccardo Bonfichi
+---
+
+## Next Steps
+- Add individual .md files for each course block
+
+- Add figures and diagrams
+
+- Create an index page for GitHub Pages navigation
+
+[▲ back to top](#table-of-contents)
+
+---
+
+## Author
+**Riccardo Bonfichi**
 Statistical Consultant for Pharma Operations
 Specializing in Quality Control, Quality Assurance, and Statistical Methods applied to GMP manufacturing and laboratory processes.
 
