@@ -49,7 +49,7 @@ The course follows 8 progressive modules:
   ```r
   install.packages(c("ggplot2", "dplyr", "parallel"))
 
-▲ back to top
+[▲ back to top](#-table-of-contents)
 
 💊 Monte Carlo in Pharma: Why It Matters
 Monte Carlo methods can:
@@ -64,7 +64,7 @@ Model measurement uncertainty in QC labs
 
 Evaluate sampling plans and acceptance criteria
 
-▲ back to top
+[▲ back to top](#-table-of-contents)
 
 📂 Course Modules
 Each block will be provided as a Markdown file in the /chapters folder, including:
@@ -77,7 +77,7 @@ Numerical examples
 
 Plots & figures
 
-▲ back to top
+[▲ back to top](#-table-of-contents)
 
 📌 How to Use This Repository
 Read the README to get the big picture
@@ -88,7 +88,7 @@ Run the R scripts locally to replicate results
 
 Apply the methodology to your own GMP-related problems
 
-▲ back to top
+[▲ back to top](#-table-of-contents)
 
 🚀 Next Steps
  Add individual .md files for each course block
@@ -97,7 +97,7 @@ Apply the methodology to your own GMP-related problems
 
  Create an index page for GitHub Pages navigation
 
-▲ back to top
+[▲ back to top](#-table-of-contents)
 
 ✍️ Author
 Riccardo Bonfichi
@@ -106,4 +106,4 @@ Specializing in Quality Control, Quality Assurance, and Statistical Methods appl
 
 📌 Live version: GitHub Pages Site
 
-▲ back to top
+[▲ back to top](#-table-of-contents)
