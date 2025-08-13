@@ -19,7 +19,7 @@ _Statistical Simulation Tools for Pharmaceutical Quality and GMP Decision-Making
 This repository is a practical, industry-focused introduction to **Monte Carlo methods** for professionals working in **pharmaceutical manufacturing, quality control, and GMP operations**.  
 It is not a purely theoretical treatise — the emphasis is on **real-world applications** where Monte Carlo simulation can support decision-making, process understanding, and risk assessment.
 
-[▲ back to top](#-table-of-contents)
+[▲ back to top](#table-of-contents)
 
 ---
 
@@ -37,7 +37,7 @@ The course follows 8 progressive modules:
 | **7** | Pharmaceutical Case Study | OOS, process capability, dose delivery |
 | **8** | Decision & Risk | Using Monte Carlo for decision-making |
 
-[▲ back to top](#-table-of-contents)
+[▲ back to top](#table-of-contents)
 
 ---
 
@@ -49,7 +49,7 @@ The course follows 8 progressive modules:
   ```r
   install.packages(c("ggplot2", "dplyr", "parallel"))
 
-[▲ back to top](#-table-of-contents)
+[▲ back to top](#table-of-contents)
 
 💊 Monte Carlo in Pharma: Why It Matters
 Monte Carlo methods can:
@@ -64,7 +64,7 @@ Model measurement uncertainty in QC labs
 
 Evaluate sampling plans and acceptance criteria
 
-[▲ back to top](#-table-of-contents)
+[▲ back to top](#table-of-contents)
 
 📂 Course Modules
 Each block will be provided as a Markdown file in the /chapters folder, including:
@@ -77,7 +77,7 @@ Numerical examples
 
 Plots & figures
 
-[▲ back to top](#-table-of-contents)
+[▲ back to top](#table-of-contents)
 
 📌 How to Use This Repository
 Read the README to get the big picture
@@ -88,7 +88,7 @@ Run the R scripts locally to replicate results
 
 Apply the methodology to your own GMP-related problems
 
-[▲ back to top](#-table-of-contents)
+[▲ back to top](#table-of-contents)
 
 🚀 Next Steps
  Add individual .md files for each course block
@@ -97,7 +97,7 @@ Apply the methodology to your own GMP-related problems
 
  Create an index page for GitHub Pages navigation
 
-[▲ back to top](#-table-of-contents)
+[▲ back to top](#table-of-contents)
 
 ✍️ Author
 Riccardo Bonfichi
@@ -106,4 +106,4 @@ Specializing in Quality Control, Quality Assurance, and Statistical Methods appl
 
 📌 Live version: GitHub Pages Site
 
-[▲ back to top](#-table-of-contents)
+[▲ back to top](#table-of-contents)
