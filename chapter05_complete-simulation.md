@@ -1,4 +1,4 @@
-# Block 5 — Complete Simulation in R
+# Chapter 5 — Complete Simulation in R
 
 Step-by-step example for `C = W/V`.
 ```r
@@ -10,3 +10,6 @@ C <- W / V
 mean(C); sd(C); quantile(C, c(.025,.975))
 ```
 Plot a histogram and overlay mean/quantiles.
+
+---
+[← Previous: The Transfer Equation](chapter04_transfer-equation.md) | [▲ back to top](../#table-of-contents) | [Next → Analysis of Results](chapter06_analysis.md)
