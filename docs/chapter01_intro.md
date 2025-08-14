@@ -40,6 +40,6 @@ set.seed(123)
 x <- rnorm(10000, mean = 98.0, sd = 0.4)
 mean(x)
 sd(x)
-
+```
 ---
 [▲ back to top](../#table-of-contents) | [Next → Random Numbers vs. Random Variates](chapter02_random-variates.md)
