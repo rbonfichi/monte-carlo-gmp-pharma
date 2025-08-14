@@ -30,6 +30,12 @@ In this chapter, we clarify a crucial distinction:
 
 ## 🔄 From Numbers to Variates
 
+<p align="center">
+  <img src="images/random_numbers_to_variates.png" alt="Figure 2.1 – Random Numbers to Random Variates" width="70%">
+  <br>
+  <em>Figure 2.1 – From Random Numbers to Random Variates</em>
+</p>
+
 1. Generate uniform random numbers.
 
 2. Apply a transformation (inverse CDF or algorithm) to match the target distribution.
