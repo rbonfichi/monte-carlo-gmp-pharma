@@ -41,7 +41,7 @@ p_out
 
 If `p_out` is small (e.g., < 0.1%), the process is considered highly capable.
 
-- **Confidence Interval (95%)**
+**Confidence Interval (95%)**
 
 For a more robust assessment, we can estimate a 95% confidence interval for `p_out` using the `prop.test` function, which provides a score-based CI (Wilson interval).
 
