@@ -21,7 +21,7 @@ sd(Assay)
 quantile(Assay, probs = c(0.05, 0.95))
 ```
 
-- **95% CI for the Mean**
+**95% CI for the Mean**
 
 ```r
 t.test(Assay)$conf.int
@@ -43,13 +43,14 @@ If `p_out` is small (e.g., < 0.1%), the process is considered highly capable.
 
 - **Confidence Interval (95%)**
 
-For a more robust assessment, we can estimate a binomial confidence interval for p_out:
+For a more robust assessment, we can estimate a 95% confidence interval for `p_out` using the `prop.test` function, which provides a score-based CI (Wilson interval).
 
 ```r
 N <- length(Assay)
 x <- sum(Assay < 98 | Assay > 102)
 prop.test(x, N)$conf.int
 ```
+
 ---
 
 ## 📈 3. Visualizing the Distribution
@@ -94,7 +95,7 @@ $$
 Cpk = \min \left( \frac{USL - \mu}{3\sigma}, \frac{\mu - LSL}{3\sigma} \right)
 $$
 
-`Cpk = min( (USL - mu)/(3*sigma), (mu - LSL)/(3*sigma) )`
+`Cpk = min( (USL - μ)/(3*σ), (μ - LSL)/(3*σ) )`
 
 *Note: the closed-form Cpk formula assumes approximate normality. For non-normal data, consider transformations or percentile-based capability indices.*
 
