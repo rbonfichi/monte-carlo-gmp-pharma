@@ -12,7 +12,6 @@ _Statistical Simulation Tools for Pharmaceutical Quality and GMP Decision-Making
 6. [How to Use This Repository](#how-to-use-this-repository)
 7. [Next Steps](#next-steps)
 8. [Author](#author)
-9. [Conclusions and Next Steps](chapters/chapter09_conclusions-nextsteps.md)
 
 ---
 
