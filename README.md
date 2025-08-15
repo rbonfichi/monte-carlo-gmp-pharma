@@ -79,6 +79,7 @@ The course follows 8 progressive modules:
 - [Chapter 6 – Analysis of Results](docs/chapter06_analysis.md)
 - [Chapter 7 – Pharmaceutical Case Study](docs/chapter07_case-pharma.md)
 - [Chapter 8 – Decision and Risk](docs/chapter08_decision-risk.md)
+- [Chapter 9 – Conclusions and Next Steps](docs/chapter09_conclusions-nextsteps.md)
 
 [▲ back to top](#table-of-contents)
 
