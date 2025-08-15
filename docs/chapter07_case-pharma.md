@@ -43,37 +43,42 @@ set.seed(123)
 # Number of simulations
 N <- 100000
 
-# 1. Random inputs
-API_weight    <- rnorm(N, mean = 101, sd = 2)
-Tablet_weight <- rnorm(N, mean = 250, sd = 5)
-Purity        <- runif(N, min = 0.98, max = 1.00)
+# NOTE ON VARIABLES:
+# - API_weight: measured API content per tablet (mg)
+# - Tablet_weight: LABEL CLAIM of API (mg), not total tablet mass
+# - Purity: assay purity (fraction), used as correction factor
 
-# 2. Transfer equation
+# 1) Random inputs (choose realistic values so that assay ~ 100%)
+API_weight    <- rnorm(N, mean = 100.5, sd = 1.2)  # mg measured API
+Tablet_weight <- rnorm(N, mean = 100.0, sd = 0.5)  # mg label claim (API)
+Purity        <- runif(N, min = 0.985, max = 1.000)
+
+# 2) Transfer equation
 Assay <- (API_weight / Tablet_weight) * Purity * 100
 
-# 3. Save histogram
+# Quick sanity-check on center and spread
+mean_assay <- mean(Assay)
+sd_assay   <- sd(Assay)
+
+# 3) Save histogram with specs
 png("case_study_hist.png", width = 800, height = 600)
 hist(Assay,
-     main = "Simulated Assay (%)",
-     xlab = "Assay %",
+     main = sprintf("Simulated Assay (%%) — mean=%.2f, sd=%.2f", mean_assay, sd_assay),
+     xlab = "Assay (%)",
      col = "lightblue",
      border = "white")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
 dev.off()
 
-# 4. Probability of OOS
+# 4) Probability of OOS
 p_out <- mean(Assay < 98 | Assay > 102)
 
-# 5. Capability index
-mean_assay <- mean(Assay)
-sd_assay   <- sd(Assay)
-USL <- 102
-LSL <- 98
-
+# 5) Capability index vs 98–102 (normality assumption)
+USL <- 102; LSL <- 98
 Cpk <- min((USL - mean_assay) / (3 * sd_assay),
            (mean_assay - LSL) / (3 * sd_assay))
 
-list(p_out = p_out, Cpk = Cpk)
+list(mean_assay = mean_assay, sd_assay = sd_assay, p_out = p_out, Cpk = Cpk)
 ```
 
 ---
