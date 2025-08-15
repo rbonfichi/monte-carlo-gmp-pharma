@@ -19,17 +19,19 @@ Based on historical data and expert estimates:
 
 | Input Variable    | Distribution  | Parameters                  | Source                  |
 |-------------------|--------------|-----------------------------|-------------------------|
-| API weight (mg)   | Normal       | mean = 101, sd = 2           | Production data         |
-| Tablet weight (mg)| Normal       | mean = 250, sd = 5           | Production data         |
+| API Weight (mg)   | Normal       | mean = 101, sd = 2           | Production data         |
+| Tablet Weight (mg)| Normal       | mean = 250, sd = 5           | Production data         |
 | Purity (fraction) | Uniform      | min = 0.98, max = 1.00        | Certificate of Analysis |
 
 ---
 
 ## 🔗 Step 2 – Define the Transfer Equation
 
-\[
-Assay(\%) = \frac{API_{\text{weight}}}{Tablet_{\text{weight}}} \times Purity \times 100
-\]
+The assay is calculated using the ratio of API weight to tablet weight, multiplied by purity and converted to a percentage:
+
+$$
+Assay(\%) = \frac{\text{API}_{\text{weight}}}{\text{Tablet}_{\text{weight}}} \times Purity \times 100
+$$
 
 ---
 
@@ -84,6 +86,12 @@ list(p_out = p_out, Cpk = Cpk)
 
 <p align="center"> <img src="images/case_study_hist.png" alt="Case Study Histogram" width="500"> </p>
 
+Cpk was calculated as:
+
+$$
+Cpk = \min \left( \frac{USL - \mu}{3\sigma}, \frac{\mu - LSL}{3\sigma} \right)
+$$
+
 ---
 
 ## 📌 Step 5 – GMP Interpretation
@@ -96,6 +104,8 @@ This approach can be extended to:
 - Content uniformity
 - Stability data projections
 - Microbiological limits
+
+This quantitative approach supports risk-based decision-making and can be documented in validation or continued process verification reports.
 
 ---
 [← Previous: Analysis of Results](chapter06_analysis.md) | [▲ back to top](../#table-of-contents) | [Next → Decision and Risk](chapter08_decision-risk.md)
