@@ -108,9 +108,13 @@ $$
 ---
 
 ## 📌 Step 5 – GMP Interpretation
-- **Low p_out**: high compliance probability.
-- **High Cpk**: process well-centered and with low variability.
-- No immediate corrective action needed, but **continued monitoring** is recommended.
+
+- **High p_out** (~15%): significant risk of non-compliance.
+- **Low Cpk** (~0.43): process poorly centered and/or with high variability.
+- Immediate corrective and preventive actions (CAPA) would be needed before routine production.
+
+> **Reminder:** Unlike the “ideal” scenarios shown earlier (low p_out, high Cpk),  
+> this case study was selected to demonstrate how Monte Carlo simulation can **highlight an at-risk process** and guide GMP decision-making.
 
 This approach can be extended to:
 - Dissolution testing
