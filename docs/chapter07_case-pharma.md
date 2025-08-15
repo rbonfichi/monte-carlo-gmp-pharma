@@ -86,8 +86,16 @@ list(mean_assay = mean_assay, sd_assay = sd_assay, p_out = p_out, Cpk = Cpk)
 ## 📊 Step 4 – Example Output
 
 - **Histogram** with red dashed lines marking specification limits.
-- Probability of OOS (`p_out`): typically **< 0.1%** in this scenario.
-- **Cpk:** well above 1.33 → indicates a capable process.
+- **Observed results** for this simulation:
+  - Mean assay: 99.75%
+  - Standard deviation: 1.36%
+  - Probability of OOS (`p_out`): ≈ 15%
+  - **Cpk**: ≈ 0.43 → far below the GMP-recommended threshold of 1.33
+
+These values indicate a process with **excessive variability** and a **non-negligible risk** of producing batches outside specifications.
+
+> **Note:** This dataset was chosen **deliberately** to illustrate how Monte Carlo simulations can reveal a process that is **not in control**.  
+> In a real GMP context, results like these would trigger a root cause investigation and corrective actions to reduce variability and improve process centering.
 
 <p align="center"> <img src="images/case_study_hist.png" alt="Case Study Histogram" width="500"> </p>
 
