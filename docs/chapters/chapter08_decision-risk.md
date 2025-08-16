@@ -83,4 +83,4 @@ These thresholds **transform raw statistics into actionable decisions.**
 This decision-oriented use of Monte Carlo simulation allows pharmaceutical companies to move from descriptive statistics to actionable risk control.
 
 ---
-[← Previous: Pharmaceutical Case Study](chapter07_case-pharma.md) | [▲ back to top](../#table-of-contents) [Next → Conclusions-Next Steps](chapter09_conclusions-nrxtsteps.md)
+[← Previous: Pharmaceutical Case Study](chapter07_case-pharma.md) | [▲ back to top](../#table-of-contents) [Next → Conclusions and Next Steps](chapter09_conclusions-nextsteps.md)
