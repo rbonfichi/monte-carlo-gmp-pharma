@@ -117,6 +117,21 @@ Specializing in Quality Control, Quality Assurance, and Statistical Methods appl
 📌 Live version: GitHub Pages Site
 
 ---
+
+## 📖 How to Cite
+
+If you use or reference this work, please cite it as follows:
+
+**APA 7th:**
+
+Bonfichi, R. (2025). *Monte Carlo Methods for GMP Pharma (eBook)*. GitHub. https://github.com/rbonfichi/monte-carlo-gmp-pharma  
+
+**Vancouver:**
+
+Bonfichi R. Monte Carlo Methods for GMP Pharma (eBook) [Internet]. 2025. Available from: https://github.com/rbonfichi/monte-carlo-gmp-pharma
+
+---
+
 © 2025 Riccardo Bonfichi.  
 Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
