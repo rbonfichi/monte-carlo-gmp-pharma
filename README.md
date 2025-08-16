@@ -116,4 +116,9 @@ Specializing in Quality Control, Quality Assurance, and Statistical Methods appl
 
 📌 Live version: GitHub Pages Site
 
+---
+© 2025 Riccardo Bonfichi.  
+Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+
 [▲ back to top](#table-of-contents)
