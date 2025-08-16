@@ -31,7 +31,7 @@ In this chapter, we clarify a crucial distinction:
 ## 🔄 From Numbers to Variates
 
 <p align="center">
-  <img src="images/random_numbers_to_variates.png" alt="Figure 2.1 – Random Numbers to Random Variates" width="70%">
+  <img src="../images/random_numbers_to_variates.png" alt="Figure 2.1 – Random Numbers to Random Variates" width="70%">
   <br>
   <em>Figure 2.1 – From Random Numbers to Random Variates</em>
 </p>
