@@ -82,9 +82,9 @@ abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
 dev.off()
 ```
 
-<p align="center"> <img src="images/analysis_histogram.png" alt="Analysis Histogram" width="500"> </p> 
+<p align="center"> <img src="../images/analysis_histogram.png" alt="Analysis Histogram" width="500"> </p> 
 
-<p align="center"> <img src="images/analysis_boxplot.png" alt="Analysis Boxplot" width="500"> </p>
+<p align="center"> <img src="../images/analysis_boxplot.png" alt="Analysis Boxplot" width="500"> </p>
 
 ---
 
