@@ -15,7 +15,7 @@ In this chapter, we review four common distributions used in GMP & Pharma applic
   ```
 - **Use in Pharma:** Modeling tolerance bands where all outcomes within limits are equally likely.
 
-<p align="center"> <img src="images/dist_uniform.png" alt="Uniform Distribution" width="500"> </p>
+<p align="center"> <img src="../images/dist_uniform.png" alt="Uniform Distribution" width="500"> </p>
 
 ---
 
@@ -30,7 +30,7 @@ rnorm(5, mean = 0, sd = 1)  # 5 standard normal values
 ```
 - **Use in Pharma:** Measurement errors, assay results, tablet weights.
 
-<p align="center"> <img src="images/dist_normal.png" alt="Normal Distribution" width="500"> </p>
+<p align="center"> <img src="../images/dist_normal.png" alt="Normal Distribution" width="500"> </p>
 
 ---
 
@@ -45,7 +45,7 @@ rexp(5, rate = 1)  # 5 exponential values with λ = 1
 ```
 - **Use in Pharma:** Time to microbial contamination, equipment failure.
 
-<p align="center"> <img src="images/dist_exponential.png" alt="Exponential Distribution" width="500"> </p>
+<p align="center"> <img src="../images/dist_exponential.png" alt="Exponential Distribution" width="500"> </p>
 
 ---
 
@@ -60,7 +60,7 @@ rtriangle(5, a = 0, b = 3, c = 1)
 ```
 - **Use in Pharma:** When only expert estimates (min, most likely, max) are available.
 
-<p align="center"> <img src="images/dist_triangular.png" alt="Triangular Distribution" width="500"> </p>
+<p align="center"> <img src="../images/dist_triangular.png" alt="Triangular Distribution" width="500"> </p>
 
 ---
 
