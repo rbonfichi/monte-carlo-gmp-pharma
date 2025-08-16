@@ -44,7 +44,7 @@ Assay <- (API_weight / Tablet_weight) * Purity * 100
 # 3. Output analysis
 hist(Assay, main = "Simulated Assay (%)", xlab = "Assay %")
 ```
-<p align="center"> <img src="images/transfer_equation_example.png" alt="Transfer Equation Example" width="500"> </p>
+<p align="center"> <img src="../images/transfer_equation_example.png" alt="Transfer Equation Example" width="500"> </p>
 
 ---
 
