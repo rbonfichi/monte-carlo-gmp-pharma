@@ -10,18 +10,17 @@ It is not a purely theoretical treatise — the emphasis is on **real-world appl
 
 ---
 
-## 🗂️ Chapters
-Explore the content chapter by chapter:
+## 📑 Chapters
 
-1. [Chapter 1 – Introduction](chapter01_intro.md)  
-2. [Chapter 2 – Random Numbers vs. Random Variates](chapter02_random-variates.md)  
-3. [Chapter 3 – Simple Distributions](chapter03_distributions.md)  
-4. [Chapter 4 – The Transfer Equation](chapter04_transfer-equation.md)  
-5. [Chapter 5 – A Complete Simulation in R](chapter05_full-simulation.md)  
-6. [Chapter 6 – Analysis of Results](chapter06_analysis.md)  
-7. [Chapter 7 – Pharmaceutical Case Study](chapter07_case-pharma.md)  
-8. [Chapter 8 – Decision and Risk](chapter08_decision-risk.md)  
-9. [Chapter 9 – Conclusions and Next Steps](chapter09_conclusions-nextsteps.md)  
+1. [Chapter 1 – Introduction](chapters/chapter01_intro.md)  
+2. [Chapter 2 – Random Numbers vs. Random Variates](chapters/chapter02_random-variates.md)  
+3. [Chapter 3 – Simple Distributions](chapters/chapter03_distributions.md)  
+4. [Chapter 4 – The Transfer Equation](chapters/chapter04_transfer-equation.md)  
+5. [Chapter 5 – A Complete Simulation in R](chapters/chapter05_full-simulation.md)  
+6. [Chapter 6 – Analysis of Results](chapters/chapter06_analysis.md)  
+7. [Chapter 7 – Pharmaceutical Case Study](chapters/chapter07_case-pharma.md)  
+8. [Chapter 8 – Decision and Risk](chapters/chapter08_decision-risk.md)  
+9. [Chapter 9 – Conclusions and Next Steps](chapters/chapter09_conclusions-nextsteps.md)
 
 ---
 
