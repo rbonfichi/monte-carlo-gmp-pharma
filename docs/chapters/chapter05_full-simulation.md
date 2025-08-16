@@ -64,7 +64,7 @@ p_out
 
 - Printed `p_out` → probability of being out of specification.
 
-<p align="center"> <img src="images/full_simulation_assay.png" alt="Full Simulation Assay" width="500"> </p>
+<p align="center"> <img src="../images/full_simulation_assay.png" alt="Full Simulation Assay" width="500"> </p>
 
 ---
 
