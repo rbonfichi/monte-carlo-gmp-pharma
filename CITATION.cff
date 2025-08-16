@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Monte Carlo Methods for GMP Pharma (eBook)"
+message: "If you use this eBook, please cite it as below."
+authors:
+  - family-names: Bonfichi
+    given-names: Riccardo
+date-released: 2025-02-15
+version: "1.0"
+license: CC-BY-NC-ND-4.0
+repository-code: "https://github.com/rbonfichi/monte-carlo-gmp-pharma"
