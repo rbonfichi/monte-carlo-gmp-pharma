@@ -15,15 +15,15 @@ _Statistical Simulation Tools for Pharmaceutical Quality and GMP Decision-Making
 
 ---
 
-## Introduction
-This repository is a practical, industry-focused introduction to **Monte Carlo methods** for professionals working in **pharmaceutical manufacturing, quality control, and GMP operations**.  
+## 📘 Introduction
+This project is a practical, industry-focused mini-eBook (hosted on GitHub) introducing **Monte Carlo methods** for professionals working in **pharmaceutical manufacturing, quality control, and GMP operations**.  
 It is not a purely theoretical treatise — the emphasis is on **real-world applications** where Monte Carlo simulation can support decision-making, process understanding, and risk assessment.
 
 [▲ back to top](#table-of-contents)
 
 ---
 
-## Course Structure
+## 🗂️ Course Structure
 The course follows 8 progressive modules:
 
 | Block | Topic                              | Objective                                         |
@@ -41,7 +41,7 @@ The course follows 8 progressive modules:
 
 ---
 
-## Getting Started
+## 💻 Getting Started
 **Requirements:**
 - R (≥ 4.0)
 - RStudio (recommended)
@@ -52,7 +52,7 @@ The course follows 8 progressive modules:
 
 ---
 
-## Monte Carlo in Pharma: Why It Matters
+## 💊 Monte Carlo in Pharma: Why It Matters
 **Monte Carlo methods can:**
 
 - Estimate process capability with uncertainty
@@ -69,7 +69,7 @@ The course follows 8 progressive modules:
 
 ---
 
-## Course Modules
+## 📑 Chapters
 
 - [Chapter 1 – Introduction](docs/chapter01_intro.md)
 - [Chapter 2 – Random Numbers vs. Random Variates](docs/chapter02_random-variates.md)
@@ -85,7 +85,7 @@ The course follows 8 progressive modules:
 
 ---
 
-## How to Use This Repository
+## 📝 How to Use This mini-eBook
 - Read the README to get the big picture
 
 - Explore the /chapters folder for each module
@@ -98,7 +98,7 @@ The course follows 8 progressive modules:
 
 ---
 
-## Next Steps
+## 🚀 Next Steps
 - Add individual .md files for each course block
 
 - Add figures and diagrams
@@ -109,7 +109,7 @@ The course follows 8 progressive modules:
 
 ---
 
-## Author
+## 👤 Author
 **Riccardo Bonfichi**
 Statistical Consultant for Pharma Operations
 Specializing in Quality Control, Quality Assurance, and Statistical Methods applied to GMP manufacturing and laboratory processes.
