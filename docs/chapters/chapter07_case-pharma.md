@@ -97,7 +97,7 @@ These values indicate a process with **excessive variability** and a **non-negli
 > **Note:** This dataset was chosen **deliberately** to illustrate how Monte Carlo simulations can reveal a process that is **not in control**.  
 > In a real GMP context, results like these would trigger a root cause investigation and corrective actions to reduce variability and improve process centering.
 
-<p align="center"> <img src="images/case_study_hist.png" alt="Case Study Histogram" width="500"> </p>
+<p align="center"> <img src="../images/case_study_hist.png" alt="Case Study Histogram" width="500"> </p>
 
 Cpk was calculated as:
 
