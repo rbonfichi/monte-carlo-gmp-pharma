@@ -45,9 +45,30 @@ In this chapter, we clarify a crucial distinction:
 **Example in R – Transforming Uniform → Normal**
 ```r
 u <- runif(1000)
-x <- qnorm(u, mean = 50, sd = 5)  # Convert uniform to normal
-hist(x, main = "Normal Variates from Uniform Random Numbers")
+x <- qnorm(u, mean = 50, sd = 5)
+
+hist(x,
+     main = "Normal Variates from Uniform Random Numbers",
+     xlab = "Value",
+     col = "lightblue",
+     border = "white")
 ```
+➡️ What happens here?
+
+1. We first generate 1,000 **uniform random numbers** between 0 and 1.  
+2. We then apply the **inverse Normal CDF** (`qnorm`) to transform them into values that follow a Normal distribution (mean = 50, sd = 5).  
+3. The histogram shows that the values now follow the familiar bell-shaped curve.  
+
+This demonstrates the core idea:  
+
+- **Uniform random numbers** are the raw material.  
+- **Random variates** are shaped into a distribution that models real-world phenomena (e.g., tablet weight around 50 mg).  
+
+<p align="center">
+  <img src="../images/random_uniform_to_normal.png" alt="Figure 2.2 – Transforming Uniform Random Numbers into Normal Variates" width="70%">
+  <br>
+  <em>Figure 2.2 – Transforming Uniform Random Numbers into Normal Variates (mean = 50, sd = 5)</em>
+</p>
 
 ## 💊 Why It Matters in Pharma
 
