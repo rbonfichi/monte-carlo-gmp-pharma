@@ -5,15 +5,15 @@ _Statistical Simulation Tools for Pharmaceutical Quality and GMP Decision-Making
 
 ## Table of Contents  
 
-1. [📘 Introduction](#introduction)  
-2. [🗂️ Course Structure](#course-structure)  
-3. [💻 Getting Started](#getting-started)  
-4. [💊 Monte Carlo in Pharma: Why It Matters](#monte-carlo-in-pharma-why-it-matters)  
-5. [📑 Chapters](#chapters)  
-6. [📝 How to Use This mini-eBook](#-how-to-use-this-mini-ebook)
-7. [🚀 Next Steps](#next-steps)  
-8. [👤 Author](#author)  
-9. [📖 How to Cite](#how-to-cite)  
+1. [Introduction](#introduction)  
+2. [Course Structure](#course-structure)  
+3. [Getting Started](#getting-started)  
+4. [Monte Carlo in Pharma: Why It Matters](#monte-carlo-in-pharma-why-it-matters)  
+5. [Chapters](#chapters)  
+6. [How to Use This mini-eBook](#-how-to-use-this-mini-ebook)
+7. [Next Steps](#next-steps)  
+8. [Author](#author)  
+9. [How to Cite](#how-to-cite)  
 
 ---
 
