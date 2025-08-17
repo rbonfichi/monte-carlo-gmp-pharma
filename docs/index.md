@@ -24,6 +24,18 @@ It is not a purely theoretical treatise — the emphasis is on **real-world appl
 
 ---
 
+## 🚀 Next Steps
+
+This mini-eBook is a living project and will continue to evolve over time.
+Future improvements may include:
+- Refine and expand current chapters with clearer explanations, figures, and diagrams
+- Add new pharmaceutical case studies to illustrate practical applications
+- Introduce advanced statistical tools (e.g., Resampling, Bootstrap, Bayesian methods)
+- Explore integration with quality standards (ICH Q2(R2), USP <1210>, ISO 3951-1, etc.)
+- Collect feedback from readers to guide future improvements
+
+---
+
 ## 💡 How to Use This mini-eBook
 - Start with the **Introduction** for context.  
 - Navigate through chapters progressively.  
