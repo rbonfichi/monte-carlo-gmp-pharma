@@ -19,9 +19,9 @@ This connection is expressed mathematically by the **transfer equation**.
 
 Suppose we want to simulate the **assay** of an active ingredient in a tablet:
 
-- `API_weight` → random variable (mg)
-- `Tablet_weight` → random variable (mg)
+- `API_weight` → random variable (mg per tablet)
 - `Purity` → random variable (fraction)
+- `Label_Claim` → constant (mg declared on the product label)
 
 **Practical note — Purity as % vs fraction**
 In QC practice, **Purity** is typically reported as a **percentage** (e.g., 99.2%).
@@ -57,15 +57,15 @@ hist(Assay,
      col = "lightblue", border = "white")
 abline(v = c(97, 103), col = "red", lwd = 2, lty = 2)  # specification limits
 ```
-As shown in Figure 4.1, the simulated assay distribution is centered close to the target value, with natural variability leading to occasional values outside the specification limits (97–99%). This illustrates how the transfer equation connects random inputs to a realistic process output.
+As shown in Figure 4.1, the simulated assay distribution is centered close to the target value, with natural variability leading to occasional values outside the specification limits (97–103%). This illustrates how the transfer equation connects random inputs to a realistic process output.
 
 <p align="center">
   <img src="../images/transfer_equation_assay.png" alt="Histogram – Simulated Assay with Specification Limits" width="600">
   <br>
-  <em>Figure 4.1 – Histogram of 10,000 simulated assay values (Transfer Equation model), with specification limits 97–99%</em>
+  <em>Figure 4.1 – Histogram of 10,000 simulated assay values (Transfer Equation model), with specification limits 97–103%</em>
 </p>
 
-ℹ️ **Note on "Label Claim" vs. "% w/w in Tablet"**  
+🔎 **Note on "Label Claim" vs. "% w/w in Tablet"**  
 In pharmaceutical QC, *assay* is normally expressed as a percentage of the **label claim** —  
 i.e., how much active ingredient is measured compared to the amount declared on the product label (e.g., 100 mg).  
 This is why specifications are usually written as *97.0–103.0% of label claim*.  
@@ -77,10 +77,9 @@ For this reason, the transfer equation in this example uses **label claim** in t
 ---
 
 ## 💊 Why It Matters in Pharma
+
 - The transfer equation defines **the model** — a wrong equation = wrong simulation.
-
 - It helps identify **which input contributes most** to variability (sensitivity analysis).
-
 - Essential in **process validation**, **robustness studies**, and **risk assessment**.
 
 ---
