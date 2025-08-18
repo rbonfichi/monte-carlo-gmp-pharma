@@ -29,7 +29,7 @@ In the transfer equation, however, it is convenient to use Purity as a **fractio
 To avoid confusion, we explicitly state that Purity is handled as a fraction inside the model.
 
 **Transfer Equation:**
-`Assay (%) = (API_weight / Tablet_weight) × Purity × 100`
+`Assay (%) = (API_weight × Purity / Label_Claim) × 100`
 
 ---
 
@@ -64,9 +64,6 @@ As shown in Figure 4.1, the simulated assay distribution is centered close to th
   <br>
   <em>Figure 4.1 – Histogram of 10,000 simulated assay values (Transfer Equation model), with specification limits 97–99%</em>
 </p>
-
-
-<p align="center"> <img src="../images/transfer_equation_example.png" alt="Transfer Equation Example" width="500"> </p>
 
 ℹ️ **Note on "Label Claim" vs. "% w/w in Tablet"**  
 In pharmaceutical QC, *assay* is normally expressed as a percentage of the **label claim** —  
