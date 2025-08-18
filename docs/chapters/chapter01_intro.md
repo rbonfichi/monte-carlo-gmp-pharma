@@ -53,6 +53,36 @@ x <- rnorm(10000, mean = 98.0, sd = 0.4)
 mean(x < 97.0 | x > 99.0)
 ```
 
+> 💡 **Optional Visualization**  
+> Instead of only looking at the calculated OOS risk, we can *visualize* it.  
+> The histogram below shows 1,000 simulated assay values with specification limits (97% – 99%).  
+> You can clearly see some values falling outside the limits, which matches the estimated OOS probability.  
+
+```r
+set.seed(123)
+x <- rnorm(1000, mean = 98.5, sd = 0.4)
+hist(x,
+     breaks = 30,
+     main = "Simulated Assay Values with Specification Limits",
+     xlab  = "Assay (%)",
+     col   = "lightblue",
+     border= "white",
+     xlim  = c(95, 100),   
+     xaxs  = "i")          
+abline(v = 97, col = "red", lwd = 3, lty = 2)  # LSL
+abline(v = 99, col = "red", lwd = 3, lty = 2)  # USL
+legend("topleft", c("LSL = 97", "USL = 99"),
+       lty = 2, lwd = 3, col = "red", bty = "n", cex = 0.9)
+```
+
+<p align="center">
+  <img src="../images/ch1_histogram_with_specs.png" alt="Histogram with Spec Limits" width="700">
+  <br>
+  <em>Figure 1.x – Histogram of simulated assay values with specification limits.</em>
+</p>
+
+```
+
 ➡️ What happens here?
 
 1. We generate **10,000 virtual assay results** (like simulating 10,000 potential batches).
