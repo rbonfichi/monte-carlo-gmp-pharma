@@ -72,7 +72,7 @@ rexp(50, rate = 1)  # 50 exponential values with λ = 1
 library(triangle)
 rtriangle(50, a = 0, b = 3, c = 1)
 ```
-- **Use in Pharma:** When only expert estimates (min, most likely, max) are available.
+- **Use in Pharma:** When only expert estimates are available, specified as minimum (a), maximum (b), and most likely (c).
 
 <p align="center"> <img src="../images/dist_triangular.png" alt="Triangular Distribution" width="500"> </p>
 
