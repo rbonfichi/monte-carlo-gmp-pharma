@@ -59,6 +59,11 @@ hist(x,
 2. We then apply the **inverse Normal CDF** (`qnorm`) to transform them into values that follow a Normal distribution (mean = 50, sd = 5).  
 3. The histogram shows that the values now follow the familiar bell-shaped curve.  
 
+ℹ️ **Note – What is the inverse Normal CDF?**  
+The inverse Normal CDF (also called the **quantile function**) tells us:  
+*“Given a probability p, which value x of the Normal distribution has that cumulative probability?”*  
+For example, the 0.975 quantile of a standard Normal distribution is 1.96 — meaning 97.5% of values lie below 1.96.
+
 This demonstrates the core idea:  
 
 - **Uniform random numbers** are the raw material.  
