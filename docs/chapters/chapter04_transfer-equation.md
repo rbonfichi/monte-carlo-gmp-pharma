@@ -23,10 +23,10 @@ Suppose we want to simulate the **assay** of an active ingredient in a tablet:
 - `Purity` → random variable (fraction)
 - `Label_Claim` → constant (mg declared on the product label)
 
-**Practical note — Purity as % vs fraction**
-In QC practice, **Purity** is typically reported as a **percentage** (e.g., 99.2%).
-In the transfer equation, however, it is convenient to use Purity as a **fraction** (e.g., 0.992) and multiply by 100 only at the end to express **Assay (%)**.
-To avoid confusion, we explicitly state that Purity is handled as a fraction inside the model.
+> **Practical note — Purity as % vs fraction**
+> In QC practice, **Purity** is typically reported as a **percentage** (e.g., 99.2%).
+> In the transfer equation, however, it is convenient to use Purity as a **fraction** (e.g., 0.992) and multiply by 100 only at the end to express **Assay (%)**.
+> To avoid confusion, we explicitly state that Purity is handled as a fraction inside the model.
 
 **Transfer Equation:**
 `Assay (%) = (API_weight × Purity / Label_Claim) × 100`
