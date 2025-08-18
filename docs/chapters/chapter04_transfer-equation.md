@@ -57,6 +57,14 @@ hist(Assay,
      col = "lightblue", border = "white")
 abline(v = c(97, 103), col = "red", lwd = 2, lty = 2)  # specification limits
 ```
+As shown in Figure 4.1, the simulated assay distribution is centered close to the target value, with natural variability leading to occasional values outside the specification limits (97–99%). This illustrates how the transfer equation connects random inputs to a realistic process output.
+
+<p align="center">
+  <img src="../images/transfer_equation_assay.png" alt="Histogram – Simulated Assay with Specification Limits" width="600">
+  <br>
+  <em>Figure 4.1 – Histogram of 10,000 simulated assay values (Transfer Equation model), with specification limits 97–99%</em>
+</p>
+
 
 <p align="center"> <img src="../images/transfer_equation_example.png" alt="Transfer Equation Example" width="500"> </p>
 
