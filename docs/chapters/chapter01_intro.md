@@ -73,7 +73,6 @@ abline(v = 97, col = "red", lwd = 3, lty = 2)  # LSL
 abline(v = 99, col = "red", lwd = 3, lty = 2)  # USL
 legend("topleft", c("LSL = 97", "USL = 99"),
        lty = 2, lwd = 3, col = "red", bty = "n", cex = 0.9)
-```
 
 <p align="center">
   <img src="../images/ch1_histogram_with_specs.png" alt="Histogram with Spec Limits" width="700">
