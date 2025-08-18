@@ -28,8 +28,14 @@ Suppose we want to simulate the **assay** of an active ingredient in a tablet:
 > In the transfer equation, however, it is convenient to use Purity as a **fraction** (e.g., 0.992) and multiply by 100 only at the end to express **Assay (%)**.
 > To avoid confusion, we explicitly state that Purity is handled as a fraction inside the model.
 
+
 **Transfer Equation:**
+<p align="center">
+
 `Assay (%) = (API_weight × Purity / Label_Claim) × 100`
+
+</p>
+
 
 > ⚠️ **Note on terminology — Assay vs. Content**  
 > In pharmacopoeias such as USP and Ph. Eur., the result of this calculation may be reported either as **assay** or as **content**.  
