@@ -72,10 +72,10 @@ As shown in Figure 4.1, the simulated assay distribution is centered close to th
   <em>Figure 4.1 – Histogram of 10,000 simulated assay values (Transfer Equation model), with specification limits 97–103%</em>
 </p>
 
-🔎 **Note on "Label Claim" vs. "% w/w in Tablet"**  
-In pharmaceutical QC, *assay* is normally expressed as a percentage of the **label claim** —  
-i.e., how much active ingredient is measured compared to the amount declared on the product label (e.g., 100 mg).  
-This is why specifications are usually written as *97.0–103.0% of label claim*.  
+> 🔎 **Note on "Label Claim" vs. "% w/w in Tablet"**  
+> In pharmaceutical QC, *assay* is normally expressed as a percentage of the **label claim** —  
+> i.e., how much active ingredient is measured compared to the amount declared on the product label (e.g., 100 mg).  
+> This is why specifications are usually written as *97.0–103.0% of label claim*.  
 
 By contrast, the ratio `(API_weight / Tablet_weight) × 100` gives the **% w/w in the tablet** (here ~40%).  
 While correct mathematically, it does not correspond to regulatory assay specifications.  
