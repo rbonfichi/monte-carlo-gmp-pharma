@@ -87,6 +87,7 @@ rtriangle(50, a = 0, b = 3, c = 1)
 | **Exponential** | Time between rare events | Time to microbial contamination, pump failure |
 | **Triangular** | Only min, most likely, and max are known | Expert estimates for stability loss |
 
+
 🔎 **Note:** In the small-sample examples (n = 50), distributions may look irregular due to random variation.  
 With larger samples (see illustrative examples, n = 1000), the histograms converge toward the smooth theoretical shapes.  
 This reflects a key principle of Monte Carlo simulation: results depend on the number of random draws.
