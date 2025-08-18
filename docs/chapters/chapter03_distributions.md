@@ -114,7 +114,7 @@ The histogram shows the classic **bell-shaped curve**, centered at 100 with most
 
 ### Triangular Distribution
 ```r
-ùlibrary(triangle)
+library(triangle)
 set.seed(123)
 y <- rtriangle(1000, a = 95, b = 105, c = 100)
 
