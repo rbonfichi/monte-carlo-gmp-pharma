@@ -30,11 +30,11 @@ Suppose we want to simulate the **assay** of an active ingredient in a tablet:
 
 
 **Transfer Equation:**
-<p align="center">
+::: center
 
 `Assay (%) = (API_weight × Purity / Label_Claim) × 100`
 
-</p>
+::: 
 
 
 > ⚠️ **Note on terminology — Assay vs. Content**  
