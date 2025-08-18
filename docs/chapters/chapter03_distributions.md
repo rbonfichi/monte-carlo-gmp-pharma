@@ -25,7 +25,7 @@ In this chapter, we review four common distributions used in GMP & Pharma applic
 - **Parameters:** `a` = minimum, `b` = maximum.
 - **R Example:**
   ```r
-  runif(5, min = 40, max = 60)  # 5 values between 40 and 60
+  runif(50, min = 40, max = 60)  # 50 values between 40 and 60
   ```
 - **Use in Pharma:** Modeling tolerance bands where all outcomes within limits are equally likely.
 
@@ -40,7 +40,7 @@ In this chapter, we review four common distributions used in GMP & Pharma applic
 
 - **R Example:**
  ```r
-rnorm(5, mean = 0, sd = 1)  # 5 standard normal values
+rnorm(50, mean = 0, sd = 1)  # 50 standard normal values
 ```
 - **Use in Pharma:** Measurement errors, assay results, tablet weights.
 
@@ -55,7 +55,7 @@ rnorm(5, mean = 0, sd = 1)  # 5 standard normal values
 
 - **R Example:**
 ```r
-rexp(5, rate = 1)  # 5 exponential values with λ = 1
+rexp(50, rate = 1)  # 50 exponential values with λ = 1
 ```
 - **Use in Pharma:** Time to microbial contamination, equipment failure.
 
@@ -70,7 +70,7 @@ rexp(5, rate = 1)  # 5 exponential values with λ = 1
 - **R Example** (using triangle package):
 ```r
 library(triangle)
-rtriangle(5, a = 0, b = 3, c = 1)
+rtriangle(50, a = 0, b = 3, c = 1)
 ```
 - **Use in Pharma:** When only expert estimates (min, most likely, max) are available.
 
