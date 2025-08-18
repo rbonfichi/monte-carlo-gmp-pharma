@@ -23,6 +23,11 @@ Suppose we want to simulate the **assay** of an active ingredient in a tablet:
 - `Tablet_weight` → random variable (mg)
 - `Purity` → random variable (fraction)
 
+**Practical note — Purity as % vs fraction**
+In QC practice, **Purity** is typically reported as a **percentage** (e.g., 99.2%).
+In the transfer equation, however, it is convenient to use Purity as a **fraction** (e.g., 0.992) and multiply by 100 only at the end to express **Assay (%)**.
+To avoid confusion, we explicitly state that Purity is handled as a fraction inside the model.
+
 **Transfer Equation:**
 `Assay (%) = (API_weight / Tablet_weight) × Purity × 100`
 
@@ -33,18 +38,36 @@ Suppose we want to simulate the **assay** of an active ingredient in a tablet:
 ```r
 set.seed(123)
 
-# 1. Random inputs
-API_weight     <- rnorm(10000, mean = 101, sd = 2)   # mg
-Tablet_weight  <- rnorm(10000, mean = 250, sd = 5)   # mg
-Purity         <- runif(10000, min = 0.98, max = 1.00)
+n <- 10000
+Label_Claim <- 100          # mg declared on the product label
 
-# 2. Transfer equation
-Assay <- (API_weight / Tablet_weight) * Purity * 100
+# 1. Random inputs
+API_weight <- rnorm(n, mean = 100, sd = 1.5)    # mg of API per tablet
+Purity     <- rnorm(n, mean = 0.995, sd = 0.002) # fraction purity
+Purity[Purity > 1]  <- 1       # clamp unrealistic >100%
+Purity[Purity < 0.98] <- 0.98  # clamp unrealistic <98%
+
+# 2. Transfer equation: % of label claim
+Assay <- (API_weight * Purity / Label_Claim) * 100
 
 # 3. Output analysis
-hist(Assay, main = "Simulated Assay (%)", xlab = "Assay %")
+hist(Assay,
+     main = "Simulated Assay (% of Label Claim)",
+     xlab = "Assay (%)",
+     col = "lightblue", border = "white")
+abline(v = c(97, 103), col = "red", lwd = 2, lty = 2)  # specification limits
 ```
+
 <p align="center"> <img src="../images/transfer_equation_example.png" alt="Transfer Equation Example" width="500"> </p>
+
+ℹ️ **Note on "Label Claim" vs. "% w/w in Tablet"**  
+In pharmaceutical QC, *assay* is normally expressed as a percentage of the **label claim** —  
+i.e., how much active ingredient is measured compared to the amount declared on the product label (e.g., 100 mg).  
+This is why specifications are usually written as *97.0–103.0% of label claim*.  
+
+By contrast, the ratio `(API_weight / Tablet_weight) × 100` gives the **% w/w in the tablet** (here ~40%).  
+While correct mathematically, it does not correspond to regulatory assay specifications.  
+For this reason, the transfer equation in this example uses **label claim** in the denominator.
 
 ---
 
