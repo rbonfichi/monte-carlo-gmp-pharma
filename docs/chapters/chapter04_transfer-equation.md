@@ -31,6 +31,13 @@ To avoid confusion, we explicitly state that Purity is handled as a fraction ins
 **Transfer Equation:**
 `Assay (%) = (API_weight × Purity / Label_Claim) × 100`
 
+> ⚠️ **Note on terminology — Assay vs. Content**  
+> In pharmacopoeias such as USP and Ph. Eur., the result of this calculation may be reported either as **assay** or as **content**.  
+> Both terms refer to the quantitative determination of the active ingredient, usually expressed as a **percentage of the label claim**.  
+>   
+> However, to avoid confusion with **content uniformity** (USP <905>), which is a different test assessing unit-to-unit variability,  
+> this book consistently uses the term **assay (% of label claim)**.
+
 ---
 
 ## 💻 Example in R
