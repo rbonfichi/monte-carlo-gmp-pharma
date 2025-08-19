@@ -113,7 +113,7 @@ This simulation provides more than a single result:
 - **Spread**: the standard deviation quantifies the impact of input variability (API weight and purity).
 - **Shape**: the Q-Q plot helps assess whether the simulated assay distribution is approximately normal.
 - **Capability**: the probability of being out of specification (p_out) directly expresses the risk of producing tablets outside the 98–102% range.
-  
+
 If `p_out` is **very low** (e.g., < 0.1%), the process is highly capable.
 
 If `p_out` is **significant**, we may need to:
@@ -123,7 +123,8 @@ If `p_out` is **significant**, we may need to:
 - Improve measurement accuracy
 - This is exactly the type of insight we gain from Monte Carlo: the direct estimation of risk (% OOS).
 
-In the next chapter we will see how to analyze these results more systematically, turning raw simulation outputs into structured capability assessments.
+*In the next chapter we will see how to analyze these results more systematically, turning raw simulation outputs into structured capability assessments.*
+
 ---
 
 [← Previous: The Transfer Equation](chapter04_transfer-equation.md) | [▲ back to top](../#table-of-contents) | [Next → Analysis of Results](chapter06_analysis.md)
