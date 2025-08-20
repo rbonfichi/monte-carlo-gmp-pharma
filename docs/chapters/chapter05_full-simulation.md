@@ -50,20 +50,16 @@ print(summary(Assay))
 cat("Standard Deviation:", sd(Assay), "\n")
 
 # 5) Histogram + specification limits
-png("full_simulation_assay.png", width = 800, height = 600)
 hist(Assay,
      main = "Simulated Assay (%)",
      xlab = "Assay %",
      col = "lightblue",
      border = "white")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
-dev.off()
 
 # 6) Q-Q plot
-png("qqplot_assay.png", width = 800, height = 600)
 qqnorm(Assay, main = "Q-Q Plot of Simulated Assay")
 qqline(Assay, col = "red", lwd = 2)
-dev.off()
 
 # 7) Quantiles
 qs <- quantile(Assay, probs = c(0, .25, .5, .75, 1))
