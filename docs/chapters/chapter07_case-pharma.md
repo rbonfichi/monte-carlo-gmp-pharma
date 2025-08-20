@@ -29,7 +29,13 @@ Based on historical data and expert estimates:
 
 The assay is calculated using the ratio of API weight to tablet weight, multiplied by purity and converted to a percentage:
 
-![formula](https://render.githubusercontent.com/render/math?math=\text{Assay}(\%)=\frac{\text{API weight}}{\text{Tablet weight}}\times\text{Purity}\times100)
+<p align="center">
+  <img alt="Assay formula"
+       src="https://render.githubusercontent.com/render/math?math=%5Ctext%7BAssay%7D(%5C%25)=%5Cfrac%7B%5Ctext%7BAPI%20weight%7D%7D%7B%5Ctext%7BTablet%20weight%7D%7D%5Ctimes%5Ctext%7BPurity%7D%5Ctimes100"
+       width="420">
+</p>
+
+Assay(%) = (`API_weight` / `Tablet_weight`) * `Purity` * 100
 
 ---
 
