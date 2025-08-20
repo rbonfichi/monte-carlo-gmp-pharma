@@ -19,9 +19,9 @@ Based on historical data and expert estimates:
 
 | Input Variable    | Distribution  | Parameters                  | Source                  |
 |-------------------|--------------|-----------------------------|-------------------------|
-| API Weight (mg)   | Normal       | mean = 101, sd = 2           | Production data         |
-| Tablet Weight (mg)| Normal       | mean = 250, sd = 5           | Production data         |
-| Purity (fraction) | Uniform      | min = 0.98, max = 1.00        | Certificate of Analysis |
+| API Weight (mg)   | Normal       | mean = 100.5, sd = 1.2           | Production data         |
+| Tablet Weight (mg)| Normal       | mean = 100.0, sd = 0.5           | Production data         |
+| Purity (fraction) | Uniform      | min = 0.985, max = 1.00        | Certificate of Analysis |
 
 ---
 
@@ -62,8 +62,8 @@ sd_assay   <- sd(Assay)
 
 # 3) Histogram with specs
 png("case_study1_hist.png", width = 800, height = 600)
-hist(Assay,
-     main = sprintf("Simulated Assay (%%) — mean=%.2f, sd=%.2f", mean_assay, sd_assay),
+hist(Assay, 
+     main = sprintf("Case Study 1 — Simulated Assay (%%) — mean=%.2f, sd=%.2f", mean_assay, sd_assay),
      xlab = "Assay (%)",
      col = "lightblue",
      border = "white")
@@ -73,7 +73,7 @@ dev.off()
 # 4) Boxplot
 png("case_study1_box.png", width = 800, height = 600)
 boxplot(Assay, horizontal = TRUE,
-        main = "Case Study — Assay Distribution",
+        main = "Case Study 1 — Assay Distribution",
         col = "lightgreen")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
 dev.off()
@@ -81,14 +81,14 @@ dev.off()
 # 5) ECDF
 png("case_study1_ecdf.png", width = 800, height = 600)
 plot(ecdf(Assay),
-     main = "Case Study — Empirical CDF of Assay",
+     main = "Case Study 1 — Empirical CDF of Assay",
      xlab = "Assay (%)",
      ylab = "Cumulative probability")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
+dev.off()
 
 # 6) Probability of OOS
 p_out <- mean(Assay < 98 | Assay > 102)
-dev.off()
 
 # 7) Capability index vs 98–102 (normality assumption)
 USL <- 102; LSL <- 98
@@ -114,7 +114,7 @@ list(mean_assay = mean_assay, sd_assay = sd_assay, p_out = p_out, Cpk = Cpk)
 | Statistic               | Value        |
 |--------------------------|-------------:|
 | Mean                     | 99.75        |
-| Standard Deviation (SD)  | 1.36         |
+| Standard Deviation       | 1.36         |
 | 5th Percentile           | 97.53        |
 | 95th Percentile          | 101.96       |
 | Probability of OOS       | 15.0%        |
@@ -136,8 +136,9 @@ Cpk was calculated as:
 $$
 Cpk = \min \left( \frac{USL - \mu}{3\sigma}, \frac{\mu - LSL}{3\sigma} \right)
 $$
-
 ---
+
+*Note: The closed-form Cpk assumes approximate normality. For skewed or non-normal data, percentile-based indices or Monte Carlo percentiles are more robust.*
 
 ## 📌 Step 5 – GMP Interpretation
 
@@ -163,15 +164,17 @@ This quantitative approach supports risk-based decision-making and can be docume
 Suppose variability of API weight is reduced from **sd = 1.2 mg → sd = 0.8 mg**  
 (e.g., by better control of blending and compression).
 
-Re-running the simulation yields:
+**Re-running the simulation (after process improvement, N = 100,000) yields:**
 
-- Mean assay: 99.75%
-- Standard deviation: 0.93%
-- Probability of OOS: ≈ 5%
-- Cpk: ≈ 0.63
+| Statistic               | Value        |
+|--------------------------|-------------:|
+| Mean                     | 99.75        |
+| Standard Deviation (SD)  | 0.93         |
+| Probability of OOS       | 5.0%         |
+| Capability Index (Cpk)   | 0.63         |
 
 This demonstrates how Monte Carlo can quantify the **benefit of CAPA actions**,  
-providing objective evidence that process improvements reduce risk of non-compliance.
+providing objective evidence that process improvements **significantly** reduce the risk of non-compliance..
 
 > 🔎 **Regulatory Note:**  
 > This type of Monte Carlo analysis aligns with the **ICH Q9(R1) principles of risk management**,  
