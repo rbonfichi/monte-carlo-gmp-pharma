@@ -61,7 +61,7 @@ mean_assay <- mean(Assay)
 sd_assay   <- sd(Assay)
 
 # 3) Histogram with specs
-png("case_study_hist.png", width = 800, height = 600)
+png("case_study1_hist.png", width = 800, height = 600)
 hist(Assay,
      main = sprintf("Simulated Assay (%%) — mean=%.2f, sd=%.2f", mean_assay, sd_assay),
      xlab = "Assay (%)",
@@ -71,12 +71,15 @@ abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
 dev.off()
 
 # 4) Boxplot
+png("case_study1_box.png", width = 800, height = 600)
 boxplot(Assay, horizontal = TRUE,
         main = "Case Study — Assay Distribution",
         col = "lightgreen")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
+dev.off()
 
 # 5) ECDF
+png("case_study1_ecdf.png", width = 800, height = 600)
 plot(ecdf(Assay),
      main = "Case Study — Empirical CDF of Assay",
      xlab = "Assay (%)",
@@ -85,6 +88,7 @@ abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
 
 # 6) Probability of OOS
 p_out <- mean(Assay < 98 | Assay > 102)
+dev.off()
 
 # 7) Capability index vs 98–102 (normality assumption)
 USL <- 102; LSL <- 98
@@ -121,11 +125,11 @@ These values indicate a process with **excessive variability** and a **non-negli
 > **Note:** This dataset was chosen **deliberately** to illustrate how Monte Carlo simulations can reveal a process that is **not in control**.  
 > In a real GMP context, results like these would trigger a root cause investigation and corrective actions to reduce variability and improve process centering.
 
-<p align="center"> <img src="../images/case_study_hist.png" alt="Case Study Histogram" width="500"> </p>
+<p align="center"> <img src="../images/case_study1_hist.png" alt="Case Study Histogram" width="500"> </p>
 
-<p align="center"> <img src="../images/case_study_box.png" alt="Case Study Boxplot" width="500"> </p>
+<p align="center"> <img src="../images/case_study1_box.png" alt="Case Study Boxplot" width="500"> </p>
 
-<p align="center"> <img src="../images/case_study_ecdf.png" alt="Case Study ECDF" width="500"> </p>
+<p align="center"> <img src="../images/case_study1_ecdf.png" alt="Case Study ECDF" width="500"> </p>
 
 Cpk was calculated as:
 
@@ -169,7 +173,7 @@ Re-running the simulation yields:
 This demonstrates how Monte Carlo can quantify the **benefit of CAPA actions**,  
 providing objective evidence that process improvements reduce risk of non-compliance.
 
-> **Regulatory Note:**  
+> 🔎 **Regulatory Note:**  
 > This type of Monte Carlo analysis aligns with the **ICH Q9(R1) principles of risk management**,  
 > and can support documentation in **Process Validation Stage 3 (Continued Process Verification)**  
 > as recommended in FDA and EMA guidelines.
