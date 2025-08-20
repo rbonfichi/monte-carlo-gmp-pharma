@@ -90,7 +90,6 @@ If you are new to R, we recommend installing RStudio Desktop and trying the exam
 - [Chapter 7 – Pharmaceutical Case Study](docs/chapter07_case-pharma.md)
 - [Chapter 8 – Decision and Risk](docs/chapter08_decision-risk.md)
 - [Chapter 9 – Conclusions and Next Steps](docs/chapter09_conclusions-nextsteps.md)
-  
 - [Chapter 10 — References](chapters/chapter10_references.md)
 
 [▲ back to top](#table-of-contents)
