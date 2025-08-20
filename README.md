@@ -92,7 +92,6 @@ If you are new to R, we recommend installing RStudio Desktop and trying the exam
 - [Chapter 9 – Conclusions and Next Steps](docs/chapter09_conclusions-nextsteps.md)
 - [Chapter 10 — References](chapters/chapter10_references.md)
 
-
 [▲ back to top](#table-of-contents)
 
 ---
