@@ -1,5 +1,9 @@
 # Chapter 6 – Analysis of Results
 
+*This chapter interprets the simulated assay results from Chapter 5.  
+We summarize the key descriptive statistics, quantify the probability of out-of-specification results, visualize the distribution, and calculate capability indices.  
+Together, these tools provide a structured framework for linking Monte Carlo outputs to GMP decision-making.*
+
 In Chapter 5 we generated 10,000 simulated assay results.  
 Now the next step is to **analyze these simulated data** systematically.
 This allows us to assess compliance with specifications, estimate process capability, and evaluate risks.
@@ -64,6 +68,12 @@ p_out
 ```
 
 If `p_out` is small (e.g., < 0.1%), the process is considered highly capable.
+In our simulation, however, the estimated probability of an out-of-specification result is:
+
+**p_out = 0.2125 (≈ 21%)**
+
+This is a relatively high probability, indicating that about 1 in 5 simulated units fall outside the specification range (98–102%).  
+Such a high OOS rate is consistent with the low capability index (Cpk ≈ 0.33) calculated later.
 
 **Confidence Interval (95%) for p_out**
 
@@ -126,29 +136,23 @@ Graphs make interpretation easier:
 **R Example:**
 
 ```r
-png("analysis_histogram.png", width = 800, height = 600)
 hist(Assay,
      main = "Distribution of Simulated Assay (%)",
      xlab = "Assay %",
      col = "lightblue",
      border = "white")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
-dev.off()
 
-png("analysis_boxplot.png", width = 800, height = 600)
 boxplot(Assay, horizontal = TRUE,
         main = "Assay Distribution",
         col = "lightgreen")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
-dev.off()
 
-png("analysis_ecdf.png", width = 800, height = 600)
 plot(ecdf(Assay),
      main = "Empirical CDF of Assay",
      xlab = "Assay %",
      ylab = "Cumulative probability")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
-dev.off()
 ```
 
 <p align="center"> <img src="../images/analysis_histogram.png" alt="Analysis Histogram" width="500"> </p> 
@@ -183,6 +187,16 @@ Cpk <- min((USL - mean_assay) / (3 * sd_assay),
            (mean_assay - LSL) / (3 * sd_assay))
 Cpk
 ```
+
+**Result:**  
+For the simulated assay data, the capability index is:
+
+Cpk = 0.33  
+
+This value is far below the usual GMP threshold (Cpk ≥ 1.33),  
+confirming that the process, as simulated, has insufficient capability  
+to consistently remain within the 98–102% specification limits.  
+The low Cpk is coherent with the relatively high probability of OOS (≈ 21%).
 
 ---
 
