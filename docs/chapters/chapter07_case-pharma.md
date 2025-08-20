@@ -131,11 +131,16 @@ These values indicate a process with **excessive variability** and a **non-negli
 
 <p align="center"> <img src="../images/case_study1_ecdf.png" alt="Case Study ECDF" width="500"> </p>
 
+---
+
 Cpk was calculated as:
 
 $$
 Cpk = \min \left( \frac{USL - \mu}{3\sigma}, \frac{\mu - LSL}{3\sigma} \right)
 $$
+
+`Cpk = min( (USL - μ)/(3*σ), (μ - LSL)/(3*σ) )`
+
 ---
 
 *Note: The closed-form Cpk assumes approximate normality. For skewed or non-normal data, percentile-based indices or Monte Carlo percentiles are more robust.*
