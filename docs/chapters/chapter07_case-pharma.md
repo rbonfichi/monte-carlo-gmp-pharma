@@ -33,6 +33,7 @@ $$
 \text{Assay}(\%) \;=\; \frac{\text{API weight}}{\text{Tablet weight}} \times \text{Purity} \times 100
 $$
 
+
 ---
 
 ## 💻 Step 3 – Run the Simulation in R
