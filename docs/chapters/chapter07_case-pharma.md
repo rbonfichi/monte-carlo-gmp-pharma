@@ -61,31 +61,26 @@ mean_assay <- mean(Assay)
 sd_assay   <- sd(Assay)
 
 # 3) Histogram with specs
-png("case_study1_hist.png", width = 800, height = 600)
 hist(Assay, 
      main = sprintf("Case Study 1 — Simulated Assay (%%) — mean=%.2f, sd=%.2f", mean_assay, sd_assay),
      xlab = "Assay (%)",
      col = "lightblue",
      border = "white")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
-dev.off()
 
 # 4) Boxplot
-png("case_study1_box.png", width = 800, height = 600)
 boxplot(Assay, horizontal = TRUE,
         main = "Case Study 1 — Assay Distribution",
         col = "lightgreen")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
-dev.off()
 
 # 5) ECDF
-png("case_study1_ecdf.png", width = 800, height = 600)
 plot(ecdf(Assay),
      main = "Case Study 1 — Empirical CDF of Assay",
      xlab = "Assay (%)",
      ylab = "Cumulative probability")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
-dev.off()
+
 
 # 6) Probability of OOS
 p_out <- mean(Assay < 98 | Assay > 102)
