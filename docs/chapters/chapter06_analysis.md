@@ -1,6 +1,7 @@
 # Chapter 6 – Analysis of Results
 
-Once a Monte Carlo simulation is complete, the next step is to **analyze the simulated data**.  
+In Chapter 5 we generated 10,000 simulated assay results.  
+Now the next step is to **analyze these simulated data** systematically.
 This allows us to assess compliance with specifications, estimate process capability, and evaluate risks.
 
 ---
@@ -13,11 +14,13 @@ Key metrics to summarize the simulation output:
 - **Standard deviation (SD)** → variability.
 - **Minimum / Maximum** → extreme values.
 - **Percentiles** → distribution shape and spread.
+  - **Interquartile Range (IQR)** → spread of the middle 50% of values.
 
 **R Example:**
 ```r
 summary(Assay)
 sd(Assay)
+IQR(Assay)
 quantile(Assay, probs = c(0.05, 0.95))
 ```
 
@@ -41,9 +44,12 @@ p_out
 
 If `p_out` is small (e.g., < 0.1%), the process is considered highly capable.
 
-**Confidence Interval (95%)**
+**Confidence Interval (95%) for p_out**
 
 For a more robust assessment, we can estimate a 95% confidence interval for `p_out` using the `prop.test` function, which provides a score-based CI (Wilson interval).
+Alternatively, confidence intervals for `p_out` can also be estimated using **bootstrap resampling**.  
+This method is particularly useful when analyzing **real experimental data**, where the distribution is not well described by simple binomial assumptions.  
+In Monte Carlo simulations, however, the number of simulated data points can be arbitrarily large, so the binomial approximation is usually sufficient.
 
 ```r
 N <- length(Assay)
@@ -51,6 +57,40 @@ x <- sum(Assay < 98 | Assay > 102)
 prop.test(x, N)$conf.int
 ```
 
+⚠️ **Important note on interpretation of OOS confidence intervals**
+
+There is a fundamental difference between two contexts:
+
+- **Case 1: Monte Carlo simulation**  
+  In a simulation we generate as many virtual observations as we want, based on assumed probability models (Normal, Uniform, Triangular, etc.).  
+  The probability of OOS can be estimated directly as the relative frequency:  
+  ```r
+  p_out <- mean(Assay < 98 | Assay > 102)
+  ```
+  With large simulated samples (e.g., 100,000), this estimate is already very precise.
+  In this context, additional binomial confidence intervals are usually not required.
+
+- **Case 2: Real experimental data (non-simulated)**
+  When we analyze *actual samples* from production or laboratory experiments, the number of OOS results is a discrete count out of n units tested.
+  This situation follows a **Binomial(n, p)** model, where each unit is either in-spec or OOS.
+  In this case, confidence intervals for the true OOS probability p are essential, and can be computed with:
+
+ - **Clopper–Pearson exact interval** (conservative, guarantees at least 95% coverage).
+ - **Wilson (score) interval** (less conservative and widely recommended).
+ - `prop.test()` **in R**, which implements the Wilson score-based CI by default.
+
+Example:
+```r
+N <- length(Assay)               # number of observations
+x <- sum(Assay < 98 | Assay > 102)  # number of OOS
+prop.test(x, N)$conf.int
+```
+
+In practice, the correct approach depends on the context:
+
+- For **Monte Carlo outputs**, the binomial model is not needed, because the simulation itself provides a precise estimate of probabilities.
+- For **real GMP data**, confidence intervals based on binomial theory (Clopper–Pearson, Wilson) or bootstrap resampling are necessary to quantify the              uncertainty due to limited sample size.
+  
 ---
 
 ## 📈 3. Visualizing the Distribution
@@ -60,7 +100,7 @@ Graphs make interpretation easier:
 
 - **Boxplot** to detect skewness and outliers.
 
-- **Cumulative distribution function (CDF)** to read probabilities directly.
+- **Empirical cumulative distribution function (ECDF)** to directly read probabilities.
 
 **R Example:**
 
@@ -80,11 +120,21 @@ boxplot(Assay, horizontal = TRUE,
         col = "lightgreen")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
 dev.off()
+
+png("analysis_ecdf.png", width = 800, height = 600)
+plot(ecdf(Assay),
+     main = "Empirical CDF of Assay",
+     xlab = "Assay %",
+     ylab = "Cumulative probability")
+abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
+dev.off()
 ```
 
 <p align="center"> <img src="../images/analysis_histogram.png" alt="Analysis Histogram" width="500"> </p> 
 
 <p align="center"> <img src="../images/analysis_boxplot.png" alt="Analysis Boxplot" width="500"> </p>
+
+<p align="center"> <img src="../images/analysis_ecdf.png" alt="Analysis ECDF" width="500"> </p>
 
 ---
 
@@ -97,7 +147,8 @@ $$
 
 `Cpk = min( (USL - μ)/(3*σ), (μ - LSL)/(3*σ) )`
 
-*Note: the closed-form Cpk formula assumes approximate normality. For non-normal data, consider transformations or percentile-based capability indices.*
+*Note: the closed-form Cpk formula assumes approximate normality and a symmetric distribution.  
+For non-normal data, consider transformations or **percentile-based capability indices**, which Monte Carlo can estimate directly.*
 
 **R Example:**
 
@@ -116,9 +167,9 @@ Cpk
 
 ## 💊 Interpretation in GMP Context
 
-- **Low p_out + High Cpk** → process under good control.
-- **High p_out or Low Cpk** → potential quality risk; investigate variability sources.
-- Visual tools and statistics **together** give the clearest picture.
+- **Low p_out + High Cpk** → process under good control, with high confidence in consistent GMP compliance.
+- **High p_out or Low Cpk** → potential quality risk; these indicators should trigger investigation or corrective actions.
+- Visual tools and statistics, **together**, provide the clearest and most reliable basis for decision-making.
 
 ---
 [← Previous: A Complete Simulation in R](chapter05_full-simulation.md) | [▲ back to top](../#table-of-contents) | [Next → Pharmaceutical Case Study](chapter07_case-pharma.md)
