@@ -21,7 +21,6 @@ It is not a purely theoretical treatise — the emphasis is on **real-world appl
 7. [Chapter 7 – Pharmaceutical Case Study](chapters/chapter07_case-pharma.md)  
 8. [Chapter 8 – Decision and Risk](chapters/chapter08_decision-risk.md)  
 9. [Chapter 9 – Conclusions and Next Steps](chapters/chapter09_conclusions-nextsteps.md)
-   
 10. [Chapter 10 — References](chapters/chapter10_references.md)
 
 ---
