@@ -30,6 +30,27 @@ quantile(Assay, probs = c(0.05, 0.95))
 t.test(Assay)$conf.int
 ```
 
+**Summary of simulated assay results (N = 10,000):**
+
+| Statistic               | Value        |
+|--------------------------|-------------:|
+| Minimum                  | 93.80        |
+| 1st Quartile (Q1)        | 98.48        |
+| Median                   | 99.49        |
+| Mean                     | 99.49        |
+| 3rd Quartile (Q3)        | 100.52       |
+| Maximum                  | 105.51       |
+| Standard Deviation (SD)  | 1.50         |
+| Interquartile Range (IQR)| 2.04         |
+| 5th Percentile           | 97.03        |
+| 95th Percentile          | 101.97       |
+| 95% CI for Mean          | [99.46 ; 99.52] |
+
+These results confirm that the simulated assay distribution is centered close to the target (≈ 100%),  
+with moderate variability (SD ≈ 1.5%).  
+The specification limits (98–102%) correspond approximately to ±1.0σ and ±1.7σ from the mean,  
+which explains the relatively high probability of out-of-specification results observed later.
+
 ---
 
 ## 📉 2. Probability of Out-of-Spec (OOS)
