@@ -17,11 +17,13 @@ The target assay is **100.0%** with specifications:
 
 Based on historical data and expert estimates:
 
-| Input Variable    | Distribution  | Parameters                  | Source                  |
-|-------------------|--------------|-----------------------------|-------------------------|
-| API Weight (mg)   | Normal       | mean = 100.5, sd = 1.2           | Production data         |
-| Tablet Weight (mg)| Normal       | mean = 100.0, sd = 0.5           | Production data         |
-| Purity (fraction) | Uniform      | min = 0.985, max = 1.00        | Certificate of Analysis |
+| Input Variable                | Distribution  | Parameters                  | Source                  |
+|-------------------------------|--------------|-----------------------------|-------------------------|
+| API Weight (mg)               | Normal       | mean = 100.5, sd = 1.2      | Production data         |
+| Tablet Weight (mg, label claim)| Normal      | mean = 100.0, sd = 0.5      | Production data         |
+| Purity (fraction)             | Uniform      | min = 0.985, max = 1.00     | Certificate of Analysis |
+
+*Note: “Tablet Weight” refers to the **label claim of API (mg)**, not the total tablet mass.*
 
 ---
 
@@ -104,7 +106,7 @@ list(mean_assay = mean_assay, sd_assay = sd_assay, p_out = p_out, Cpk = Cpk)
 - **Observed results** for this simulation:
   - Mean assay: 99.75%
   - Standard deviation: 1.36%
-  - Probability of OOS (`p_out`): ≈ 15%
+  - Probability of OOS (`p_out`): 14.95%
   - **Cpk**: ≈ 0.43 → far below the GMP-recommended threshold of 1.33
 
 **Summary of simulated assay results (N = 100,000):**
@@ -115,7 +117,7 @@ list(mean_assay = mean_assay, sd_assay = sd_assay, p_out = p_out, Cpk = Cpk)
 | Standard Deviation       | 1.36         |
 | 5th Percentile           | 97.53        |
 | 95th Percentile          | 101.96       |
-| Probability of OOS       | 15.0%        |
+| Probability of OOS       | 14.95%       |
 | Capability Index (Cpk)   | 0.43         |
 
 These values indicate a process with **excessive variability** and a **non-negligible risk** of producing batches outside specifications.
@@ -172,7 +174,7 @@ Suppose variability of API weight is reduced from **sd = 1.2 mg → sd = 0.8 mg*
 | Capability Index (Cpk)   | 0.63         |
 
 This demonstrates how Monte Carlo can quantify the **benefit of CAPA actions**,  
-providing objective evidence that process improvements **significantly** reduce the risk of non-compliance..
+providing objective evidence that process improvements **significantly** reduce the risk of non-compliance.
 
 > 🔎 **Regulatory Note:**  
 > This type of Monte Carlo analysis aligns with the **ICH Q9(R1) principles of risk management**,  
