@@ -1,4 +1,4 @@
-# Chapter 7 — Pharmaceutical Case Study
+# Chapter 7 — Case Study 1 — API Assay in Tablets
 
 In this chapter, we present a realistic **GMP pharmaceutical example** to demonstrate the complete Monte Carlo workflow — from defining inputs to interpreting results.
 
@@ -60,7 +60,7 @@ Assay <- (API_weight / Tablet_weight) * Purity * 100
 mean_assay <- mean(Assay)
 sd_assay   <- sd(Assay)
 
-# 3) Save histogram with specs
+# 3) Histogram with specs
 png("case_study_hist.png", width = 800, height = 600)
 hist(Assay,
      main = sprintf("Simulated Assay (%%) — mean=%.2f, sd=%.2f", mean_assay, sd_assay),
@@ -70,10 +70,23 @@ hist(Assay,
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
 dev.off()
 
-# 4) Probability of OOS
+# 4) Boxplot
+boxplot(Assay, horizontal = TRUE,
+        main = "Case Study — Assay Distribution",
+        col = "lightgreen")
+abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
+
+# 5) ECDF
+plot(ecdf(Assay),
+     main = "Case Study — Empirical CDF of Assay",
+     xlab = "Assay (%)",
+     ylab = "Cumulative probability")
+abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
+
+# 6) Probability of OOS
 p_out <- mean(Assay < 98 | Assay > 102)
 
-# 5) Capability index vs 98–102 (normality assumption)
+# 7) Capability index vs 98–102 (normality assumption)
 USL <- 102; LSL <- 98
 Cpk <- min((USL - mean_assay) / (3 * sd_assay),
            (mean_assay - LSL) / (3 * sd_assay))
@@ -92,12 +105,27 @@ list(mean_assay = mean_assay, sd_assay = sd_assay, p_out = p_out, Cpk = Cpk)
   - Probability of OOS (`p_out`): ≈ 15%
   - **Cpk**: ≈ 0.43 → far below the GMP-recommended threshold of 1.33
 
+**Summary of simulated assay results (N = 100,000):**
+
+| Statistic               | Value        |
+|--------------------------|-------------:|
+| Mean                     | 99.75        |
+| Standard Deviation (SD)  | 1.36         |
+| 5th Percentile           | 97.53        |
+| 95th Percentile          | 101.96       |
+| Probability of OOS       | 15.0%        |
+| Capability Index (Cpk)   | 0.43         |
+
 These values indicate a process with **excessive variability** and a **non-negligible risk** of producing batches outside specifications.
 
 > **Note:** This dataset was chosen **deliberately** to illustrate how Monte Carlo simulations can reveal a process that is **not in control**.  
 > In a real GMP context, results like these would trigger a root cause investigation and corrective actions to reduce variability and improve process centering.
 
 <p align="center"> <img src="../images/case_study_hist.png" alt="Case Study Histogram" width="500"> </p>
+
+<p align="center"> <img src="../images/case_study_box.png" alt="Case Study Boxplot" width="500"> </p>
+
+<p align="center"> <img src="../images/case_study_ecdf.png" alt="Case Study ECDF" width="500"> </p>
 
 Cpk was calculated as:
 
@@ -123,6 +151,29 @@ This approach can be extended to:
 - Microbiological limits
 
 This quantitative approach supports risk-based decision-making and can be documented in validation or continued process verification reports.
+
+---
+
+## 🔄 Step 6 – What-if Scenario (Process Improvement)
+
+Suppose variability of API weight is reduced from **sd = 1.2 mg → sd = 0.8 mg**  
+(e.g., by better control of blending and compression).
+
+Re-running the simulation yields:
+
+- Mean assay: 99.75%
+- Standard deviation: 0.93%
+- Probability of OOS: ≈ 5%
+- Cpk: ≈ 0.63
+
+This demonstrates how Monte Carlo can quantify the **benefit of CAPA actions**,  
+providing objective evidence that process improvements reduce risk of non-compliance.
+
+> **Regulatory Note:**  
+> This type of Monte Carlo analysis aligns with the **ICH Q9(R1) principles of risk management**,  
+> and can support documentation in **Process Validation Stage 3 (Continued Process Verification)**  
+> as recommended in FDA and EMA guidelines.
+
 
 ---
 [← Previous: Analysis of Results](chapter06_analysis.md) | [▲ back to top](../#table-of-contents) | [Next → Decision and Risk](chapter08_decision-risk.md)
