@@ -40,7 +40,7 @@ In this chapter, we review four common distributions used in GMP & Pharma applic
 
 - **R Example:**
  ```r
-rnorm(50, mean = 0, sd = 1)  # 50 standard normal values
+rnorm(50, mean = 0, sd = 1)  # 50 values from the standard Normal distribution (mean=0, sd=1)
 ```
 - **Use in Pharma:** Measurement errors, assay results, tablet weights.
 
@@ -65,11 +65,11 @@ rexp(50, rate = 1)  # 50 exponential values with λ = 1
 
 ## 📊 4. Triangular Distribution
 
-- **Definition:** Defined by a minimum `a`, a maximum `b`, and a most likely value `c`.
+- **Definition:** Defined by a minimum (`a`), a maximum (`b`), and a most likely value (`c`).
 
-- **R Example** (using triangle package):
+- **R Example** (using `triangle` package):
 ```r
-library(triangle)
+library(triangle)  # make sure the package is installed
 rtriangle(50, a = 0, b = 3, c = 1)
 ```
 - **Use in Pharma:** When only expert estimates are available, specified as minimum (a), maximum (b), and most likely (c).
@@ -85,7 +85,7 @@ rtriangle(50, a = 0, b = 3, c = 1)
 | **Uniform** | All values in a range equally likely | Early risk assessment with no prior data |
 | **Normal** | Natural variation around a mean | Assay results, tablet weights |
 | **Exponential** | Time between rare events | Time to microbial contamination, pump failure |
-| **Triangular** | Only min, most likely, and max are known | Expert estimates for stability loss |
+| **Triangular** | Only minimum, most likely, and maximum are known | Expert estimates for stability loss |
 
 
 🔎 **Note:** In the small-sample examples (n = 50), distributions may look irregular due to random variation.  
@@ -140,8 +140,11 @@ The histogram shows a **triangle shape**, rising towards the most likely value (
 ---
 
 ## 💊 Why Distributions Matter in GMP
-Choosing the right distribution ensures that simulated data reflect real-world processes.
-Using the wrong one can lead to misleading conclusions, especially in **risk assessment** and **capability analysis**.
+Choosing the right distribution ensures that simulated data reflect real-world processes.  
+Using the wrong one can lead to misleading conclusions, especially in **risk assessment** and **capability analysis**.  
+
+👉 In the next chapter, we will see how distributions combine through the **transfer equation** to model variability propagation in real processes.
 
 ---
+
 [← Previous: Random Numbers vs. Random Variates](chapter02_random-variates.md) | [▲ back to top](../#table-of-contents) | [Next → The Transfer Equation](chapter04_transfer-equation.md)
