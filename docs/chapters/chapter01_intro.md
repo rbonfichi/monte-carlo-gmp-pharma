@@ -1,4 +1,4 @@
-# Chapter 1 – Introduction
+# Chapter 1 – Introduction to Monte Carlo in Pharma
 
 Monte Carlo methods are powerful simulation tools widely used in engineering, finance, and increasingly in the **pharmaceutical industry**.
 
@@ -21,18 +21,19 @@ It is especially useful when:
 - You want to model uncertainty and explore a range of possible outcomes.  
 
 The method takes its name from the **Monte Carlo Casino** in Monaco — a metaphor for randomness, introduced in the 1940s by mathematicians working on complex physics problems.
+Although originally developed for physics and engineering, Monte Carlo simulation has found increasing relevance in regulated industries such as **pharmaceuticals**, where uncertainty and variability are central concerns.
 
 ---
 
 ## 2️⃣ Why Monte Carlo in Pharma?
 
-In the pharmaceutical and GMP context, Monte Carlo simulation can help:
+In the pharmaceutical and GMP context, Monte Carlo simulation can support a wide range of applications, including but not limited to:
 
-- Estimate the probability of out-of-specification (OOS) results.  
-- Predict process capability with uncertainty.  
-- Support regulatory decisions with quantitative evidence.  
-- Model measurement uncertainty in QC laboratories.  
-- Evaluate sampling plans and acceptance criteria.  
+- Estimating the probability of out-of-specification (OOS) results  
+- Predicting process capability **with confidence intervals**  
+- Supporting **risk-based regulatory decisions** with quantitative evidence  
+- Modeling measurement uncertainty in QC laboratories  
+- Evaluating sampling plans, acceptance criteria, and inspection strategies  
 
 These applications make Monte Carlo not only a statistical curiosity, but a **practical decision-support tool** for QA, QC, and manufacturing.
 
@@ -60,7 +61,7 @@ mean(x < 97.0 | x > 99.0)
 
 ```r
 set.seed(123)
-x <- rnorm(1000, mean = 98.5, sd = 0.4)
+x <- rnorm(1000, mean = 98.0, sd = 0.4)
 hist(x,
      breaks = 30,
      main = "Simulated Assay Values with Specification Limits",
@@ -107,7 +108,7 @@ This simple experiment illustrates the core idea of Monte Carlo:
 ---
 
 ## 🚫 What’s not covered
-- This is **not** a full statistics course  
-- This is **not** a regulatory guideline, but a practical supplement  
+- This is not a full statistics textbook  
+- This is not a regulatory guideline — but rather a **practical companion** for applying Monte Carlo methods in GMP decision-making  
 
-[▲ back to top](../#table-of-contents) | [Next → Random Numbers vs. Random Variates](chapter02_random-variates.md)
+[▲ back to top](https://rbonfichi.github.io/monte-carlo-gmp-pharma/) | [Next → Random Numbers vs. Random Variates](chapter02_random-variates.md)
