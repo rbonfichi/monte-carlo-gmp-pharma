@@ -15,24 +15,33 @@ The goal is to provide **practical statistical tools** that can be applied immed
 ## 📑 Chapters
 
 1. [Chapter 1 – Introduction](chapters/chapter01_intro.md)  
-   Overview of Monte Carlo simulation and its role in GMP decision-making.  
+   Overview of Monte Carlo simulation and its role in GMP decision-making.
+
 2. [Chapter 2 – Random Numbers vs. Random Variates](chapters/chapter02_random-variates.md)  
-   Understanding the basics of random number generation and statistical distributions.  
+   Understanding the basics of random number generation and statistical distributions.
+
 3. [Chapter 3 – Simple Distributions](chapters/chapter03_distributions.md)  
-   Key probability distributions used in pharmaceutical applications.  
+   Key probability distributions used in pharmaceutical applications.
+
 4. [Chapter 4 – The Transfer Equation](chapters/chapter04_transfer-equation.md)  
-   How to translate input variability into output variability.  
+   How to translate input variability into output variability.
+
 5. [Chapter 5 – A Complete Simulation in R](chapters/chapter05_full-simulation.md)  
-   A step-by-step worked example with code and interpretation.  
+   A step-by-step worked example with code and interpretation.
+
 6. [Chapter 6 – Analysis of Results](chapters/chapter06_analysis.md)  
-   Summarizing simulation outcomes with descriptive and inferential tools.  
-7. [Chapter 7 – Case Study 1: API Assay in Tablets](chapters/chapter07_case-pharma.md)
+   Summarizing simulation outcomes with descriptive and inferential tools.
+
+7. [Chapter 7 – Case Study 1: API Assay in Tablets](chapters/chapter07_case-pharma.md)  
    A real-world GMP case where Monte Carlo supports quality decisions.
-9. [Chapter 8 – Decision and Risk](chapters/chapter08_decision-risk.md)  
-   Using simulation to inform risk management and uncertainty analysis.     
-10. [Chapter 9 – Conclusions and Next Steps](chapters/chapter09_conclusions-nextsteps.md)  
-   Summary and roadmap for future work.  
-11. [Chapter 10 – References](chapters/chapter10_references.md)  
+
+8. [Chapter 8 – Decision and Risk](chapters/chapter08_decision-risk.md)  
+   Using simulation to inform risk management and uncertainty analysis.
+
+9. [Chapter 9 – Conclusions and Next Steps](chapters/chapter09_conclusions-nextsteps.md)  
+   Summary and roadmap for future work.
+
+10. [Chapter 10 – References](chapters/chapter10_references.md)  
     Key literature and resources for further reading.
 
 ---
