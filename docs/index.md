@@ -1,4 +1,4 @@
-# 📘 Monte Carlo Methods for GMP & Pharmaceutical Operations  
+# 📘 Monte Carlo Methods for GMP & Pharma Operations  
 _Statistical Simulation Tools for Pharmaceutical Quality and GMP Decision-Making_
 
 ---
