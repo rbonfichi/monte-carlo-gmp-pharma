@@ -6,8 +6,9 @@ In this chapter, we clarify a crucial distinction:
 ---
 
 ## 🎲 Random Numbers
-- **Definition:** Numbers generated without a predictable pattern, usually between 0 and 1.
-- **Source:** Often produced by a *pseudo-random number generator* (PRNG) in software.
+- **Definition:** Numbers generated without a predictable pattern, typically in the range [0, 1].  
+- **Source:** In practice, they are produced by a *pseudo-random number generator* (PRNG), which is deterministic but sufficiently random for most statistical simulations.
+
 - **Example in R:**
   ```r
   runif(5)  # Generates 5 random numbers between 0 and 1
@@ -17,7 +18,8 @@ In this chapter, we clarify a crucial distinction:
 
 ## 📈 Random Variates
 
-- **Definition:** Values drawn from a specific probability distribution using random numbers as input.
+- **Definition:** Values drawn from a specific probability distribution, obtained by transforming random numbers.  
+- **Key Point:** Random variates represent **real-world data models** (e.g., assay values, tablet weights).
 
 - **Example:** Transforming random numbers into normally distributed values.
 
@@ -26,14 +28,12 @@ In this chapter, we clarify a crucial distinction:
   rnorm(5, mean = 100, sd = 15)  # 5 normal variates with mean 100, sd 15
   ```
 
-- **Key Point:** Random variates are random numbers mapped to a model of the real world.
-
 ## 🔄 From Numbers to Variates
 
 <p align="center">
   <img src="../images/random_numbers_to_variates.png" alt="Figure 2.1 – Random Numbers to Random Variates" width="70%">
   <br>
-  <em>Figure 2.1 – From Random Numbers to Random Variates</em>
+  <em>Figure 2.1 – Transformation process: from raw uniform random numbers to model-based random variates.</em>
 </p>
 
 1. Generate uniform random numbers.
@@ -79,11 +79,12 @@ This demonstrates the core idea:
 
 In pharmaceutical applications:
 
-- **Random Numbers** simulate uncertainty without a specific context.
+- **Random Numbers** simulate uncertainty in a general sense, without context.  
+- **Random Variates** simulate actual process or measurement data (e.g., tablet weight, assay results).  
+- Using the wrong one may lead to unrealistic or misleading outcomes.  
 
-- **Random Variates** simulate actual process or measurement data (e.g., tablet weight, assay results).
-
-- Using the wrong one may lead to unrealistic results.
+👉 This distinction is fundamental: **all Monte Carlo simulations in GMP contexts are ultimately based on random variates, not raw random numbers.**  
+This foundation is essential for moving forward. In the next chapter, we will explore the most common probability distributions used in pharmaceutical applications.
 
 ---
 
