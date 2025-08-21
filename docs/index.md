@@ -26,7 +26,7 @@ The goal is to provide **practical statistical tools** that can be applied immed
    A step-by-step worked example with code and interpretation.  
 6. [Chapter 6 – Analysis of Results](chapters/chapter06_analysis.md)  
    Summarizing simulation outcomes with descriptive and inferential tools.  
-7. [Chapter 7 – Pharmaceutical Case Study](chapters/chapter07_case-pharma.md)  
+7. [Chapter 7 – Case Study 1: API Assay in Tablets](chapters/chapter07_case-pharma.md)
    A real-world GMP case where Monte Carlo supports quality decisions.  
 8. [Chapter 8 – Decision and Risk](chapters/chapter08_decision-risk.md)  
    Using simulation to inform risk management and uncertainty analysis.  
