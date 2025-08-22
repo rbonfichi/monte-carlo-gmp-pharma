@@ -17,23 +17,25 @@ The target assay is **100.0%** with specifications:
 
 Based on historical data and expert estimates:
 
-| Input Variable                | Distribution  | Parameters                  | Source                  |
-|-------------------------------|--------------|-----------------------------|-------------------------|
-| API Weight (mg)               | Normal       | mean = 100.5, sd = 1.2      | Production data         |
-| Tablet Weight (mg, label claim)| Normal      | mean = 100.0, sd = 0.5      | Production data         |
-| Purity (fraction)             | Uniform      | min = 0.985, max = 1.00     | Certificate of Analysis |
+| Input Variable        | Distribution  | Parameters                  | Source                  |
+|-----------------------|--------------|-----------------------------|-------------------------|
+| API Weight (mg)       | Normal       | mean = 100.5, sd = 1.2      | Production data         |
+| API Label Claim (mg)  | Normal       | mean = 100.0, sd = 0.5      | Production data         |
+| Purity (fraction)     | Uniform      | min = 0.985, max = 1.00     | Certificate of Analysis |
 
-*Note: “Tablet Weight” refers to the **label claim of API (mg)**, not the total tablet mass.*
+*Note: “API Label Claim” refers to the **declared API content (mg)**, not the total tablet mass.*
 
 ---
 
 ## 🔗 Step 2 – Define the Transfer Equation
 
-The assay is calculated using the ratio of API weight to tablet weight, multiplied by purity and converted to a percentage:
+The assay is calculated using the ratio of API weight to API label claim, multiplied by purity and converted to a percentage:
 
-Assay(%) = (`API_weight` / `Tablet_weight`) * `Purity` * 100
+Assay(%) = (`API_weight` / `API_LabelClaim`) * `Purity` * 100
 
 ---
+*Note: “API Label Claim” represents the declared API content per tablet (mg), 
+used as the denominator in the transfer equation. It does not refer to the total tablet mass.*
 
 ## 💻 Step 3 – Run the Simulation in R
 
@@ -45,16 +47,16 @@ N <- 100000
 
 # NOTE ON VARIABLES:
 # - API_weight: measured API content per tablet (mg)
-# - Tablet_weight: LABEL CLAIM of API (mg), not total tablet mass
+# - API_LabelClaim: declared API content (mg), not total tablet mass
 # - Purity: assay purity (fraction), used as correction factor
 
 # 1) Random inputs (choose realistic values so that assay ~ 100%)
 API_weight    <- rnorm(N, mean = 100.5, sd = 1.2)  # mg measured API
-Tablet_weight <- rnorm(N, mean = 100.0, sd = 0.5)  # mg label claim (API)
+API_LabelClaim <- rnorm(N, mean = 100.0, sd = 0.5)  # mg label claim (API)
 Purity        <- runif(N, min = 0.985, max = 1.000)
 
 # 2) Transfer equation
-Assay <- (API_weight / Tablet_weight) * Purity * 100
+Assay <- (API_weight / API_LabelClaim) * Purity * 100
 
 # Quick sanity-check on center and spread
 mean_assay <- mean(Assay)
@@ -81,11 +83,14 @@ plot(ecdf(Assay),
      ylab = "Cumulative probability")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
 
+# 6) QQ plot for normality check
+qqnorm(Assay, main = "Case Study 1 — QQ Plot of Assay")
+qqline(Assay, col = "red", lwd = 2)
 
-# 6) Probability of OOS
+# 7) Probability of OOS
 p_out <- mean(Assay < 98 | Assay > 102)
 
-# 7) Capability index vs 98–102 (normality assumption)
+# 8) Capability index vs 98–102 (normality assumption)
 USL <- 102; LSL <- 98
 Cpk <- min((USL - mean_assay) / (3 * sd_assay),
            (mean_assay - LSL) / (3 * sd_assay))
@@ -112,6 +117,8 @@ list(mean_assay = mean_assay, sd_assay = sd_assay, p_out = p_out, Cpk = Cpk)
 | Standard Deviation       | 1.36         |
 | 5th Percentile           | 97.53        |
 | 95th Percentile          | 101.96       |
+| Minimum (simulated)      | 95.01        |
+| Maximum (simulated)      | 104.56       |
 | Probability of OOS       | 14.95%       |
 | Capability Index (Cpk)   | 0.43         |
 
@@ -126,6 +133,8 @@ These values indicate a process with **excessive variability** and a **non-negli
 
 <p align="center"> <img src="../images/case_study1_ecdf.png" alt="Case Study ECDF" width="500"> </p>
 
+<p align="center"> <img src="../images/case_study1_qq.png" alt="Case Study QQ Plot" width="500"> </p>
+
 ---
 
 Cpk was calculated as:
@@ -139,6 +148,8 @@ $$
 ---
 
 *Note: The closed-form Cpk assumes approximate normality. For skewed or non-normal data, percentile-based indices or Monte Carlo percentiles are more robust.*
+*In GMP reports, it is often recommended to present both **parametric indices** (like Cpk) and **percentile-based indices**,  
+to ensure robustness against deviations from normality.*
 
 ## 📌 Step 5 – GMP Interpretation
 
@@ -173,6 +184,15 @@ Suppose variability of API weight is reduced from **sd = 1.2 mg → sd = 0.8 mg*
 | Probability of OOS       | 5.0%         |
 | Capability Index (Cpk)   | 0.63         |
 
+**Comparison: Before vs After Process Improvement**
+
+| Statistic               | Before (sd=1.2 mg) | After (sd=0.8 mg) |
+|--------------------------|-------------------:|------------------:|
+| Mean                     | 99.75              | 99.75             |
+| Standard Deviation (SD)  | 1.36               | 0.93              |
+| Probability of OOS       | 14.95%             | 5.0%              |
+| Capability Index (Cpk)   | 0.43               | 0.63              |
+
 This demonstrates how Monte Carlo can quantify the **benefit of CAPA actions**,  
 providing objective evidence that process improvements **significantly** reduce the risk of non-compliance.
 
@@ -181,6 +201,9 @@ providing objective evidence that process improvements **significantly** reduce 
 > and can support documentation in **Process Validation Stage 3 (Continued Process Verification)**  
 > as recommended in FDA and EMA guidelines.
 
-
 ---
+These results illustrate how Monte Carlo simulation provides not only descriptive statistics,  
+but also **probabilistic evidence of compliance risk**,  
+which can be directly incorporated into GMP decision-making and regulatory documentation.
+
 [← Previous: Analysis of Results](chapter06_analysis.md) | [▲ back to top](../#table-of-contents) | [Next → Decision and Risk](chapter08_decision-risk.md)
