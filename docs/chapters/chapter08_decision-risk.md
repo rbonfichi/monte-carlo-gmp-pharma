@@ -119,7 +119,7 @@ Each Case Study provides a worked example of applying this framework:
 
 - **Case Study 1: API Assay** → high OOS probability → reject/redesign.
 - **Case Study 2: Dissolution (planned)** → interpret % release distributions.
-- **Case Study 3: Microbiology (future)** → rare-event probabilities (Poisson).
+- **Case Study 3: Microbiology (planned)** → rare-event probabilities (Poisson).
 
 These placeholders illustrate how new case studies can be integrated without rewriting this chapter.
 
