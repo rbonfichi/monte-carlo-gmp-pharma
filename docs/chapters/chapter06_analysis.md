@@ -1,11 +1,8 @@
 # Chapter 6 – Analysis of Results
 
-*This chapter interprets the simulated assay results from Chapter 5.  
-We summarize the key descriptive statistics, quantify the probability of out-of-specification results, visualize the distribution, and calculate capability indices.  
-Together, these tools provide a structured framework for linking Monte Carlo outputs to GMP decision-making.*
-
-In Chapter 5 we generated 10,000 simulated assay results.  
-Now the next step is to **analyze these simulated data** systematically.
+In this chapter we systematically analyze the **10,000 simulated assay results** generated in Chapter 5.  
+We use **descriptive statistics, probability of out-of-specification (OOS) results, visual tools, and capability indices**.  
+Together, these methods link Monte Carlo outputs to **structured GMP decision-making**.
 This allows us to assess compliance with specifications, estimate process capability, and evaluate risks.
 
 ---
@@ -34,10 +31,11 @@ quantile(Assay, probs = c(0.05, 0.95))
 t.test(Assay)$conf.int
 ```
 
-**Summary of simulated assay results (N = 10,000):**
+**Summary of simulated assay results (N = 10,000 simulations):**
 
 | Statistic               | Value        |
 |--------------------------|-------------:|
+| Sample Size (N)          | 10,000       |
 | Minimum                  | 93.80        |
 | 1st Quartile (Q1)        | 98.48        |
 | Median                   | 99.49        |
@@ -99,16 +97,15 @@ There is a fundamental difference between two contexts:
   p_out <- mean(Assay < 98 | Assay > 102)
   ```
   With large simulated samples (e.g., 100,000), this estimate is already very precise.
-  In this context, additional binomial confidence intervals are usually not required.
+  **Binomial confidence intervals** are not required here, because the probability is derived directly from the model.
 
 - **Case 2: Real experimental data (non-simulated)**
-  When we analyze *actual samples* from production or laboratory experiments, the number of OOS results is a discrete count out of n units tested.
+  When analyzing actual samples from production or laboratory experiments, the number of OOS results is a discrete count out of n units tested.
   This situation follows a **Binomial(n, p)** model, where each unit is either in-spec or OOS.
   In this case, confidence intervals for the true OOS probability p are essential, and can be computed with:
-
- - **Clopper–Pearson exact interval** (conservative, guarantees at least 95% coverage).
- - **Wilson (score) interval** (less conservative and widely recommended).
- - `prop.test()` **in R**, which implements the Wilson score-based CI by default.
+  - **Clopper–Pearson exact interval** (conservative, guarantees at least 95% coverage).
+  - **Wilson (score) interval** (less conservative and widely recommended).
+  - `prop.test()` **in R**, which implements the Wilson score-based CI by default.
 
 Example:
 ```r
@@ -117,10 +114,9 @@ x <- sum(Assay < 98 | Assay > 102)  # number of OOS
 prop.test(x, N)$conf.int
 ```
 
-In practice, the correct approach depends on the context:
-
-- For **Monte Carlo outputs**, the binomial model is not needed, because the simulation itself provides a precise estimate of probabilities.
-- For **real GMP data**, confidence intervals based on binomial theory (Clopper–Pearson, Wilson) or bootstrap resampling are necessary to quantify the              uncertainty due to limited sample size.
+👉 In practice:
+    - For **Monte Carlo outputs**, the simulation itself provides a precise estimate.
+    - For **real GMP data**, binomial confidence intervals (Clopper–Pearson, Wilson) or bootstrap resampling are necessary to quantify uncertainty from limited         sample size.
   
 ---
 
@@ -153,14 +149,18 @@ plot(ecdf(Assay),
      xlab = "Assay %",
      ylab = "Cumulative probability")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
-```
 
-<p align="center"> <img src="../images/analysis_histogram.png" alt="Analysis Histogram" width="500"> </p> 
+<p align="center">
+  <em>Figure 6.1 – Histogram of simulated assay values with specification limits (98–102%).</em>
+</p>
 
-<p align="center"> <img src="../images/analysis_boxplot.png" alt="Analysis Boxplot" width="500"> </p>
+<p align="center">
+  <em>Figure 6.2 – Boxplot of simulated assay values with specification limits (98–102%).</em>
+</p>
 
-<p align="center"> <img src="../images/analysis_ecdf.png" alt="Analysis ECDF" width="500"> </p>
-
+<p align="center">
+  <em>Figure 6.3 – Empirical CDF of simulated assay values with specification limits (98–102%).</em>
+</p>
 ---
 
 ## 📐 4. Capability Indices
@@ -202,9 +202,12 @@ The low Cpk is coherent with the relatively high probability of OOS (≈ 21%).
 
 ## 💊 Interpretation in GMP Context
 
-- **Low p_out + High Cpk** → process under good control, with high confidence in consistent GMP compliance.
-- **High p_out or Low Cpk** → potential quality risk; these indicators should trigger investigation or corrective actions.
-- Visual tools and statistics, **together**, provide the clearest and most reliable basis for decision-making.
+- **Low p_out + High Cpk** → process under good control, with high confidence in consistent GMP compliance.  
+- **High p_out or Low Cpk** → potential quality risk; these indicators should trigger investigation or corrective actions.  
+
+Visual tools and numerical metrics, **together**, provide the clearest and most reliable basis for decision-making.  
+
+👉 This structured analysis bridges raw simulation output with **regulatory decision-making**, preparing the ground for the real-world pharmaceutical case study in the next chapter.
 
 ---
 [← Previous: A Complete Simulation in R](chapter05_full-simulation.md) | [▲ back to top](../#table-of-contents) | [Next → Pharmaceutical Case Study](chapter07_case-pharma.md)
