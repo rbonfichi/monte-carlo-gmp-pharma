@@ -30,6 +30,28 @@ Typical risk metrics from simulation output:
 *Note: In GMP decision-making, capability indices such as Cpk should be interpreted with caution when the distribution is skewed or non-normal.  
 Monte Carlo simulations allow the use of **percentile-based capability measures**, which are often more robust and transparent for regulatory discussions.*
 
+### 📦 Percentile-based Capability Indices (Alternative to Cpk)
+
+Traditional capability indices such as Cpk assume that data follow a **normal distribution**.  
+However, in GMP contexts, distributions are often skewed or heavy-tailed (e.g., dissolution, microbiology).
+
+An alternative is to use **percentile-based capability measures**, which rely directly on quantiles of the simulated distribution.  
+Instead of asking *“does ±3σ fit inside the specs?”*, we check where the **extreme percentiles** fall relative to the specification limits.
+
+**Mini-example (Case Study 1 — API Assay):**
+
+```r
+quantile(Assay, probs = c(0.00135, 0.5, 0.99865))
+# Example output:
+#   0.135%     50%   99.865% 
+#    95.2     99.7    104.3
+```
+- The extreme quantiles (0.135% and 99.865%) fall **outside** 98–102%.
+- Conclusion: the process is **not capable**, without assuming normality.
+
+*Benefit*: This approach is **robust** and more transparent for regulatory discussions,
+because it shows directly how the simulated data compare with specifications.
+
 **R Example:**
 ```r
 p_out <- mean(Assay < 98 | Assay > 102)
