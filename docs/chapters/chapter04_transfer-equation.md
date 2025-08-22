@@ -1,4 +1,4 @@
-# Chapter 4 — The Transfer Equation (Model)
+# Chapter 4 — The Transfer Equation
 
 Monte Carlo simulations need a way to connect **random inputs** to the **output** we want to study.  
 This connection is expressed mathematically by the **transfer equation**.
@@ -35,8 +35,6 @@ Suppose we want to simulate the **assay** of an active ingredient in a tablet:
 `Assay (%) = (API_weight × Purity / Label_Claim) × 100`
 
 </p>
-
-
 
 > ⚠️ **Note on terminology — Assay vs. Content**  
 > In pharmacopoeias such as USP and Ph. Eur., the result of this calculation may be reported either as **assay** or as **content**.  
@@ -76,7 +74,7 @@ As shown in Figure 4.1, the simulated assay distribution is centered close to th
 <p align="center">
   <img src="../images/transfer_equation_assay.png" alt="Histogram – Simulated Assay with Specification Limits" width="600">
   <br>
-  <em>Figure 4.1 – Histogram of 10,000 simulated assay values (Transfer Equation model), with specification limits 97–103%</em>
+  <em>Figure 4.1 – Histogram of 10,000 simulated assay values computed via the transfer equation, with specification limits at 97–103% of label claim.</em>
 </p>
 
 > 🔎 **Note on "Label Claim" vs. "% w/w in Tablet"**  
