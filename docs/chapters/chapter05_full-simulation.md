@@ -19,11 +19,9 @@ Inputs:
 
 Transfer Equation (normalized to the label claim = 100 mg):
 
-\[
-Assay(\%) = \frac{API\_weight \times Purity}{100} \times 100
-\]
-
 `Assay(%) = (API_weight * Purity / LabelClaim) * 100`   (with LabelClaim = 100 mg)
+
+👉 Note: `Tablet_weight` is generated here as an example of an additional variable that could be used in extended scenarios (e.g., content uniformity). In this basic example it is not directly part of the assay formula.
 
 ---
 
@@ -80,24 +78,34 @@ cat("Probability out of spec:", p_out, "\n")
 ## 📊 Expected Output
 - **Histogram** with vertical red dashed lines at 98% and 102% to mark specifications.
 
-<p align="center"> <img src="../images/full_simulation_assay.png" alt="Full Simulation Assay" width="500"> </p>
+<p align="center"> 
+  <img src="../images/full_simulation_assay.png" alt="Full Simulation Assay" width="500"> 
+  <br>
+  <em>Figure 5.1 – Histogram of simulated assay values with specification limits</em>
+</p>
 
-- **Q-Q Plot** showing whether the simulated assay distribution follows a normal shape.
-<p align="center"> <img src="../images/qqplot_assay.png" alt="Q-Q Plot Assay" width="500"> </p>
+<p align="center"> 
+  <img src="../images/qqplot_assay.png" alt="Q-Q Plot Assay" width="500"> 
+  <br>
+  <em>Figure 5.2 – Q-Q Plot of simulated assay values</em>
+</p>
 
 - **Summary of Simulation Results** (mean ≈ 100%, standard deviation, quantiles) and printed `p_out` → probability of being out of specification
 
-| Statistic        | Value  |
-|------------------|-------:|
-| Mean Assay (%)   | 99.98  |
-| Median Assay (%) | 99.98  |
-| SD               | 2.06   |
-| Min              | 92.27  |
-| Q1 (25th)        | 98.59  |
-| Q3 (75th)        | 101.38 |
-| IQR              | 2.79   |
-| Max              | 107.87 |
-| Probability OOS  | 33.58% |
+| **Statistic**        | **Value** |
+|----------------------|----------:|
+| Mean Assay (%)       | 99.98     |
+| Median Assay (%)     | 99.98     |
+| SD                   | 2.06      |
+| Min                  | 92.27     |
+| Q1 (25th)            | 98.59     |
+| Q3 (75th)            | 101.38    |
+| IQR                  | 2.79      |
+| Max                  | 107.87    |
+| Probability OOS      | 33.58%    |
+
+> **Note:** Exact numbers may vary slightly due to random simulation,  
+> but results are reproducible with the fixed seed (`set.seed(123)`).
 
 ---
 
@@ -108,18 +116,17 @@ This simulation provides more than a single result:
 - **Location**: the mean of the assay distribution is now centered around 100%, consistent with the label claim.
 - **Spread**: the standard deviation quantifies the impact of input variability (API weight and purity).
 - **Shape**: the Q-Q plot helps assess whether the simulated assay distribution is approximately normal.
-- **Capability**: the probability of being out of specification (p_out) directly expresses the risk of producing tablets outside the 98–102% range.
+- **Capability**: the probability of being out of specification (`p_out`) directly expresses the risk of producing tablets outside the 98–102% range.
 
-If `p_out` is **very low** (e.g., < 0.1%), the process is highly capable.
-
+If `p_out` is **very low** (e.g., < 0.1%), the process is highly capable.  
 If `p_out` is **significant**, we may need to:
+- Reduce input variability  
+- Adjust process targets  
+- Reduce measurement uncertainty  
 
-- Reduce input variability,
-- Adjust process targets,
-- Improve measurement accuracy
-- This is exactly the type of insight we gain from Monte Carlo: the direct estimation of risk (% OOS).
+👉 In GMP contexts, such probabilities (`p_out`) directly inform **risk-based decisions**: whether the process can be accepted, requires corrective actions, or must be redesigned.
 
-*In the next chapter we will see how to analyze these results more systematically, turning raw simulation outputs into structured capability assessments.*
+*In the next chapter we will systematically analyze these results, introducing graphical summaries and capability indices to turn raw Monte Carlo output into structured GMP insights.*
 
 ---
 
