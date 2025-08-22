@@ -149,18 +149,26 @@ plot(ecdf(Assay),
      xlab = "Assay %",
      ylab = "Cumulative probability")
 abline(v = c(98, 102), col = "red", lwd = 2, lty = 2)
+```
 
 <p align="center">
+  <img src="../images/analysis_histogram.png" alt="Analysis Histogram" width="500">
+  <br>
   <em>Figure 6.1 – Histogram of simulated assay values with specification limits (98–102%).</em>
 </p>
 
 <p align="center">
+  <img src="../images/analysis_boxplot.png" alt="Analysis Boxplot" width="500">
+  <br>
   <em>Figure 6.2 – Boxplot of simulated assay values with specification limits (98–102%).</em>
 </p>
 
 <p align="center">
+  <img src="../images/analysis_ecdf.png" alt="Analysis ECDF" width="500">
+  <br>
   <em>Figure 6.3 – Empirical CDF of simulated assay values with specification limits (98–102%).</em>
 </p>
+
 ---
 
 ## 📐 4. Capability Indices
