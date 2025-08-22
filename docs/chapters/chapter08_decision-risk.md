@@ -26,6 +26,9 @@ Typical risk metrics from simulation output:
 - **Probability of OOS** (`p_out`): proportion of simulated batches outside specifications.
 - **Capability indices** (e.g., Cpk): quantify process centering and spread relative to specifications.
 - **Tail probabilities**: probability mass in the extreme quantiles (e.g., 0.1% tails of the distribution).
+ 
+*Note: In GMP decision-making, capability indices such as Cpk should be interpreted with caution when the distribution is skewed or non-normal.  
+Monte Carlo simulations allow the use of **percentile-based capability measures**, which are often more robust and transparent for regulatory discussions.*
 
 **R Example:**
 ```r
@@ -36,7 +39,7 @@ Cpk   <- min((102 - mean(Assay)) / (3 * sd(Assay)),
 quantile(Assay, probs = c(0.001, 0.999))
 ```
 ---
-> 📌 **Example (Case Study 2 — Dissolution, hypothetical):**
+> 📌 **Example (Case Study 2 — Dissolution, planned):**
 > Simulation may focus on % dissolved at 30 minutes.
 > Tail probability (e.g., worst 0.1% of units falling below 75% dissolution) could guide acceptance.
 
@@ -53,7 +56,7 @@ Monte Carlo enables **scenario analysis**:
 # Simulate reduced variability
 sd_new <- 1.0
 API_weight_new <- rnorm(N, mean = 101, sd = sd_new)
-Assay_new <- (API_weight_new / Tablet_weight) * Purity * 100
+Assay_new <- (API_weight_new / API_LabelClaim) * Purity * 100
 mean(Assay_new < 98 | Assay_new > 102)
 ```
 ---
@@ -69,6 +72,9 @@ Before running simulations, define:
 - **Target Cpk** (e.g., ≥ 1.33)
 - **Regulatory or internal tolerances**
 
+*Important: These thresholds are not regulatory requirements but typical industry practice.  
+Acceptance limits should be defined within the company’s Quality System, considering product criticality and regulatory expectations.*  
+
 These thresholds **transform raw statistics into actionable decisions.**
 
 ---
@@ -79,7 +85,9 @@ These thresholds **transform raw statistics into actionable decisions.**
 - **Moderate p_out or marginal Cpk** → investigate and mitigate sources of variation.
 - **High p_out or Low Cpk** → reject process or redesign.
 
-*💡 This structured approach aligns with ICH Q9 (Quality Risk Management) principles and supports regulatory inspections.*
+*💡 This structured approach aligns with **ICH Q9(R1) (Quality Risk Management, 2023 revision)**,  
+which emphasizes the quantification of risk rather than relying solely on qualitative scoring.  
+This quantitative view strengthens the evidence base for regulatory inspections.*
 
 ---
 
@@ -88,13 +96,13 @@ These thresholds **transform raw statistics into actionable decisions.**
 Each Case Study provides a worked example of applying this framework:
 
 - **Case Study 1: API Assay** → high OOS probability → reject/redesign.
-- **Case Study 2: Dissolution (future)** → interpret % release distributions.
+- **Case Study 2: Dissolution (planned)** → interpret % release distributions.
 - **Case Study 3: Microbiology (future)** → rare-event probabilities (Poisson).
 
 These placeholders illustrate how new case studies can be integrated without rewriting this chapter.
 
 ---
 
-This modular design ensures that Monte Carlo simulation supports **consistent, scalable decision-making** across different GMP applications.
+This modular design allows an organization to gradually build a **library of risk-based simulations**, providing a consistent and scalable knowledge base that supports GMP decision-making across different applications.
 
 [← Previous: Pharmaceutical Case Study](chapter07_case-study1.md) | [▲ back to top](../#table-of-contents) | [Next → Conclusions and Next Steps](chapter09_conclusions-nextsteps.md)
