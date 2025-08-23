@@ -4,7 +4,7 @@ _Statistical Simulation Tools for Pharmaceutical Quality and GMP Decision-Making
 ---
 
 ## 📖 About
-This repository hosts a **mini-eBook** on **Monte Carlo methods** for professionals working in **pharmaceutical manufacturing, quality control, and GMP operations**.  
+This repository hosts a **eBook** on **Monte Carlo methods** for professionals working in **pharmaceutical manufacturing, quality control, and GMP operations**.  
 It focuses on **practical applications** for decision-making, process understanding, and risk assessment — not on abstract theory.  
 
 ---
