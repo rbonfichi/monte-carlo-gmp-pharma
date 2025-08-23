@@ -160,7 +160,7 @@ to ensure robustness against deviations from normality.*
 > **Reminder:** Unlike the “ideal” scenarios shown earlier (low p_out, high Cpk),  
 > this case study was selected to demonstrate how Monte Carlo simulation can **highlight an at-risk process** and guide GMP decision-making.
 
-This approach can be extended to:
+This approach can be extended to future case studies, such as:
 - Dissolution testing
 - Content uniformity
 - Stability data projections
