@@ -205,5 +205,8 @@ providing objective evidence that process improvements **significantly** reduce 
 These results illustrate how Monte Carlo simulation provides not only descriptive statistics,  
 but also **probabilistic evidence of compliance risk**,  
 which can be directly incorporated into GMP decision-making and regulatory documentation.
+*In the next chapter, we expand this perspective by showing how simulation results  
+can systematically support decision-making and risk management in GMP contexts.*
+
 
 [← Previous: Analysis of Results](chapter06_analysis.md) | [▲ back to top](../#table-of-contents) | [Next → Decision and Risk](chapter08_decision-risk.md)
