@@ -1,6 +1,9 @@
 # Chapter 9 — Conclusions and Next Steps
 
 ## 📌 Conclusions
+
+*Among the different GMP applications discussed, the API assay case study served as the first concrete demonstration of how Monte Carlo can reveal compliance risks and quantify improvement benefits.*
+
 This mini-ebook introduced the practical application of **Monte Carlo simulation** in a GMP pharmaceutical context.  
 By moving step-by-step — from defining inputs to interpreting simulation-derived risk metrics such as **probability of OOS (p_out)** and **capability indices (Cpk)** — we demonstrated how simulation results can directly support **risk-based decision-making**.
 
