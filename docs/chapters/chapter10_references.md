@@ -1,6 +1,7 @@
 # Chapter 10 — References
 
-While no single text currently covers **Monte Carlo simulation in a pharmaceutical GMP context**, the following references provide the **mathematical background**, **decision-making frameworks**, and **regulatory guidance** that informed this work.
+Although Monte Carlo methods are mentioned across pharmaceutical and regulatory literature, there is currently no **comprehensive text** focused on their application in a GMP context.  
+The following references therefore provide the **mathematical background**, **decision-making frameworks**, and **regulatory guidance** that informed this work.  
 This chapter is not exhaustive but serves as a **starting point for further study**.
 
 ---
@@ -23,7 +24,6 @@ This chapter is not exhaustive but serves as a **starting point for further stud
 
 ---
 
-
 ## 💊 Pharmaceutical & Regulatory Guidance
 
 - [ICH Q9 (R1): Quality Risk Management (2023)](https://www.ich.org/page/quality-guidelines)  
@@ -37,8 +37,8 @@ This chapter is not exhaustive but serves as a **starting point for further stud
 ## 📌 Note
 
 This guide emphasizes **practical GMP applications**.  
-For deeper mathematics, see Section 1; for regulatory focus, see Section 3..
+For deeper mathematics, see Section 1; for regulatory focus, see Section 3.
 
 ---
 
-[← Previous: Conclusions and Next Steps](chapter09_conclusions-nextsteps.md) | [▲ back to top](../#table-of-contents)
+[← Previous: Conclusions and Next Steps](chapter09_conclusions-nextsteps.md) | [▲ back to top](../#table-of-contents)  
