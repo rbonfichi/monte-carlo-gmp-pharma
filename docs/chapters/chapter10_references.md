@@ -37,7 +37,7 @@ This chapter is not exhaustive but serves as a **starting point for further stud
 ## 📌 Note
 
 This guide emphasizes **practical GMP applications**.  
-For deeper mathematics, see Section 1; for regulatory focus, see Section 3.
+For deeper mathematics, see 📘 **Statistical & Simulation Foundations**; for regulatory focus, see 💊 **Pharmaceutical & Regulatory Guidance.**
 
 ---
 
