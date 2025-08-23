@@ -127,4 +127,8 @@ These placeholders illustrate how new case studies can be integrated without rew
 
 This modular design allows an organization to gradually build a **library of risk-based simulations**, providing a consistent and scalable knowledge base that supports GMP decision-making across different applications.
 
+---
+
+*The next chapter consolidates these insights, summarizing the main conclusions and outlining practical next steps.*
+
 [← Previous: Pharmaceutical Case Study](chapter07_case-study1.md) | [▲ back to top](../#table-of-contents) | [Next → Conclusions and Next Steps](chapter09_conclusions-nextsteps.md)
