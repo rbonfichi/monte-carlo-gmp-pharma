@@ -21,7 +21,8 @@ The eBook includes:
 - Complete simulation examples in R  
 - Case study: API assay in tablets  
 - Decision-making and risk analysis  
-- References and further reading  
+- References and further reading
+- Glossary of key terms and concepts
 
 ---
 
