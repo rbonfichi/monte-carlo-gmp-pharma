@@ -44,6 +44,9 @@ The goal is to provide **practical statistical tools** that can be applied immed
 10. [Chapter 10 – References](chapters/chapter10_references.md)  
     Key literature and resources for further reading.
 
+11. [Chapter 11 – Glossary](docs/chapters/glossary.md)
+    Glossary of key terms and concepts
+
 ---
 
 ## 🚀 Next Steps
