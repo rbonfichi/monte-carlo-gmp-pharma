@@ -71,9 +71,7 @@ abline(v = c(97, 103), col = "red", lwd = 2, lty = 2)  # specification limits
 ```
 ---
 
-## 📌 Clarification Box — Two Meanings of *Transfer Equation*
-
-📌 Clarification Box — Two Meanings of Transfer Equation
+📌 **Clarification Box — Two Meanings of Transfer Equation**
 
 In simulation literature, the term transfer equation is used in two related but distinct ways:
 
