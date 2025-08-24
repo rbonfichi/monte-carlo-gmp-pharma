@@ -69,6 +69,24 @@ hist(Assay,
      col = "lightblue", border = "white")
 abline(v = c(97, 103), col = "red", lwd = 2, lty = 2)  # specification limits
 ```
+---
+
+## 📌 Clarification Box — Two Meanings of *Transfer Equation*
+
+In simulation literature, the term *transfer equation* is used in two related but distinct ways:
+
+| Context | Meaning |
+|---------|---------|
+| **Technical (simulation theory — Hammersley & Handscomb, 1964; Ripley, 1987)** | Formula that transforms a random number from `U(0,1)` into a random variate following a target distribution (e.g., exponential, triangular). |
+| **Modeling (applied Monte Carlo — Hubbard, 2014)** | The system model that combines uncertain input variables into an output of interest (e.g., Annual Savings = (MS + LS + RMS) × PL). |
+
+👉 In this eBook, we use the **modeling sense**: the equation that transfers uncertainty from inputs (random variates) to outputs (assay, dissolution, etc.).  
+But remember: in the background, random numbers are first transformed into random variates using the **technical definition** of transfer equations.
+
+*For a more detailed discussion and examples, see the entry **Transfer Equation** in Chapter 11 – Glossary.*
+
+---
+
 As shown in Figure 4.1, the simulated assay distribution is centered close to the target value, with natural variability leading to occasional values outside the specification limits (97–103%). This illustrates how the transfer equation connects random inputs to a realistic process output.
 
 <p align="center">
