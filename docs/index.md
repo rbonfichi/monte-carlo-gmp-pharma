@@ -45,7 +45,8 @@ The goal is to provide **practical statistical tools** that can be applied immed
     Key literature and resources for further reading.
 
 11. [Chapter 11 – Glossary](chapters/chapter11_glossary.md)  
-    Glossary of key terms and concepts
+    Definitions of key terms (random numbers, random variates, transfer equations, etc.),  
+    with both technical and applied meanings for clarity in GMP applications.
 
 ---
 
@@ -63,7 +64,7 @@ Future improvements may include:
 
 ---
 
-## 💡 How to Use This mini-eBook
+## 💡 How to Use This eBook
 - Start with the **Introduction** for context.  
 - Navigate through chapters progressively.  
 - Run the included **R scripts** locally to replicate results, and adapt them to your own datasets.  
