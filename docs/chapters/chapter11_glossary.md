@@ -6,17 +6,17 @@ It will expand in future releases as new chapters and case studies are added.
 ---
 
 ## 🔑 Transfer Equation
-- **Technical definition (simulation theory — Hammersley & Handscomb, 1964; Ripley, 1987):**  
+- **Technical definition (simulation theory, e.g., Hammersley & Handscomb, 1964; Ripley, 1987):**  
   A mathematical transformation that converts a random number `r ∼ U(0,1)` into a random variate following a target distribution.  
   Example: For an exponential distribution with rate λ,  
   `x = - (1/λ) * log(r)`.  
 
-- **Modeling definition (applied Monte Carlo — Hubbard, 2014):**  
+- **Modeling definition (applied Monte Carlo, e.g., Hubbard, 2014):**  
   The *system model* equation that combines input variables (themselves uncertain/random) to produce an output.  
   Example: `Annual Savings = (MS + LS + RMS) × PL`.  
 
 - **In this eBook:**  
-  We primarily use the **modeling definition**, since in GMP and pharma applications we care about how input uncertainties (assay weights, purities, dissolution times) propagate to outputs.  
+  We primarily use the **modeling definition** (Hubbard, 2014), since in GMP and pharma applications we care about how input uncertainties (assay weights, purities, dissolution times) propagate to outputs.  
   Nevertheless, the technical definition underpins the generation of random variates.
 
 ---
