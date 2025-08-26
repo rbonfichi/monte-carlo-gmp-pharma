@@ -75,6 +75,28 @@ This demonstrates the core idea:
   <em>Figure 2.2 – Transforming Uniform Random Numbers into Normal Variates (mean = 50, sd = 5)</em>
 </p>
 
+> 📌 **Historical Note — Random Numbers vs Random Variates**  
+> In early simulation texts (e.g., Rubinstein, 1981), the term *random numbers* was often used broadly, referring both to  
+> - uniform sequences U(0,1), and  
+> - sampled values from target distributions.  
+> 
+> Modern usage (2025) makes a clearer distinction:  
+> - **Random numbers** = pseudorandom draws ∼ U(0,1),  
+> - **Random variates** = transformed values from those numbers (e.g., inversion, Box–Muller, rejection).  
+> 
+> This two-step view is pedagogically useful: it emphasizes that every random variate is ultimately built on top of uniform random numbers.
+
+📊 **Random Numbers vs Random Variates — Rubinstein (1981) vs Modern View (2025)**
+
+| Aspect                | Rubinstein (1981) | Modern View (2025) |
+|------------------------|------------------|--------------------|
+| **Terminology**        | Uses *random numbers* broadly, covering both uniforms and variates | Clear separation: numbers = U(0,1), variates = transformed values |
+| **Definition of numbers** | “Independent random variables uniformly distributed over [0,1]” (p. 11) | Numbers from a PRNG, ideally i.i.d. U(0,1) |
+| **Definition of variates** | Mentions “stochastic variates” but without stressing the intermediate role of uniforms | Explicit: variates are generated from uniform numbers via inversion, Box–Muller, rejection |
+| **Pedagogical clarity** | Implicit two-step process assumed | Two distinct layers emphasized for teaching |
+| **Example** | Sampling directly from exponential or normal without detailing the uniform step | Example: U∼U(0,1); X = -λ⁻¹ ln(1-U) → exponential variate |
+| **Why the difference?** | Terminology less standardized; focus on algorithms | Modern pedagogy highlights the distinction for clarity |
+
 ## 💊 Why It Matters in Pharma
 
 In pharmaceutical applications:
