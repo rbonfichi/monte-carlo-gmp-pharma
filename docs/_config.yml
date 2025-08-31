@@ -1,0 +1,7 @@
+# Applica il layout "default" a tutte le pagine in /docs
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
