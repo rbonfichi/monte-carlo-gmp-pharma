@@ -24,7 +24,7 @@ It is not exhaustive but serves as a **starting point for further study**.
 - **Ripley, B. D. (1987), *Stochastic Simulation*, Wiley**  
   A more modern (for its time) treatment of stochastic simulation, still valuable for theory and examples.  
 
-- **Rubinstein, R. Y. (1981), *Simulation and the Monte Carlo Method*, Wiley**
+- **Rubinstein, R. Y. (1981), *Simulation and the Monte Carlo Method*, Wiley**  
   First edition, authored by Rubinstein alone. Simpler and historically interesting, especially regarding terminology (e.g., use of “random numbers”).  
 
 - **Rubinstein, R. Y., & Kroese, D. P. (2016), *Simulation and the Monte Carlo Method* (3rd ed.), Wiley**  
