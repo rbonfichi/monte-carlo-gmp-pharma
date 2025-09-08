@@ -21,7 +21,7 @@ In this chapter, we clarify a crucial distinction:
 - **Definition:** Values drawn from a specific probability distribution, obtained by transforming random numbers.  
 - **Key Point:** Random variates represent **real-world data models** (e.g., assay values, tablet weights).
 
-- **Example:** Transforming random numbers into normally distributed values.
+- **Example (conceptual):** Transforming random numbers into normally distributed values.
 
 - **Example in R:**
   ```r
@@ -38,8 +38,8 @@ In this chapter, we clarify a crucial distinction:
 | **Uncertainty** (*epistemic, knowledge-based*) | Lack of knowledge about the true value of a parameter or about the model. | We do not know exactly the true standard deviation of tablet weights; we estimate it from a sample. | ✅ Yes, by collecting more data or refining the model. |
 
 **Practical Note**  
-- Variability = what *really* makes units differ from each other.  
-- Uncertainty = what makes *us* unsure about the system’s parameters.  
+- **Variability** = what *really* makes units differ from each other.  
+- **Uncertainty** = what makes *us* unsure about the system’s parameters.  
 - Variability is modeled by probability distributions (e.g., Normal for tablet weights).  
 - Uncertainty is modeled by distributions on parameters (e.g., Beta for defect probability, bootstrap for variance).  
 
@@ -50,7 +50,7 @@ In this chapter, we clarify a crucial distinction:
 <p align="center">
   <img src="../images/random_numbers_to_variates.png" alt="Figure 2.1 – Random Numbers to Random Variates" width="70%">
   <br>
-  <em>Figure 2.1 – Transformation process: from raw uniform random numbers to model-based random variates.</em>
+  <em>Figure 2.1 – Transformation process: from raw uniform random numbers to model-based random variates. </em>
 </p>
 
 1. Generate uniform random numbers.
@@ -89,7 +89,7 @@ This demonstrates the core idea:
 <p align="center">
   <img src="../images/random_uniform_to_normal.png" alt="Figure 2.2 – Transforming Uniform Random Numbers into Normal Variates" width="70%">
   <br>
-  <em>Figure 2.2 – Transforming Uniform Random Numbers into Normal Variates (mean = 50, sd = 5)</em>
+  <em>Figure 2.2 – Transforming Uniform Random Numbers into Normal Variates (mean = 50, sd = 5). </em>
 </p>
 
 > 📌 **Historical Note — Random Numbers vs Random Variates**  
