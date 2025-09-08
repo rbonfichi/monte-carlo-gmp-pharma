@@ -37,4 +37,4 @@ In this way, Monte Carlo simulation evolves from a statistical technique into a 
 
 ---
 
-[← Previous: Decision and Risk](chapter08_decision-risk.md) | [▲ back to top](../#table-of-contents) | [Next → References](chapter10_references.md)
+[← Previous: Decision & Risk](chapter10_decision-risk.md) | [Next: References →](chapter12_references.md)
