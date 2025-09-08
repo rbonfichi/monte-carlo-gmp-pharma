@@ -6,6 +6,93 @@ Now we take a real leap forward: in this chapter we combine **random variates**,
 
 ---
 
+### 📦 Variability vs Uncertainty – A Practical Illustration
+
+Before running our first complete Monte Carlo simulation, it is useful to clarify the difference between **variability** and **uncertainty** with a simple visual experiment.
+
+#### Example in R
+
+```r
+
+set.seed(123)
+
+# --- Variability: tablet weights from a given process ---
+true_mean <- 250     # mg
+true_sd   <- 5       # mg
+n_lot     <- 1000    # tablets in a lot
+
+# Simulated lot: represents intrinsic variability
+lot_weights <- rnorm(n_lot, mean = true_mean, sd = true_sd)
+
+# --- Uncertainty: estimating the mean from a small sample ---
+n_sample <- 20
+sample_weights <- sample(lot_weights, n_sample)
+
+mean_est <- mean(sample_weights)
+sd_est   <- sd(sample_weights)
+
+# Confidence interval for the true mean (uncertainty in estimation)
+ci <- t.test(sample_weights)$conf.int
+
+list(
+  estimated_mean = mean_est,
+  estimated_sd   = sd_est,
+  CI_for_mean    = ci
+)
+
+# --- Plot 1: Variability (histogram of lot weights) ---
+hist(lot_weights,
+     breaks = 30,
+     col = "lightblue",
+     border = "white",
+     main = "Variability: Distribution of Tablet Weights in a Lot",
+     xlab = "Tablet weight (mg)")
+abline(v = true_mean, col = "red", lwd = 2, lty = 2)
+legend("topright", legend = c("True mean = 250 mg"),
+       col = "red", lty = 2, lwd = 2, bty = "n")
+
+# --- Plot 2: Uncertainty (sample mean with 95% CI) ---
+plot(1, mean_est,
+     ylim = c(true_mean - 5, true_mean + 5),   # margine più ampio
+     pch = 19, col = "blue",
+     xlab = "", ylab = "Estimated mean weight (mg)",
+     xaxt = "n",
+     main = "Uncertainty: Mean Estimate from 20 Tablets")
+
+arrows(1, ci[1], 1, ci[2],
+       angle = 90, code = 3, length = 0.1,
+       col = "blue", lwd = 2)
+
+abline(h = true_mean, col = "red", lwd = 2, lty = 2)
+
+legend("bottomright",
+       legend = c("True mean = 250 mg", "Sample mean ± 95% CI"),
+       col = c("red","blue"),
+       lty = c(2,1), pch = c(NA,19),
+       lwd = c(2,2), bty = "n")
+
+```
+
+#### Visual Output
+
+<p align="center">
+  <img src="../images/variability_hist.png" alt="Variability Histogram" width="600">
+  <br>
+  <em>Figure 5.x – Variability: distribution of tablet weights in a simulated lot (1,000 tablets). The spread around the true mean (250 mg) represents intrinsic variability of the process.</em>
+</p>
+
+<p align="center">
+  <img src="../images/uncertainty_CI.png" alt="Uncertainty Confidence Interval" width="600">
+  <br>
+  <em>Figure 5.y – Uncertainty: estimate of the mean from a sample of 20 tablets. The point estimate is shown with its 95% confidence interval. The dashed red line is the true mean (250 mg).</em>
+</p>
+
+#### Interpretation
+- The histogram shows **variability**: how much individual tablets differ from each other in a stable process.  
+- The CI plot shows **uncertainty**: how sure we are about the true mean when only a small sample is available.  
+
+---
+
 ## 🎯 Scenario
 
 We want to simulate the **assay** of a tablet to assess if the process meets specifications:  
