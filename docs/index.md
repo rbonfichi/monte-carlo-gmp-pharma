@@ -35,16 +35,22 @@ The goal is to provide **practical statistical tools** that can be applied immed
 7. [Chapter 7 – Case Study 1: API Assay in Tablets](chapters/chapter07_case-pharma.md)  
    A real-world GMP case where Monte Carlo supports quality decisions.
 
-8. [Chapter 8 – Decision and Risk](chapters/chapter08_decision-risk.md)  
-   Using simulation to inform risk management and uncertainty analysis.
+8. [Chapter 8 – Case Study 2: Dissolution with Noyes–Whitney Law](chapters/chapter08_case-study2.md)  
+   Application of Monte Carlo to dissolution kinetics, contrasting deterministic vs. stochastic simulation.
 
-9. [Chapter 9 – Conclusions and Next Steps](chapters/chapter09_conclusions-nextsteps.md)  
-   Summary and roadmap for future work.
+9. [Chapter 9 – Case Study 3: From 3 Batches to Continuous Confidence](chapters/chapter09_case-study3.md)  
+   Using Monte Carlo and Bootstrap to bridge PPQ (3 lots) and CPV (many lots).
 
-10. [Chapter 10 – References](chapters/chapter10_references.md)  
+10. [Chapter 10 – Decision and Risk](chapters/chapter10_decision-risk.md)  
+    Using simulation to inform risk management and uncertainty analysis.
+
+11. [Chapter 11 – Conclusions and Next Steps](chapters/chapter11_conclusions-nextsteps.md)  
+    Summary and roadmap for future work.
+
+12. [Chapter 12 – References](chapters/chapter12_references.md)  
     Key literature and resources for further reading.
 
-11. [Chapter 11 – Glossary](chapters/chapter11_glossary.md)  
+13. [Chapter 13 – Glossary](chapters/chapter13_glossary.md)  
     Definitions of key terms (random numbers, random variates, transfer equations, etc.),  
     with both technical and applied meanings for clarity in GMP applications.
 
