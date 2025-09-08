@@ -131,4 +131,4 @@ This modular design allows an organization to gradually build a **library of ris
 
 *The next chapter consolidates these insights, summarizing the main conclusions and outlining practical next steps.*
 
-[← Previous: Pharmaceutical Case Study](chapter07_case-study1.md) | [▲ back to top](../#table-of-contents) | [Next → Conclusions and Next Steps](chapter09_conclusions-nextsteps.md)
+[← Previous: Case Study 3 — From 3 Batches to Continuous Confidence](chapter09_case-study3.md) | [Next: Conclusions and Next Steps →](chapter11_conclusions-nextsteps.md)
