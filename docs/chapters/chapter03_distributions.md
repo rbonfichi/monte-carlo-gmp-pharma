@@ -25,11 +25,12 @@ In this chapter, we review four common distributions used in GMP & Pharma applic
 - **Parameters:** `a` = minimum, `b` = maximum.
 - **R Example:**
   ```r
+  set.seed(123)
   runif(50, min = 40, max = 60)  # 50 values between 40 and 60
   ```
 - **Use in Pharma:** Modeling tolerance bands where all outcomes within limits are equally likely.
 
-<p align="center"> <img src="../images/dist_uniform.png" alt="Uniform Distribution" width="500"> </p>
+<p align="center"> <img src="../images/dist_uniform.png" alt="Uniform Distribution" width="500"> <br> <em>Figure 3.1 – Uniform distribution (example with n=50).</em> </p>
 
 ---
 
@@ -40,11 +41,12 @@ In this chapter, we review four common distributions used in GMP & Pharma applic
 
 - **R Example:**
  ```r
+set.seed(123)
 rnorm(50, mean = 0, sd = 1)  # 50 values from the standard Normal distribution (mean=0, sd=1)
 ```
 - **Use in Pharma:** Measurement errors, assay results, tablet weights.
 
-<p align="center"> <img src="../images/dist_normal.png" alt="Normal Distribution" width="500"> </p>
+<p align="center"> <img src="../images/dist_normal.png" alt="Normal Distribution" width="500"> <br> <em>Figure 3.2 – Normal distribution (example with n=50).</em> </p>
 
 ---
 
@@ -55,11 +57,12 @@ rnorm(50, mean = 0, sd = 1)  # 50 values from the standard Normal distribution (
 
 - **R Example:**
 ```r
+set.seed(123)
 rexp(50, rate = 1)  # 50 exponential values with λ = 1
 ```
 - **Use in Pharma:** Time to microbial contamination, equipment failure.
 
-<p align="center"> <img src="../images/dist_exponential.png" alt="Exponential Distribution" width="500"> </p>
+<p align="center"> <img src="../images/dist_exponential.png" alt="Exponential Distribution" width="500"> <br> <em>Figure 3.3 – Exponential distribution (example with n=50).</em> </p>
 
 ---
 
@@ -70,11 +73,12 @@ rexp(50, rate = 1)  # 50 exponential values with λ = 1
 - **R Example** (using `triangle` package):
 ```r
 library(triangle)  # make sure the package is installed
+set.seed(123)
 rtriangle(50, a = 0, b = 3, c = 1)
 ```
 - **Use in Pharma:** When only expert estimates are available, specified as minimum (a), maximum (b), and most likely (c).
 
-<p align="center"> <img src="../images/dist_triangular.png" alt="Triangular Distribution" width="500"> </p>
+<p align="center"> <img src="../images/dist_triangular.png" alt="Triangular Distribution" width="500"> <br> <em>Figure 3.4 – Triangular distribution (example with n=50).</em> </p>
 
 ---
 
