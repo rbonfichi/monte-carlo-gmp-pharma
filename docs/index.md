@@ -6,7 +6,13 @@ _Statistical Simulation Tools for Pharmaceutical Quality and GMP Decision-Making
 ## 📖 Introduction
 This project is a practical, industry-focused **eBook** introducing **Monte Carlo methods** for professionals working in **pharmaceutical manufacturing, quality control, and GMP operations**.  
 
-It is not a purely theoretical treatise — the emphasis is on **real-world applications** where Monte Carlo simulation can support decision-making, process understanding, and risk assessment.
+It is not a purely theoretical treatise — the emphasis is on **real-world applications** where Monte Carlo simulation can support decision-making, process understanding, and risk assessment.  
+
+A distinctive feature of this eBook is the inclusion of **real-world case studies** (e.g., assay, dissolution, process validation, CPV).  
+These case studies are progressively expanded, illustrating how Monte Carlo and related methods can be applied to typical GMP scenarios.  
+
+The book also provides **historical and regulatory context** (e.g., ICH Q9(R1), USP <1210>, FDA/EMA guidance),  
+ensuring that statistical methods are presented in a way that is both scientifically rigorous and inspection-ready.  
 
 The goal is to provide **practical statistical tools** that can be applied immediately in GMP decision-making contexts.
 
