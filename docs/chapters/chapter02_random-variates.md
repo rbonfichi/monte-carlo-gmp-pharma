@@ -28,6 +28,23 @@ In this chapter, we clarify a crucial distinction:
   rnorm(5, mean = 100, sd = 15)  # 5 normal variates with mean 100, sd 15
   ```
 
+---
+
+### 📦 Concept Box – Variability vs Uncertainty
+
+| Concept        | Definition | Pharmaceutical Example | Reducible? |
+|----------------|------------|-------------------------|------------|
+| **Variability** (*aleatory, intrinsic*) | Real differences between units or events, part of the system itself. | Weight of 100 tablets from the same batch: values will never be identical, even in a stable process. | ❌ Not by measuring more, only by improving the process. |
+| **Uncertainty** (*epistemic, knowledge-based*) | Lack of knowledge about the true value of a parameter or about the model. | We do not know exactly the true standard deviation of tablet weights; we estimate it from a sample. | ✅ Yes, by collecting more data or refining the model. |
+
+**Practical Note**  
+- Variability = what *really* makes units differ from each other.  
+- Uncertainty = what makes *us* unsure about the system’s parameters.  
+- Variability is modeled by probability distributions (e.g., Normal for tablet weights).  
+- Uncertainty is modeled by distributions on parameters (e.g., Beta for defect probability, bootstrap for variance).  
+
+---
+
 ## 🔄 From Numbers to Variates
 
 <p align="center">
