@@ -23,6 +23,7 @@ The eBook includes:
 - Transfer equations and variability propagation  
 - Complete simulation examples in R  
 - Multiple **case studies** on pharmaceutical applications (e.g., assay, dissolution, process validation, CPV)  
+- Historical and regulatory context (ICH Q9(R1), USP <1210>, FDA/EMA guidance)  
 - Decision-making and risk analysis  
 - References and further reading  
 - Glossary of key terms and concepts
