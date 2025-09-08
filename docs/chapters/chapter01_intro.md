@@ -79,7 +79,7 @@ legend("topleft", c("LSL = 97", "USL = 99"),
 <p align="center">
   <img src="../images/ch1_histogram_with_specs.png" alt="Histogram with Spec Limits" width="700">
   <br>
-  <em>Figure 1.x – Histogram of simulated assay values with specification limits.</em>
+  <em>Figure 1.1 – Histogram of simulated assay values with specification limits.</em>
 </p>
 
 
@@ -111,4 +111,4 @@ This simple experiment illustrates the core idea of Monte Carlo:
 - This is not a full statistics textbook  
 - This is not a regulatory guideline — but rather a **practical companion** for applying Monte Carlo methods in GMP decision-making  
 
-[▲ back to top](https://rbonfichi.github.io/monte-carlo-gmp-pharma/) | [Next → Random Numbers vs. Random Variates](chapter02_random-variates.md)
+[▲ back to top](../#table-of-contents) | [Next → Random Numbers vs. Random Variates](chapter02_random-variates.md)
