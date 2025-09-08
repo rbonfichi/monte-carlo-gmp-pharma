@@ -44,4 +44,4 @@ This glossary will be progressively expanded as new chapters are added
 
 ---
 
-[← Previous: References](chapter10_references.md) | [▲ back to top](../#table-of-contents)
+[← Previous: References](chapter12_references.md) | [▲ Back to top](../#table-of-contents)
