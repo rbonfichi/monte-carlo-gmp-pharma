@@ -19,9 +19,9 @@ The eBook includes:
 - Basics of random numbers and statistical distributions  
 - Transfer equations and variability propagation  
 - Complete simulation examples in R  
-- Case study: API assay in tablets  
+- Multiple **case studies** on pharmaceutical applications (e.g., assay, dissolution, process validation, CPV)  
 - Decision-making and risk analysis  
-- References and further reading
+- References and further reading  
 - Glossary of key terms and concepts
 
 ---
