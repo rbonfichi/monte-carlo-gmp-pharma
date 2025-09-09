@@ -239,7 +239,7 @@ This allows **resampling from the data themselves**.
 
 ```r
 ################################################################################
-# Case Study 2 – CPV bootstrap on 23 lots (3 PPQ + 20 commercial)
+# Case Study 3 – CPV bootstrap on 23 lots (3 PPQ + 20 commercial)
 ###############################################################################
 
 ## ----------------------------- 1. Data --------------------------------------
@@ -373,7 +373,7 @@ or a **smoothed bootstrap** (add small measurement noise to resamples), both of 
 >
 > ```r
 > ###############################################################################
-> # Nonparametric vs Smoothed Bootstrap for %OOS (Case Study 2 data)
+> # Nonparametric vs Smoothed Bootstrap for %OOS (Case Study 3 data)
 > ###############################################################################
 > assay <- c(98.22, 98.21, 98.61, 98.52, 98.67, 98.38, 98.25, 98.23,
 >            98.82, 98.36, 98.81, 98.49, 98.64, 98.74, 98.34, 98.91,
@@ -484,4 +484,4 @@ This case study illustrates how simulation can extend confidence from the fragil
 
 ---
 
-[← Previous: Case Study 2 — Bootstrap with 23 Lots](chapter08_case-study2.md) | [Next: Decision & Risk →](chapter10_decision-risk.md)
+[← Previous: Case Study 2 — Dissolution with Noyes–Whitney Law](chapter08_case-study2.md) | [Next: Decision & Risk →](chapter10_decision-risk.md)
