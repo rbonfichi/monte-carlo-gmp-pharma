@@ -208,7 +208,7 @@ The low Cpk is coherent with the relatively high probability of OOS (≈ 21%).
 
 ---
 
-## 💊 Interpretation in GMP Context
+## 💊 GMP Interpretation
 
 - **Low p_out + High Cpk** → process under good control, with high confidence in consistent GMP compliance.  
 - **High p_out or Low Cpk** → potential quality risk; these indicators should trigger investigation or corrective actions.  
