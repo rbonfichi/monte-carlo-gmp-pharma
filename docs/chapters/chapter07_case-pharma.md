@@ -208,4 +208,4 @@ which can be directly incorporated into GMP decision-making and regulatory docum
 *In the next chapter, we expand this perspective by showing how simulation results can systematically support decision-making and risk management in GMP contexts.*
 
 
-[← Previous: Analysis of Results](chapter06_analysis.md) | [▲ back to top](../#table-of-contents) | [Next → Decision and Risk](chapter08_decision-risk.md)
+[← Previous: Analysis of Results](chapter06_analysis.md) | [▲ back to top](../#table-of-contents) | [Next → Case Study 2 — Dissolution with Noyes–Whitney Law](chapter08_case-study2.md)
