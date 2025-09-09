@@ -13,6 +13,10 @@ Simulation results should feed directly into **risk-based decision-making**:
 - **Mitigate variability** if risk is above thresholds but controllable.
 - **Reject or re-design** the process if unacceptable risk remains.
 
+We denote by **p_out** the probability of OOS (Out of Specification), i.e.  
+the proportion of simulated batches falling outside the specification limits.  
+This notation will be used consistently throughout this chapter.
+
 > 📌 **Example (Case Study 1 — API Assay):**
 >  Simulation showed p_out ≈ 15% and Cpk ≈ 0.43, clearly beyond acceptable GMP thresholds.
 >  Decision: process redesign or immediate CAPA required.
@@ -41,8 +45,9 @@ Instead of asking *“does ±3σ fit inside the specs?”*, we check where the *
 **Mini-example (Case Study 1 — API Assay):**
 
 ```r
+set.seed(123)
 quantile(Assay, probs = c(0.00135, 0.5, 0.99865))
-# Example output:
+# Example output (simulated):
 #   0.135%     50%   99.865% 
 #    95.2     99.7    104.3
 ```
@@ -54,6 +59,7 @@ because it shows directly how the simulated data compare with specifications.
 
 **R Example:**
 ```r
+set.seed(123)
 p_out <- mean(Assay < 98 | Assay > 102)
 Cpk   <- min((102 - mean(Assay)) / (3 * sd(Assay)),
              (mean(Assay) - 98) / (3 * sd(Assay)))
@@ -61,9 +67,10 @@ Cpk   <- min((102 - mean(Assay)) / (3 * sd(Assay)),
 quantile(Assay, probs = c(0.001, 0.999))
 ```
 ---
-> 📌 **Example (Case Study 2 — Dissolution, planned):**
-> Simulation may focus on % dissolved at 30 minutes.
-> Tail probability (e.g., worst 0.1% of units falling below 75% dissolution) could guide acceptance.
+
+> 📌 **Example (Case Study 2 — Dissolution):**
+> Simulation focuses on % dissolved at 30 minutes (see [Chapter 8](chapter08_case-study2.md)).
+> Tail probability (e.g., worst 0.1% of units falling below 75% dissolution) can guide acceptance.
 
 ## 🔄 3. What-if Scenarios
 
@@ -74,7 +81,11 @@ Monte Carlo enables **scenario analysis**:
 - Add measurement uncertainty
 
 **R Example:**
+
+*(Variables `API_LabelClaim` and `Purity` are defined as in Chapter 5 examples.)*
+
 ```r
+set.seed(123)
 # Simulate reduced variability
 sd_new <- 1.0
 API_weight_new <- rnorm(N, mean = 101, sd = sd_new)
@@ -94,8 +105,10 @@ Before running simulations, define:
 - **Target Cpk** (e.g., ≥ 1.33)
 - **Regulatory or internal tolerances**
 
-*Important: These thresholds are not regulatory requirements but typical industry practice.  
-Acceptance limits should be defined within the company’s Quality System, considering product criticality and regulatory expectations.*  
+> ⚠️ **Note**: These thresholds (e.g., p_out ≤ 0.1%, Cpk ≥ 1.33)  
+> are common industry practices but **not regulatory requirements**.  
+> Acceptance limits must be defined within the company’s Quality System,  
+> considering product criticality and regulatory expectations.
 
 These thresholds **transform raw statistics into actionable decisions.**
 
@@ -111,6 +124,11 @@ These thresholds **transform raw statistics into actionable decisions.**
 which emphasizes the quantification of risk rather than relying solely on qualitative scoring.  
 This quantitative view strengthens the evidence base for regulatory inspections.*
 
+Additional regulatory documents also emphasize the role of quantitative methods:  
+- **ICH Q14 (Analytical Procedure Development, 2023)**,  
+- **USP <1220> (Analytical Procedure Lifecycle, 2022)**.  
+These guidelines reinforce the importance of simulation and quantitative risk assessment in pharmaceutical decision-making.
+
 ---
 
 ## 6. Modular Integration of Case Studies
@@ -118,12 +136,15 @@ This quantitative view strengthens the evidence base for regulatory inspections.
 Each Case Study provides a worked example of applying this framework:
 
 - **Case Study 1: API Assay** → high OOS probability → reject/redesign.
-- **Case Study 2: Dissolution (planned)** → interpret % release distributions.
-- **Case Study 3: Microbiology (planned)** → rare-event probabilities (Poisson).
+- **Case Study 2: Dissolution** (see [Chapter 8](chapter08_case-study2.md)) → interpret % release distributions and tail risks.
+- **Case Study 3: From 3 Batches to Continuous Confidence** (see [Chapter 9](chapter09_case-study3.md)) → bridging PPQ to CPV via Monte Carlo & Bootstrap.
 
-These placeholders illustrate how new case studies can be integrated without rewriting this chapter.
-
----
+**Further Case Studies (planned, non-exhaustive):**
+- **Sampling & Acceptance Plans** — attributes/variables (ISO 2859-1, ISO 3951-1), OC curves via simulation.
+- **Microbiology (Low Counts)** — Poisson/Negative Binomial/ZIP, tolerance intervals, rare-event probabilities.
+- **Measurement Uncertainty & Guard-Banding** — decision rules under metrological uncertainty (one-sided/two-sided specs).
+- **Stability & Degradation** — trending, shelf-life simulation, tolerance bands.
+- **Fill-Weight/Volume** — one-sided compliance and lot conformance risk.
 
 This modular design allows an organization to gradually build a **library of risk-based simulations**, providing a consistent and scalable knowledge base that supports GMP decision-making across different applications.
 
