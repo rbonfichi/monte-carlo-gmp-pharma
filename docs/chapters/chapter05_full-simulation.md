@@ -53,7 +53,7 @@ legend("topright", legend = c("True mean = 250 mg"),
 
 # --- Plot 2: Uncertainty (sample mean with 95% CI) ---
 plot(1, mean_est,
-     ylim = c(true_mean - 5, true_mean + 5),   # margine più ampio
+     ylim = c(true_mean - 5, true_mean + 5),   # wider margin
      pch = 19, col = "blue",
      xlab = "", ylab = "Estimated mean weight (mg)",
      xaxt = "n",
@@ -78,13 +78,13 @@ legend("bottomright",
 <p align="center">
   <img src="../images/variability_hist.png" alt="Variability Histogram" width="600">
   <br>
-  <em>Figure 5.x – Variability: distribution of tablet weights in a simulated lot (1,000 tablets). The spread around the true mean (250 mg) represents intrinsic variability of the process.</em>
+  <em>Figure 5.1 – Variability: distribution of tablet weights in a simulated lot (1,000 tablets). The spread around the true mean (250 mg) represents intrinsic variability of the process.</em>
 </p>
 
 <p align="center">
   <img src="../images/uncertainty_CI.png" alt="Uncertainty Confidence Interval" width="600">
   <br>
-  <em>Figure 5.y – Uncertainty: estimate of the mean from a sample of 20 tablets. The point estimate is shown with its 95% confidence interval. The dashed red line is the true mean (250 mg).</em>
+  <em>Figure 5.2 – Uncertainty: estimate of the mean from a sample of 20 tablets. The point estimate is shown with its 95% confidence interval. The dashed red line is the true mean (250 mg).</em>
 </p>
 
 #### Interpretation
@@ -120,12 +120,12 @@ set.seed(123)
 # 1) Number of simulations
 N <- 10000
 
-# 2) Random inputs (come nel tuo scenario)
+# 2) Random inputs (as in the scenario)
 API_weight    <- rnorm(N, mean = 101, sd = 2)          # raw API mass
 Tablet_weight <- rnorm(N, mean = 250, sd = 5)          # not used here, but useful for extensions
 Purity        <- runif(N, min = 0.98, max = 1.00)      # purity fraction
 
-# 3) Transfer equation normalizzata al Label Claim dell'API
+# 3) Transfer equation normalized to the API's Label Claim
 LabelClaim <- 100                                       # mg
 Assay <- (API_weight * Purity / LabelClaim) * 100       # % respect to the Label Claim
 
@@ -168,13 +168,13 @@ cat("Probability out of spec:", p_out, "\n")
 <p align="center"> 
   <img src="../images/full_simulation_assay.png" alt="Full Simulation Assay" width="500"> 
   <br>
-  <em>Figure 5.1 – Histogram of simulated assay values with specification limits</em>
+  <em>Figure 5.3 – Histogram of simulated assay values with specification limits</em>
 </p>
 
 <p align="center"> 
   <img src="../images/qqplot_assay.png" alt="Q-Q Plot Assay" width="500"> 
   <br>
-  <em>Figure 5.2 – Q-Q Plot of simulated assay values</em>
+  <em>Figure 5.4 – Q-Q Plot of simulated assay values</em>
 </p>
 
 - **Summary of Simulation Results** (mean ≈ 100%, standard deviation, quantiles) and printed `p_out` → probability of being out of specification
