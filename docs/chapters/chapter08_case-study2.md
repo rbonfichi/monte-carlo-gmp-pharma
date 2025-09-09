@@ -109,10 +109,8 @@ legend("bottomright",
 
 ```
 
-<p align="center">
-  <img src="../images/case_study2_plot1.png" alt="Case Study 2 – Deterministic dissolution curve (Noyes–Whitney)" width="600">
-  <br>
-  <em>Figure 8.1 – Deterministic dissolution curve using the Noyes–Whitney model (k = 0.12, Cs = 1.20 mg/mL). The dashed line marks 80% Cs, the dotted line the T80 closed-form solution.</em>
+<p align="center"> 
+<img src="../images/case_study2_plot1.png" alt="Case Study 2 – Deterministic dissolution curve (Noyes–Whitney)" width="600"> <br> <em>Figure 8.1 – Deterministic dissolution curve using the Noyes–Whitney model (k = 0.12, Cs = 1.20 mg/mL). The dashed line marks 80% Cs, the dotted line the T80 closed-form solution (≈13 min).</em> 
 </p>
 
 The deterministic model yields a single estimate of `T80 (≈ 13 min)`.
@@ -192,11 +190,32 @@ abline(h = 0.8 * mean(Cs_samp), lty = 2, col = "blue")
   <em>Figure 8.2 – Distribution of T80 values obtained by Monte Carlo simulation (N = 5000). The variability in k leads to a spread of dissolution times, though all below 30 min.</em>
 </p>
 
-<p align="center">
-  <img src="../images/case_study2_curves.png" alt="Case Study 2 – Monte Carlo fan of dissolution curves" width="600">
-  <br>
-  <em>Figure 8.3 – Example of 20 dissolution curves simulated via Monte Carlo (random draws of k and Cs). The fan of profiles illustrates process variability around the deterministic expectation.</em>
+<p align="center"> 
+  <img src="../images/case_study2_curves.png" alt="Case Study 2 – Monte Carlo fan of dissolution curves" width="600"> <br> <em>Figure 8.3 – Example of 20 dissolution curves simulated via Monte Carlo (random draws of k and Cs). The fan of profiles illustrates process variability around the deterministic expectation.</em> 
 </p>
+
+### 📈 Additional View: ECDF of T80
+
+The **Empirical Cumulative Distribution Function (ECDF)** of T80 allows a direct read of probabilities (e.g. % of cases below 30 min).  
+
+```r
+plot(ecdf(T80),
+     main = "ECDF of T80 (Monte Carlo)",
+     xlab = "T80 (min)",
+     ylab = "Cumulative probability",
+     col = "blue", lwd = 2)
+abline(v = 30, col = "red", lty = 2)
+abline(h = p_T80_30, col = "red", lty = 2)
+
+legend("bottomright",
+       legend = c(sprintf("P(T80 ≤ 30) = %.1f%%", 100*p_T80_30)),
+       col = "red", lty = 2, bty = "n")
+```
+
+<p align="center"> 
+<img src="../images/case_study2_ecdf.png" alt="Case Study 2 – ECDF of T80" width="600"> <br> <em>Figure 8.4 – ECDF of simulated T80 values (N = 5,000). The vertical line marks 30 min; the horizontal line shows that 100% of cases fall below this threshold.</em> 
+</p>
+
 
 **Summary statistics (N = 5,000):**
 
