@@ -72,15 +72,10 @@ A resampling method that estimates variability and confidence intervals by repea
 A plot that shows the probability of accepting a lot as a function of its actual quality level (e.g., % defective units).  
 Originates from sampling theory (e.g., ISO 2859-1, ISO 3951-1).
 
----
-
 - **In this eBook:**  
   OC curves are discussed in relation to future case studies on **sampling and acceptance plans**, where Monte Carlo is used to empirically estimate acceptance probabilities under different process conditions.
 
-
-
-
-
+---
 
 ## 📌 Note
 This glossary will be progressively expanded as new chapters are added  
