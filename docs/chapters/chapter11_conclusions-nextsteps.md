@@ -2,7 +2,7 @@
 
 ## 📌 Conclusions
 
-Among the different GMP applications discussed, the API assay case study served as the first concrete demonstration of how Monte Carlo can reveal compliance risks and quantify improvement benefits.
+The API assay case study provided the first demonstration of how Monte Carlo can reveal compliance risks and quantify improvement benefits. This foundation was then expanded in subsequent case studies, such as dissolution and continued process verification, showing the broader applicability of simulation across GMP contexts.
 
 This eBook introduced the practical application of **Monte Carlo simulation** in a GMP pharmaceutical context.  
 By moving step-by-step — from defining inputs to interpreting simulation-derived risk metrics such as **probability of OOS (p_out)** and **capability indices (Cpk)** — we demonstrated how simulation results can directly support **risk-based decision-making**.
@@ -14,7 +14,7 @@ By moving step-by-step — from defining inputs to interpreting simulation-deriv
 
 The API assay case study illustrated how Monte Carlo can reveal compliance risks  
 and quantify the benefit of process improvements.  
-Future case studies (e.g., dissolution, microbiology) will expand this framework  
+Further case studies (e.g., sampling, microbiology, stability) will expand this framework  
 across different pharmaceutical applications.
 
 ---
@@ -27,7 +27,9 @@ Future extensions of this work may include:
 - Integration with **measurement uncertainty** in risk evaluation.
 - Advanced decision frameworks combining **Bayesian approaches** and Monte Carlo.
 
-These extensions further align with **regulatory expectations** (ICH Q9, ICH Q10, FDA/EMA Process Validation Stage 3) by reinforcing the quantitative foundation of risk-based decision-making.  
+These extensions further align with **regulatory expectations**  
+(ICH Q9, ICH Q10, ICH Q14, USP <1220>, FDA/EMA Process Validation Stage 3)  
+by reinforcing the quantitative foundation of risk-based decision-making.
 
 Readers are encouraged to experiment with the R code examples  
 and adapt them to their own GMP datasets,  
