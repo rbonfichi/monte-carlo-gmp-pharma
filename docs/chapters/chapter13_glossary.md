@@ -38,6 +38,50 @@ A value drawn from a specific probability distribution (Normal, Uniform, Triangu
 
 ---
 
+## 🔑 p_out (Probability of OOS)
+The probability that a simulated batch falls **Out of Specification (OOS)**.  
+It is estimated as the proportion of simulated values lying outside the lower and/or upper specification limits (LSL, USL).
+
+- **In this eBook:**  
+  p_out is the central risk metric in all case studies (assay, dissolution, process validation).  
+  It provides a direct and intuitive measure of process conformance risk.
+
+---
+
+## 🔑 Capability Indices (Cp, Cpk, Percentile-based)
+Indices that quantify how well a process fits within its specification limits.
+
+- **Cp**: measures process spread relative to specification width.  
+- **Cpk**: also accounts for centering relative to the target/mean.  
+- **Percentile-based indices**: non-parametric alternative, comparing extreme quantiles with specification limits (useful when data are non-normal or skewed).
+
+- **In this eBook:**  
+  Cp and Cpk are reported when applicable, but emphasis is given to percentile-based indices, which are more robust in pharmaceutical contexts (e.g., dissolution, microbiology).
+
+---
+
+## 🔑 Bootstrap
+A resampling method that estimates variability and confidence intervals by repeatedly sampling **with replacement** from observed data.
+
+- **In this eBook:**  
+  Bootstrap is used to quantify the uncertainty of capability indices and tail probabilities, especially when datasets are small (e.g., 3 PPQ batches, limited stability data).
+
+---
+
+## 🔑 OC Curve (Operating Characteristic Curve)
+A plot that shows the probability of accepting a lot as a function of its actual quality level (e.g., % defective units).  
+Originates from sampling theory (e.g., ISO 2859-1, ISO 3951-1).
+
+---
+
+- **In this eBook:**  
+  OC curves are discussed in relation to future case studies on **sampling and acceptance plans**, where Monte Carlo is used to empirically estimate acceptance probabilities under different process conditions.
+
+
+
+
+
+
 ## 📌 Note
 This glossary will be progressively expanded as new chapters are added  
 (e.g., dissolution, microbiology, stability, advanced capability measures).  
