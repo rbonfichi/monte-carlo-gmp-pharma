@@ -15,7 +15,7 @@ It is not exhaustive but serves as a **starting point for further study**.
 - **Hammersley, J. M., & Handscomb, D. C. (1964), *Monte Carlo Methods*, Methuen & Co**  
   A foundational text in Monte Carlo, formal but essential for understanding early development.
 
-- **B. Efron, R.J. Tibshirani (1993), *An Introduction to the Bootstrap*, Chapman & Hall/CRC**  
+- **Efron B. & Tibshirani R.J. (1993), *An Introduction to the Bootstrap*, Chapman & Hall/CRC**  
   The seminal reference on resampling methods. Introduces the bootstrap in an accessible yet rigorous way, with numerous examples and applications. Essential for understanding nonparametric inference and modern simulation-based statistics. Still the standard reference, and highly relevant to GMP applications where sample sizes are often small.
 
 - **Naylor, T. H. (1966), *Computer Simulation Experiments with Models of Economic Systems*, Wiley**  
@@ -64,6 +64,9 @@ It is not exhaustive but serves as a **starting point for further study**.
 
 - **USP <1210>: Statistical Tools for Procedure Validation**  
   Directly addresses statistical methods in validation; explicitly mentions tolerance intervals and simulation as supportive tools.  
+
+- **USP <1220>: Analytical Procedure Lifecycle (2022)**  
+  Emphasizes lifecycle management of analytical methods, encouraging quantitative tools (e.g., simulation, capability analysis) to support method robustness and regulatory compliance.  
 
 - **FDA (2011): Process Validation: General Principles and Practices**  
   Key US guidance introducing lifecycle approach to process validation. Essential for regulatory compliance.  
