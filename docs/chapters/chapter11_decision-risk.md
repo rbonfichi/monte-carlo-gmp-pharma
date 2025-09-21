@@ -152,4 +152,5 @@ This modular design allows an organization to gradually build a **library of ris
 
 *The next chapter consolidates these insights, summarizing the main conclusions and outlining practical next steps.*
 
-[← Previous: Case Study 3 — From 3 Batches to Continuous Confidence](chapter09_case-study3.md) | [Next: Conclusions and Next Steps →](chapter11_conclusions-nextsteps.md)
+[← Previous: Case Study 4 — Capability Indices in Pharma](chapter10_case-study4.md) | [Next: Conclusions and Next Steps →](chapter12_conclusions-nextsteps.md)
+
