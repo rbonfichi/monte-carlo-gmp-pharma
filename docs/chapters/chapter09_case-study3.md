@@ -17,7 +17,7 @@ Process Validation typically proceeds in 3 stages:
 2. **Performance Qualification (PPQ, Stage 2)** – usually **3 conformance lots**.  
 3. **Continued Process Verification (CPV, Stage 3)** – ongoing monitoring with many lots.  
 
-⚠️ Limitation: Stage 2 has too few data (3 lots); Stage 3 has more data, but uncertainty still needs quantification.
+⚠️ Limitation: Stage 2 has too few data points (3 lots); Stage 3 has more data, but uncertainty still needs quantification.
 
 Simulation tools provide a bridge:
 - **Monte Carlo** → probabilistic estimates based on assumptions when data are minimal.  
@@ -111,7 +111,7 @@ results$Normal <- list(summary = summary(x_norm),
                        Cpk      = cpk(x_norm))
 if (plot_on) {
   hist(x_norm, breaks = 60, col = "lightblue",
-       main = "Normal distribution (range/6 σ)", xlab = "Assay (%)",
+       main = "Normal distribution (range/6σ)", xlab = "Assay (%)",
        xlim = x_range)
   add_spec()
 }
@@ -150,24 +150,24 @@ for (d in names(results)) {
 
 | Distribution | %OOS (simulated) | Cpk (simulated) | Key Notes |
 |--------------|-----------------:|----------------:|-----------|
-| **Triangular** (min–mode–max) | ~0.00 % | ~0.84 | Middle-of-the-road estimate; finite tails and explicit “most likely” value. Consistent with ICH Q11 guidance to use prior knowledge (target set-point + observed extremes). |
-| **Uniform** (min–max)         | ~0.00 % | ~0.58 | Most conservative “no-assumption” prior; assumes every value in range equally likely; depresses Cpk. Aligns with ICH Q9 expectations of caution under uncertainty.  |
-| **Normal** (range/6σ rule)    | ~0.13 % | ~1.09 | Infinite tails produce a small %OOS which implies non-zero failure risk; capability appears higher but relies on normality.|
+| **Triangular** (min–mode–max) | ~0.00% | ~0.84 | Middle-of-the-road estimate; finite tails and explicit “most likely” value. Consistent with ICH Q11 guidance to use prior knowledge (target set-point + observed extremes). |
+| **Uniform** (min–max)         | ~0.00% | ~0.58 | Most conservative “no-assumption” prior; assumes every value in range equally likely; depresses Cpk. Aligns with ICH Q9 expectations of caution under uncertainty.  |
+| **Normal** (range/6σ rule)    | ~0.13% | ~1.09 | Infinite tails produce a small %OOS which implies non-zero failure risk; capability appears higher but relies on normality.|
 
 
 **Regulatory Interpretation**
 
-Monte Carlo simulation addresses the statistical fragility of Stage 2 PPQ, where only three batches are available. Under such small n, classical confidence intervals are essentially uninformative (e.g. zero failures in 3 lots still allows a 64 % upper bound on true failure rate).  
+Monte Carlo simulation addresses the statistical fragility of Stage 2 PPQ, where only three batches are available. Under such small n, classical confidence intervals are essentially uninformative (e.g. zero failures in 3 lots still allows a 64% upper bound on true failure rate).  
 
 By contrast, simulation enables risk-based language that resonates with **ICH Q9(R1) Quality Risk Management** and **USP <1210> Statistical Tools for Validation**:  
 
 - **Uniform distribution**: pessimistic by construction. Because all values between 97.2 and 99.4 are treated as equally likely, the variance is inflated and Cpk is depressed. Risk of OOS remains zero since the simulated range lies fully within the specification window.
 Relies on a transparent, conservative assumption when only min–max values are known. Regulators will recognize this as a cautious “worst-case” scenario  
 
-- **Triangular distribution**: concentrates probability near the set-point (98.4 %) while retaining finite tails. It yields intermediate estimates and is usually the most defensible when a credible target value is known.
+- **Triangular distribution**: concentrates probability near the set-point (98.4%) while retaining finite tails. It yields intermediate estimates and is usually the most defensible when a credible target value is known.
 It is defensible when development knowledge or a target set-point exists, as encouraged by **ICH Q11** on development models.  
 
-- **Normal distribution**: extrapolates beyond observed min–max, producing a small but non-zero OOS fraction (≈0.13 %) and a higher Cpk. This model is analytically convenient but may understate risk if physical or process limits prevent values outside the observed range.
+- **Normal distribution**: extrapolates beyond observed min–max, producing a small but non-zero OOS fraction (≈0.13%) and a higher Cpk. This model is analytically convenient but may understate risk if physical or process limits prevent values outside the observed range.
 Normal distribution links naturally to Cp/Cpk metrics commonly cited in inspection reports, but its assumption of infinite tails must be explicitly acknowledged to avoid over-optimism.
 
 **Take-home message:**  
@@ -182,7 +182,7 @@ This structured comparison bridges the Stage 2 “data gap” and provides a pro
 **Key message for inspectors and QA reviewers:**  
 Monte Carlo does not replace the three-lot requirement, but it **quantifies the predictive risk** that those three lots represent. Instead of asserting “all three lots passed,” one can state, for example:  
 
-> “Based on available evidence, the predicted long-run risk of an out-of-specification lot is ≤ 0.2 %, with a provisional Cpk of ~0.8–1.1 depending on the distributional assumption.”  
+> “Based on available evidence, the predicted long-run risk of an out-of-specification lot is ≤ 0.2%, with a provisional Cpk of ~0.8–1.1 depending on the distributional assumption.”  
 
 Such statements are aligned with the lifecycle paradigm of **FDA Process Validation Guidance (2011)** and **ICH Q8–Q12**, where the burden is to provide *science-based, quantitative evidence* of control, even in early PPQ.
 
@@ -199,6 +199,16 @@ Now suppose more data accumulate:
 - +20 commercial lots (total = 23)
 
 This allows **resampling from the data themselves**.
+
+&nbsp;
+
+> 📦 **Where Bootstrap fits among Monte Carlo methods**
+>
+> Bootstrap resampling is itself a **Monte Carlo technique**:  
+> instead of sampling from a theoretical distribution (as in “classical” Monte Carlo),
+> it draws random samples **with replacement** from the observed data.  
+> This makes it part of the same simulation family, but “data-driven” rather than “model-driven.”
+> In practice, Monte Carlo (model-driven) and Bootstrap (data-driven) are complementary along the PV lifecycle.
 
 &nbsp;
 
@@ -344,10 +354,10 @@ or a **smoothed bootstrap** (add small measurement noise to resamples), both of 
 > **Exact binomial (Clopper–Pearson)**  
 > When we observe *k* failures out of *n* lots, we can compute a 95 % confidence interval for the *true* long-run failure probability.  
 > The *Clopper–Pearson* method is the classical “exact” formula: it does not rely on approximations and is especially useful when *k* is very small.  
-> Example: with 0 failures out of 23 lots, the upper 95 % bound is 14.82 %. This means: “we cannot exclude, with 95 % confidence, a true failure rate as high as 14.8 %.”  
+> Example: with 0 failures out of 23 lots, the upper 95 % bound is 14.82 %. This means: “we cannot exclude, with 95% confidence, a true failure rate as high as 14.8%.”  
 >
 > **Non-zero predictive bound**  
-> A nonparametric bootstrap will reproduce exactly what is seen in the data. If no failures are observed, it predicts 0 % OOS with no upper bound.  
+> A nonparametric bootstrap will reproduce exactly what is seen in the data. If no failures are observed, it predicts 0 %OOS with no upper bound.  
 > In practice, auditors and QA reviewers often prefer to see a *non-zero predictive risk*, even if small. This can be achieved with a parametric model or by adding controlled randomness.  
 >
 > **Smoothed bootstrap**  
@@ -369,7 +379,7 @@ or a **smoothed bootstrap** (add small measurement noise to resamples), both of 
 > This creates tails beyond the observed min–max and produces  
 > a conservative predictive bound for %OOS.
 >
-> **R code (jitter = 0.2 %):**
+> **R code (jitter = 0.2%):**
 >
 > ```r
 > ###############################################################################
@@ -408,7 +418,7 @@ or a **smoothed bootstrap** (add small measurement noise to resamples), both of 
 >
 > **Expected output:**  
 > - *Nonparametric*: all resamples yield 0% OOS → histogram is a single spike at 0.  
-> - *Smoothed*: a right tail appears; in this dataset, the 95th percentile is ≈ 4.3 %.  
+> - *Smoothed*: a right tail appears; in this dataset, the 95th percentile is ≈ 4.3%.  
 >
 > **Regulatory note:**  
 > If used, the jitter parameter must be **justified and documented**  
@@ -438,9 +448,9 @@ or a **smoothed bootstrap** (add small measurement noise to resamples), both of 
 
 The nonparametric bootstrap reproduces the observed data exactly: since no lot is out-of-spec,  
 all resamples yield 0 %OOS, resulting in a degenerate histogram at zero.  
-The smoothed bootstrap (jitter = 0.2 %) introduces small random noise,  
+The smoothed bootstrap (jitter = 0.2%) introduces small random noise,  
 creating tails beyond the observed range and producing a non-zero predictive bound  
-(≈ 4.3 % at the 95th percentile). This illustrates the contrast between  
+(≈ 4.3% at the 95th percentile). This illustrates the contrast between  
 a descriptive resampling of observed lots and a sensitivity analysis that anticipates potential unseen variability.
 
 &nbsp;
