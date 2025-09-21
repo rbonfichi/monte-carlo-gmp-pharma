@@ -494,4 +494,4 @@ This case study illustrates how simulation can extend confidence from the fragil
 
 ---
 
-[← Previous: Case Study 2 — Dissolution with Noyes–Whitney Law](chapter08_case-study2.md) | [Next: Decision & Risk →](chapter10_decision-risk.md)
+[← Previous: Case Study 2 — Dissolution with Noyes–Whitney Law](chapter08_case-study2.md) | [Next: Case Study 4 — Capability Indices in Pharma →](chapter10_case-study4.md)
