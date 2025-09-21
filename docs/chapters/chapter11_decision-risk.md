@@ -138,6 +138,7 @@ Each Case Study provides a worked example of applying this framework:
 - **Case Study 1: API Assay** → high OOS probability → reject/redesign.
 - **Case Study 2: Dissolution** (see [Chapter 8](chapter08_case-study2.md)) → interpret % release distributions and tail risks.
 - **Case Study 3: From 3 Batches to Continuous Confidence** (see [Chapter 9](chapter09_case-study3.md)) → bridging PPQ to CPV via Monte Carlo & Bootstrap.
+- **Case Study 4: Capability Indices in Pharma** (see [Chapter 10](chapter10_case-study4.md)) → using nonparametric bootstrap to derive defensible Ppk estimates with few, skewed data.
 
 **Further Case Studies (planned, non-exhaustive):**
 - **Sampling & Acceptance Plans** — attributes/variables (ISO 2859-1, ISO 3951-1), OC curves via simulation.
