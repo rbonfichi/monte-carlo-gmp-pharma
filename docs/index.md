@@ -20,45 +20,33 @@ The goal is to provide **practical statistical tools** that can be applied immed
 
 ## 📑 Chapters
 
-1. [Chapter 1 – Introduction](chapters/chapter01_intro.md)  
-   Overview of Monte Carlo simulation and its role in GMP decision-making.
+1. [Chapter 1 – Introduction](chapters/chapter01_introduction.md)  
 
 2. [Chapter 2 – Random Numbers vs. Random Variates](chapters/chapter02_random-variates.md)  
-   Understanding the basics of random number generation and statistical distributions.
 
 3. [Chapter 3 – Simple Distributions](chapters/chapter03_distributions.md)  
-   Key probability distributions used in pharmaceutical applications.
 
 4. [Chapter 4 – The Transfer Equation](chapters/chapter04_transfer-equation.md)  
-   How to translate input variability into output variability.
 
 5. [Chapter 5 – A Complete Simulation in R](chapters/chapter05_full-simulation.md)  
-   A step-by-step worked example with code and interpretation.
 
 6. [Chapter 6 – Analysis of Results](chapters/chapter06_analysis.md)  
-   Summarizing simulation outcomes with descriptive and inferential tools.
 
 7. [Chapter 7 – Case Study 1: API Assay in Tablets](chapters/chapter07_case-pharma.md)  
-   A real-world GMP case where Monte Carlo supports quality decisions.
 
 8. [Chapter 8 – Case Study 2: Dissolution with Noyes–Whitney Law](chapters/chapter08_case-study2.md)  
-   Application of Monte Carlo to dissolution kinetics, contrasting deterministic vs. stochastic simulation.
 
 9. [Chapter 9 – Case Study 3: From 3 Batches to Continuous Confidence](chapters/chapter09_case-study3.md)  
-   Using Monte Carlo and Bootstrap to bridge PPQ (3 lots) and CPV (many lots).
 
-10. [Chapter 10 – Decision and Risk](chapters/chapter10_decision-risk.md)  
-    Using simulation to inform risk management and uncertainty analysis.
+10. [Chapter 10 – Case Study 4: Capability Indices in Pharma](chapters/chapter10_case-study4.md)  
 
-11. [Chapter 11 – Conclusions and Next Steps](chapters/chapter11_conclusions-nextsteps.md)  
-    Summary and roadmap for future work.
+11. [Chapter 11 – Decision and Risk](chapters/chapter11_decision-risk.md)  
 
-12. [Chapter 12 – References](chapters/chapter12_references.md)  
-    Key literature and resources for further reading.
+12. [Chapter 12 – Conclusions and Next Steps](chapters/chapter12_conclusions-nextsteps.md)  
 
-13. [Chapter 13 – Glossary](chapters/chapter13_glossary.md)  
-    Definitions of key terms (random numbers, random variates, transfer equations, etc.),  
-    with both technical and applied meanings for clarity in GMP applications.
+13. [Chapter 13 – References](chapters/chapter13_references.md)  
+
+14. [Chapter 14 – Glossary](chapters/chapter14_glossary.md)  
 
 ---
 
