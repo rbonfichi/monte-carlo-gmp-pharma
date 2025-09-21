@@ -18,35 +18,36 @@ The goal is to provide **practical statistical tools** that can be applied immed
 
 ---
 
-## 📑 Chapters
+## Chapters
 
-1. [Chapter 1 – Introduction](chapters/chapter01_introduction.md)  
+1. [Chapter 1 – Introduction](chapters/chapter01_intro.md)
 
-2. [Chapter 2 – Random Numbers vs. Random Variates](chapters/chapter02_random-variates.md)  
+2. [Chapter 2 – Random Numbers vs. Random Variates](chapters/chapter02_random-variates.md)
 
-3. [Chapter 3 – Simple Distributions](chapters/chapter03_distributions.md)  
+3. [Chapter 3 – Simple Distributions](chapters/chapter03_distributions.md)
 
-4. [Chapter 4 – The Transfer Equation](chapters/chapter04_transfer-equation.md)  
+4. [Chapter 4 – The Transfer Equation](chapters/chapter04_transfer-equation.md)
 
-5. [Chapter 5 – A Complete Simulation in R](chapters/chapter05_full-simulation.md)  
+5. [Chapter 5 – A Complete Simulation in R](chapters/chapter05_full-simulation.md)
 
-6. [Chapter 6 – Analysis of Results](chapters/chapter06_analysis.md)  
+6. [Chapter 6 – Analysis of Results](chapters/chapter06_analysis.md)
 
-7. [Chapter 7 – Case Study 1: API Assay in Tablets](chapters/chapter07_case-pharma.md)  
+7. [Chapter 7 – Case Study 1: API Assay in Tablets](chapters/chapter07_case-pharma.md)
 
-8. [Chapter 8 – Case Study 2: Dissolution with Noyes–Whitney Law](chapters/chapter08_case-study2.md)  
+8. [Chapter 8 – Case Study 2: Dissolution with Noyes–Whitney Law](chapters/chapter08_case-study2.md)
 
-9. [Chapter 9 – Case Study 3: From 3 Batches to Continuous Confidence](chapters/chapter09_case-study3.md)  
+9. [Chapter 9 – Case Study 3: From 3 Batches to Continuous Confidence](chapters/chapter09_case-study3.md)
 
-10. [Chapter 10 – Case Study 4: Capability Indices in Pharma](chapters/chapter10_case-study4.md)  
+10. [Chapter 10 – Case Study 4: Capability Indices in Pharma](chapters/chapter10_case-study4.md)
 
-11. [Chapter 11 – Decision and Risk](chapters/chapter11_decision-risk.md)  
+11. [Chapter 11 – Decision and Risk](chapters/chapter11_decision-risk.md)
 
-12. [Chapter 12 – Conclusions and Next Steps](chapters/chapter12_conclusions-nextsteps.md)  
+12. [Chapter 12 – Conclusions and Next Steps](chapters/chapter12_conclusions-nextsteps.md)
 
-13. [Chapter 13 – References](chapters/chapter13_references.md)  
+13. [Chapter 13 – References](chapters/chapter13_references.md)
 
-14. [Chapter 14 – Glossary](chapters/chapter14_glossary.md)  
+14. [Chapter 14 – Glossary](chapters/chapter14_glossary.md)
+ 
 
 ---
 
