@@ -1,4 +1,4 @@
-# Chapter 13 — Glossary
+# Chapter 14 — Glossary
 
 This glossary clarifies some key terms used throughout the eBook.  
 It will expand in future releases as new chapters and case studies are added.
