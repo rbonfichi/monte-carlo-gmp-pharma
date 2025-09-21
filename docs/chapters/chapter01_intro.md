@@ -90,7 +90,7 @@ legend("topleft", c("LSL = 97", "USL = 99"),
 2. We check how many of them fall outside the specifications.
 
 The simulation shows an **OOS risk ≈ 0.012 (1.2%).**
-This matches the theoretical calculation (~1.24%), confirming the accuracy of the Monte Carlo approach.
+This matches the theoretical calculation using the Normal distribution formula (~1.24%), confirming the accuracy of the Monte Carlo approach.
 
 This simple experiment illustrates the core idea of Monte Carlo:
 
