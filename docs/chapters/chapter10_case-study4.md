@@ -374,4 +374,5 @@ The approach is simple, reproducible, and defensible in GMP/QA settings.
 
 &nbsp;
 
-[← Previous: Case Study 3](chapter09_case-study3.md) | [Next → Decision and Risk](chapter11_decision-risk.md)
+[← Previous: Case Study 3 — From 3 Batches to Continuous Confidence](chapter09_case-study3.md) | [Next: Decision and Risk →](chapter11_decision-risk.md)
+
