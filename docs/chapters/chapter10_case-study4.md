@@ -62,11 +62,14 @@ Fitting a **model distribution** (normal, lognormal, Weibull, etc.) can be fragi
 
 ## 🧪 Step 3 – A robust alternative: nonparametric bootstrap for Ppk
 
-Let $\bar{x}$ and $s$ be the sample mean and sd. For one-sided specs with USL and (optionally) LSL:
+Let $\bar{x}$ and $s$ be the sample mean and standard deviation.  
+For one-sided specs with USL and (optionally) LSL:
+
 $$
-Ppk \;=\;\min\!\left(\frac{\mathrm{USL}-\bar{x}}{3s},\;\frac{\bar{x}-\mathrm{LSL}}{3s}\right).
+Ppk = \min\left(\frac{\mathrm{USL}-\bar{x}}{3s}, \frac{\bar{x}-\mathrm{LSL}}{3s}\right)
 $$
-Here 𝑠 is the overall (long-term) standard deviation; for Cpk, 𝑠 refers to the within-subgroup standard deviation.
+
+Here $s$ is the overall (long-term) standard deviation; for Cpk, $s$ refers to the within-subgroup standard deviation.
 
 The **bootstrap** resamples the observed data (with replacement), recomputes Ppk thousands of times, and summarizes the distribution (median, **95% percentile CI**).
  It **does not assume** any distributional form and **honestly reflects** uncertainty due to small n and skewness.
