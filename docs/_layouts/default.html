@@ -1,9 +1,24 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>{{ page.title }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ page.title | default: "Monte Carlo GMP & Pharma" }}</title>
+
+    <!-- MathJax configuration -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['\\(','\\)'], ['$', '$']],
+          displayMath: [['\\[','\\]'], ['$$','$$']]
+        },
+        options: {
+          skipHtmlTags: ['script','noscript','style','textarea','pre','code']
+        }
+      };
+    </script>
+    <!-- MathJax v3 -->
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7GL6CQLYP"></script>
@@ -16,5 +31,17 @@
   </head>
   <body>
     {{ content }}
+
+    <!-- (Facoltativo) in caso di navigazione AJAX/pjax/turbo -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        if (window.MathJax) MathJax.typesetPromise();
+      });
+      ['pjax:end','turbo:load','astro:after-swap'].forEach(evt =>
+        document.addEventListener(evt, () => {
+          if (window.MathJax) MathJax.typesetPromise();
+        })
+      );
+    </script>
   </body>
 </html>
