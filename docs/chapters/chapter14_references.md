@@ -1,4 +1,4 @@
-# Chapter 13 — References
+# Chapter 14 — References
 
 Although Monte Carlo methods are mentioned across pharmaceutical and regulatory literature, there is currently no **comprehensive text** focused on their application in a GMP context.  
 The following references therefore provide the **mathematical background**, **decision-making frameworks**, and **regulatory guidance** that informed this work.  
@@ -85,4 +85,4 @@ For regulatory context, see 💊 **Pharmaceutical & Regulatory Guidance**.
 
 ---
 
-[← Previous: Conclusions and Next Steps](chapter12_conclusions-nextsteps.md) | [Next: Glossary →](chapter14_glossary.md)  
+[← Previous: Conclusions and Next Steps](chapter13_conclusions-nextsteps.md) | [Next: Glossary →](chapter15_glossary.md)
