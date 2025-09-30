@@ -34,20 +34,21 @@ The goal is to provide **practical statistical tools** that can be applied immed
 
 7. [Chapter 7 – Case Study 1: API Assay in Tablets](chapters/chapter07_case-pharma.md)
 
-8. [Chapter 8 – Case Study 2: Dissolution with Noyes–Whitney Law](chapters/chapter08_case-study2.md)
+8. [Chapter 8 – Case Study 2: Dissolution with Noyes-Whitney Law](chapters/chapter08_case-study2.md)
 
 9. [Chapter 9 – Case Study 3: From 3 Batches to Continuous Confidence](chapters/chapter09_case-study3.md)
 
 10. [Chapter 10 – Case Study 4: Capability Indices in Pharma](chapters/chapter10_case-study4.md)
 
-11. [Chapter 11 – Decision and Risk](chapters/chapter11_decision-risk.md)
+11. [Chapter 11 – Case Study 5: Predictive Stability with Monte Carlo](chapters/chapter11_case-study5.md)
 
-12. [Chapter 12 – Conclusions and Next Steps](chapters/chapter12_conclusions-nextsteps.md)
+12. [Chapter 12 – Decision and Risk](chapters/chapter12_decision-risk.md)
 
-13. [Chapter 13 – References](chapters/chapter13_references.md)
+13. [Chapter 13 – Conclusions and Next Steps](chapters/chapter13_conclusions-nextsteps.md)
 
-14. [Chapter 14 – Glossary](chapters/chapter14_glossary.md)
- 
+14. [Chapter 14 – References](chapters/chapter14_references.md)
+
+15. [Chapter 15 – Glossary](chapters/chapter15_glossary.md)
 
 ---
 
