@@ -39,4 +39,19 @@ In this way, Monte Carlo simulation evolves from a statistical technique into a 
 
 ---
 
+## ✨ Final Remarks
+
+As a closing note, it is worth emphasizing that this eBook showed how **Monte Carlo simulation** can move from being a purely statistical exercise to becoming a **practical tool for decision-making in GMP environments**.  
+
+The case studies demonstrated that even simple simulations can provide insights that are both  
+quantitatively rigorous and intuitively clear, strengthening communication between statisticians,  
+QA professionals, and regulators.  
+
+The journey does not end here: simulation is not a substitute for scientific understanding,  
+but rather a complement — a way to connect data, process knowledge, and decision-making under uncertainty.  
+By embedding these methods into daily practice, the pharmaceutical industry can move towards more transparent,  
+evidence-based, and proactive Quality Assurance.  
+
+---
+
 [← Previous: Decision & Risk](chapter12_decision-risk.md) | [Next: References →](chapter14_references.md)
