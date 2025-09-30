@@ -1,4 +1,4 @@
-# Chapter 14 — Glossary
+# Chapter 15 — Glossary
 
 This glossary clarifies some key terms used throughout the eBook.  
 It will expand in future releases as new chapters and case studies are added.
@@ -83,5 +83,4 @@ This glossary will be progressively expanded as new chapters are added
 
 ---
 
-[← Previous: References](chapter13_references.md) | [▲ Back to top](../#table-of-contents)
-
+[← Previous: References](chapter14_references.md) | [▲ Back to top](../#table-of-contents)
