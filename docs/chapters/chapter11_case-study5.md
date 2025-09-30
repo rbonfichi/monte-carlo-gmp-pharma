@@ -420,4 +420,4 @@ This quantitative framework can also be extended to sampling and OC curve analys
 
 &nbsp;
 
-[← Previous: Case Study 4 — Capability Indices in Pharma](chapter10_case-study4.md) | [Next: Conclusions and Next Steps →](chapter12_conclusions-nextsteps.md)
+[← Previous: Case Study 4 — Capability Indices in Pharma](chapter10_case-study4.md) | [Next: Decision & Risk →](chapter12_decision-risk.md)
