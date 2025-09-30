@@ -1,4 +1,4 @@
-# Chapter 12 — Conclusions and Next Steps
+# Chapter 13 — Conclusions and Next Steps
 
 ## 📌 Conclusions
 
@@ -39,4 +39,4 @@ In this way, Monte Carlo simulation evolves from a statistical technique into a 
 
 ---
 
-[← Previous: Decision & Risk](chapter11_decision-risk.md) | [Next: References →](chapter13_references.md)
+[← Previous: Decision & Risk](chapter12_decision-risk.md) | [Next: References →](chapter14_references.md)
