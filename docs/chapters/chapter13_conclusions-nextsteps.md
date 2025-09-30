@@ -25,7 +25,7 @@ Future extensions of this work may include:
 - **Non-normal capability analysis**, e.g., percentile-based indices.
 - **Additional case studies** from microbiological counts, dissolution, and stability data.
 - Integration with **measurement uncertainty** in risk evaluation.
-- Advanced decision frameworks combining **Bayesian approaches** and Monte Carlo.
+- Advanced decision frameworks combining **Monte Carlo** with other quantitative risk tools.
 
 These extensions further align with **regulatory expectations**  
 (ICH Q9, ICH Q10, ICH Q14, USP <1220>, FDA/EMA Process Validation Stage 3)  
