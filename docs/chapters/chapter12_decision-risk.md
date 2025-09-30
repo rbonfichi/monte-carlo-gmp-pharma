@@ -1,4 +1,4 @@
-# Chapter 11 — Decision and Risk
+# Chapter 12 — Decision and Risk
 
 Monte Carlo simulation is not only a computational tool — it is a **decision-making aid**.  
 In GMP environments, it can quantify the probability of failing specifications, the impact of process changes, and the effectiveness of corrective actions.
@@ -153,5 +153,5 @@ This modular design allows an organization to gradually build a **library of ris
 
 *The next chapter consolidates these insights, summarizing the main conclusions and outlining practical next steps.*
 
-[← Previous: Case Study 4 — Capability Indices in Pharma](chapter10_case-study4.md) | [Next: Conclusions and Next Steps →](chapter12_conclusions-nextsteps.md)
+[← Previous: Case Study 5 — Predictive Stability with Monte Carlo](chapter11_case-study5.md) | [Next: Conclusions and Next Steps →](chapter13_conclusions-nextsteps.md)
 
