@@ -139,12 +139,13 @@ Each Case Study provides a worked example of applying this framework:
 - **Case Study 2: Dissolution** (see [Chapter 8](chapter08_case-study2.md)) → interpret % release distributions and tail risks.
 - **Case Study 3: From 3 Batches to Continuous Confidence** (see [Chapter 9](chapter09_case-study3.md)) → bridging PPQ to CPV via Monte Carlo & Bootstrap.
 - **Case Study 4: Capability Indices in Pharma** (see [Chapter 10](chapter10_case-study4.md)) → using nonparametric bootstrap to derive defensible Ppk estimates with few, skewed data.
+- **Case Study 5: Predictive Stability with Monte Carlo** (see [Chapter 11](chapter11_case-study5.md)) → forecasting stability outcomes of new batches, anchoring predictions to early data.
 
 **Further Case Studies (planned, non-exhaustive):**
 - **Sampling & Acceptance Plans** — attributes/variables (ISO 2859-1, ISO 3951-1), OC curves via simulation.
 - **Microbiology (Low Counts)** — Poisson/Negative Binomial/ZIP, tolerance intervals, rare-event probabilities.
 - **Measurement Uncertainty & Guard-Banding** — decision rules under metrological uncertainty (one-sided/two-sided specs).
-- **Stability & Degradation** — trending, shelf-life simulation, tolerance bands.
+- **Stability — tolerance intervals and advanced applications** — extending predictive stability (Case Study 5) to tolerance intervals.
 - **Fill-Weight/Volume** — one-sided compliance and lot conformance risk.
 
 This modular design allows an organization to gradually build a **library of risk-based simulations**, providing a consistent and scalable knowledge base that supports GMP decision-making across different applications.
