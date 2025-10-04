@@ -1,6 +1,12 @@
 # Monte Carlo Methods for GMP & Pharma Operations
 _Statistical Simulation Tools for Pharmaceutical Quality and GMP Decision-Making_
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17265550.svg)](https://doi.org/10.5281/zenodo.17265550)
+
+> 📚 **How to cite this work:**  
+> Bonfichi, R. (2025). *Monte Carlo Methods for GMP & Pharma Operations (eBook)*.  
+> Zenodo. [https://doi.org/10.5281/zenodo.17265550](https://doi.org/10.5281/zenodo.17265550)
+
 ---
 
 ## 📖 About
@@ -13,7 +19,7 @@ These case studies are progressively expanded, illustrating how Monte Carlo and 
 ---
 
 ## 🌐 Online Version
-📌 [Read the eBook Online](https://rbonfichi.github.io/monte-carlo-gmp-pharma/)  
+📘 [Read the eBook Online](https://rbonfichi.github.io/monte-carlo-gmp-pharma/)  
 
 ---
 
@@ -26,7 +32,7 @@ The eBook includes:
 - Historical and regulatory context (ICH Q9(R1), USP <1210>, FDA/EMA guidance)  
 - Decision-making and risk analysis  
 - References and further reading  
-- Glossary of key terms and concepts
+- Glossary of key terms and concepts  
 
 ---
 
@@ -41,8 +47,8 @@ The eBook includes:
 **Riccardo Bonfichi**  
 Statistical Consultant for Pharma Operations  
 
-📌 [Online eBook](https://rbonfichi.github.io/monte-carlo-gmp-pharma/)  
-📌 [GitHub Repository](https://github.com/rbonfichi/monte-carlo-gmp-pharma)  
+📘 [Online eBook](https://rbonfichi.github.io/monte-carlo-gmp-pharma/)  
+💻 [GitHub Repository](https://github.com/rbonfichi/monte-carlo-gmp-pharma)  
 
 ---
 
