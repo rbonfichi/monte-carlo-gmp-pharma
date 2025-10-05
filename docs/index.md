@@ -88,10 +88,14 @@ Specializing in Quality Control, Quality Assurance, and Statistical Methods appl
 If you use or reference this work, please cite it as follows:
 
 **APA 7th:**  
-Bonfichi, R. (2025). *Monte Carlo Methods for GMP & Pharma Operations (eBook)*. GitHub. https://github.com/rbonfichi/monte-carlo-gmp-pharma  
+Bonfichi, R. (2025). *Monte Carlo Methods for GMP & Pharma Operations (eBook).*  
+Zenodo. [https://doi.org/10.5281/zenodo.17265550](https://doi.org/10.5281/zenodo.17265550)
 
 **Vancouver:**  
-Bonfichi R. Monte Carlo Methods for GMP & Pharma Operations (eBook) [Internet]. 2025. Available from: https://github.com/rbonfichi/monte-carlo-gmp-pharma  
+Bonfichi R. Monte Carlo Methods for GMP & Pharma Operations (eBook) [Internet]. 2025.  
+Zenodo. Available from: [https://doi.org/10.5281/zenodo.17265550](https://doi.org/10.5281/zenodo.17265550)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17265550.svg)](https://doi.org/10.5281/zenodo.17265550)
 
 ---
 
