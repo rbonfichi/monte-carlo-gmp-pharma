@@ -154,5 +154,5 @@ This modular design allows an organization to gradually build a **library of ris
 
 *The next chapter consolidates these insights, summarizing the main conclusions and outlining practical next steps.*
 
-[← Previous: Case Study 5 — Predictive Stability with Monte Carlo](chapter11_case-study5.md) | [Next: Conclusions and Next Steps →](chapter13_conclusions-nextsteps.md)
+[← Previous: Case Study 6 — Monte Carlo Sampling Plans and Empirical OC Curves](chapter12_case-study6.md) | [Next: Conclusions and Next Steps →](chapter14_conclusions-nextsteps.md)
 
