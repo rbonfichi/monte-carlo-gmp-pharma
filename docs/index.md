@@ -42,13 +42,15 @@ The goal is to provide **practical statistical tools** that can be applied immed
 
 11. [Chapter 11 – Case Study 5: Predictive Stability with Monte Carlo](chapters/chapter11_case-study5.md)
 
-12. [Chapter 12 – Decision and Risk](chapters/chapter12_decision-risk.md)
+12. [Chapter 12 – Case Study 6: Monte Carlo Sampling Plans and Empirical OC Curves](chapters/chapter12_case-study6.md)
 
-13. [Chapter 13 – Conclusions and Next Steps](chapters/chapter13_conclusions-nextsteps.md)
+13. [Chapter 13 – Decision and Risk](chapters/chapter13_decision-risk.md)
 
-14. [Chapter 14 – References](chapters/chapter14_references.md)
+14. [Chapter 14 – Conclusions and Next Steps](chapters/chapter14_conclusions-nextsteps.md)
 
-15. [Chapter 15 – Glossary](chapters/chapter15_glossary.md)
+15. [Chapter 15 – References](chapters/chapter15_references.md)
+
+16. [Chapter 16 – Glossary](chapters/chapter16_glossary.md)
 
 ---
 
