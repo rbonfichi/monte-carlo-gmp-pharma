@@ -353,4 +353,4 @@ Reading AQL/LTPD/LQ20 directly from simulation ensures traceable risk management
 
 &nbsp;
 
-[← Previous: Case Study 5 — Predictive Stability with Monte Carlo](chapter11_case-study5.md) | [Next: Decision & Risk →](chapter12_decision-risk.md)
+[← Previous: Case Study 5 — Predictive Stability with Monte Carlo](chapter11_case-study5.md) | [Next: Decision & Risk →](chapter13_decision-risk.md)
