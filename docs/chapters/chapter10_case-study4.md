@@ -12,7 +12,7 @@ In early lifecycle (processes under design, scale-up, technology transfer), capa
 
 - **few observations** (e.g., a dozen lots),
 - **non-normal, right-skewed** data (e.g., residual impurities, microbial counts, residual solvents),
-- one-sided specifications (e.g., **USL = NMT 0.5%**).
+- one-sided specifications (e.g., **USL = NMT (Not More Than) 0.5%**).
 
 &nbsp;
 
@@ -316,7 +316,7 @@ Using the same dataset — first the 14 historical lots, then all 16 lots — se
 > • Going from 14 to 16 lots slightly shifts most parametric Ppk estimates upward but does not fundamentally change the ranking of models.  
 > • With only 14–16 observations and a right-skewed distribution, GOF tests cannot reliably pick a “true” model.  
 > • The nonparametric bootstrap delivers a single central estimate and an honest confidence interval, without relying on arbitrary distributional assumptions.  
-> • The wide CI simply reflects the small sample size; as more lots accumulate the CI will shrink and model-based estimates will stabilise.
+> • The wide CI simply reflects the small sample size; as more lots accumulate the CI will shrink and model-based estimates will stabilize.
 
 This illustrates why, in early-lifecycle pharmaceutical processes, a bootstrap-based capability analysis can be more transparent and defensible than relying on a single fitted distribution.
 
@@ -337,13 +337,10 @@ This illustrates why, in early-lifecycle pharmaceutical processes, a bootstrap-b
 
 ## 🔍 Step 5 – Results and interpretation (what to expect)
 
-Observed Ppk will be ≫ 1 (values are far below 0.5% and sd is small).
-
-Bootstrap median close to the observed Ppk;
-
-95% CI asymmetric with a long upper tail (a hallmark of small-n + small sd in one-sided scenarios).
-
-Adding 2 lots (n=16) barely shifts the center; CI width shrinks slowly—that’s honest uncertainty quantification.
+- Observed Ppk will be ≫ 1 (values are far below 0.5% and SD is small).
+- Bootstrap median close to the observed Ppk.
+- 95% CI asymmetric with a long upper tail (small n + small SD, one-sided spec).
+- Adding 2 lots (n = 16) barely shifts the center; CI width shrinks slowly — honest uncertainty quantification.
 
 &nbsp;
 
@@ -377,5 +374,4 @@ The approach is simple, reproducible, and defensible in GMP/QA settings.
 
 &nbsp;
 
-[← Previous: Case Study 3 — From 3 Batches to Continuous Confidence](chapter09_case-study3.md) | [Next: Case Study 5 — Predictive Stability with Monte Carlo →](chapter11_case-study5.md)
-
+[← Previous: Case Study 3 — From 3 Batches to Continuous Confidence](chapter09_case-study3.md) | [▲ Back to top](../#table-of-contents) | [Next: Case Study 5 — Predictive Stability with Monte Carlo →](chapter11_case-study5.md)
