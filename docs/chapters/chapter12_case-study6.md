@@ -79,11 +79,13 @@ Y-axis zoom set to $P_a$ = 0–0.40 to focus on consumer-risk regions.
 .
 
 4. **Theory overlay.**  
-   For **Ac = 0**, acceptance = “**zero defectives**” in the sample, so  
-   \[
-   P_a(p)=\Pr[K=0]=(1-p)^n,\quad K\sim\mathrm{Bin}(n,p).
-   \]
-   The **binomial curve** is drawn together with the **empirical dots** (they coincide up to MC noise).
+   For $A_c = 0$, acceptance means “zero defectives” in the sample, so:  
+
+$$
+P_a(p) = \Pr[K = 0] = (1 - p)^n, \quad K \sim \mathrm{Bin}(n, p).
+$$  
+
+The binomial curve is drawn together with the empirical dots (they coincide up to Monte Carlo noise).
 
 5. **Risk markers (closed form).**  
    We mark **AQL/LTPD/LQ20** at the $p$ where $P_a(p) \approx 0.95/0.10/0.20$:  
