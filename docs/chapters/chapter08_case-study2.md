@@ -37,7 +37,7 @@ $$
 
 Where:  
 - *C(t)* = concentration at time *t*  
-- *C_s* = solubility limit (mg/mL)  
+- *Cs* = solubility limit (mg/mL)  
 - *k* = dissolution rate constant (1/min)  
 
 A key metric is **T80**: the time required to reach 80% of solubility.
@@ -122,8 +122,8 @@ The deterministic model yields a single estimate of `T80 (≈ 13 min)`.
 In practice, dissolution parameters vary due to formulation, medium, temperature, and other experimental factors.
 We model uncertainty as:
 
-- $k \sim \text{LogNormal}(\mu=0.12, \text{CV}=25\%)$  
-- $C_s \sim \text{Normal}(1.20, \, 0.05)$, truncated to positive values
+- $k \sim \mathrm{LogNormal}(\text{mean}=0.12,\ \text{CV}=25\%)\ $
+- $C_s \sim \mathcal{N}(\mu=1.20,\ \sigma=0.05)$, truncated at $>0$ mg/mL
 
 We then simulate 5,000 virtual experiments.
 
@@ -233,6 +233,9 @@ legend("bottomright",
 - Deterministic model → one value of T80 (13 min).  
 - Monte Carlo model → distribution of T80 values, capturing uncertainty and variability.  
 - Despite variability, **all simulations meet the requirement T80 ≤ 30 min**, confirming process robustness.
+  
+In probabilistic terms, the Monte Carlo estimate of P(T80 ≤ 30 min) = 1.00 represents a **quantitative confirmation of compliance**,  
+showing that even under parameter uncertainty the process operates with **negligible risk of failure**.
 
 > **Regulatory Note:**  
 > Monte Carlo analysis of dissolution is consistent with **ICH Q9(R1)** (risk management) and **USP <1210>** (simulation as supportive tool).  
@@ -240,4 +243,4 @@ legend("bottomright",
 
 ---
 
-[← Previous: Case Study 1 — Pharmaceutical Example](chapter07_case-pharma.md) | [Next: Case Study 3 — From 3 Batches to Continuous Confidence →](chapter09_case-study3.md)
+[← Previous: Case Study 1 — API Assay in Tablets](chapter07_case-pharma.md) | [▲ Back to top](../#table-of-contents) | [Next: Case Study 3 — From 3 Batches to Continuous Confidence →](chapter09_case-study3.md)
