@@ -31,7 +31,7 @@ This case study shows how to leverage **historical, non-normal measurement data*
 
 ## ⚖️ Why ISO 3951-1 is not suitable here
 
-- ISO 3951-1 assumes (approximately) **normal** measurements or uses normal-based statistics (e.g., *s*, *\(\bar{X}\)*);  
+- ISO 3951-1 assumes (approximately) **normal** measurements or uses normal-based statistics (e.g., $s$, $\bar{X}$).  
   strong **skewness/heavy tails** invalidate Type I/II risk calibrations.  
 - Our data are **left-skewed** (extra probability mass in the underfill tail), so 3951-1 protection levels would be **misstated**.  
 - Switching to ISO 2859-1 (attributes) with **Ac = 0** is common, but **n** can become **very large**.
