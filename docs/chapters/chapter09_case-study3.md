@@ -4,7 +4,7 @@ In this chapter, we illustrate how **Monte Carlo** and **Bootstrap** methods
 can be applied in **Process Validation (Stage 2 – PPQ)** and **Continued Process Verification (Stage 3 – CPV)**.
 
 We contrast:
-- **Monte Carlo simulation**, useful when data are scarce (e.g., only 3 PPQ batches),  
+- **Monte Carlo simulation**, useful when data are scarce (e.g., only 3 PPQ lots),  
 - **Bootstrap resampling**, powerful when many data points accumulate during CPV.
 
 ---
@@ -17,7 +17,7 @@ Process Validation typically proceeds in 3 stages:
 2. **Performance Qualification (PPQ, Stage 2)** – usually **3 conformance lots**.  
 3. **Continued Process Verification (CPV, Stage 3)** – ongoing monitoring with many lots.  
 
-⚠️ Limitation: Stage 2 has too few data points (3 lots); Stage 3 has more data, but uncertainty still needs quantification.
+⚠️ Limitation: Stage 2 has very few data points (typically 3 lots); Stage 3 has more data, but uncertainty still needs quantification.
 
 Simulation tools provide a bridge:
 - **Monte Carlo** → probabilistic estimates based on assumptions when data are minimal.  
@@ -25,7 +25,7 @@ Simulation tools provide a bridge:
 
 ---
 
-## 🔗 Step 1 – Monte Carlo with 3 PPQ Batches
+## 🔗 Step 1 – Monte Carlo with 3 PPQ Lots
 
 Suppose a PPQ study provides 3 assay results:  
 - 97.2%, 98.4%, 99.4%  
@@ -157,7 +157,7 @@ for (d in names(results)) {
 
 **Regulatory Interpretation**
 
-Monte Carlo simulation addresses the statistical fragility of Stage 2 PPQ, where only three batches are available. Under such small n, classical confidence intervals are essentially uninformative (e.g. zero failures in 3 lots still allows a 64% upper bound on true failure rate).  
+Monte Carlo simulation addresses the statistical fragility of Stage 2 PPQ, where only three batches are available. Under such small n, classical confidence intervals are essentially uninformative (e.g. zero failures in 3 lots still allows a 63.2% upper bound on true failure rate).  
 
 By contrast, simulation enables risk-based language that resonates with **ICH Q9(R1) Quality Risk Management** and **USP <1210> Statistical Tools for Validation**:  
 
@@ -494,4 +494,5 @@ This case study illustrates how simulation can extend confidence from the fragil
 
 ---
 
-[← Previous: Case Study 2 — Dissolution with Noyes–Whitney Law](chapter08_case-study2.md) | [Next: Case Study 4 — Capability Indices in Pharma →](chapter10_case-study4.md)
+[← Previous: Case Study 2 — Dissolution with Noyes–Whitney Law](chapter08_case-study2.md) | [▲ Back to top](../#table-of-contents) | [Next: Case Study 4 — Capability Indices in Pharma →](chapter10_case-study4.md)
+
