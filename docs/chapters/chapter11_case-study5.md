@@ -424,4 +424,4 @@ This quantitative framework can also be extended to sampling and OC curve analys
 
 &nbsp;
 
-[← Previous: Case Study 4 — Capability Indices in Pharma](chapter10_case-study4.md) | [Next: Case Study 6 — Monte Carlo Sampling Plans and Empirical OC Curves →](chapter12_case-study6.md)
+[← Previous: Case Study 4 — Capability Indices in Pharma](chapter10_case-study4.md) | [▲ Back to top](../#table-of-contents) | [Next: Case Study 6 — Monte Carlo Sampling Plans and Empirical OC Curves →](chapter12_case-study6.md)
