@@ -342,7 +342,7 @@ It provides a transparent, auditable justification for reduced sampling.
 
 Combine with pilot confirmation runs and CPV monitoring to maintain long-term risk control.
 
-In routine use, confirm with pilot lots and monitor via CPV to maintain targeted \(P_a\) levels.
+In routine use, confirm with pilot lots and monitor via CPV to maintain targeted $\(P_a\$) levels.
 
 &nbsp;
 
