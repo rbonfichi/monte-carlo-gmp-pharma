@@ -38,8 +38,9 @@ This case study shows how to leverage **historical, non-normal measurement data*
 
 **Solution:** Build an **empirical OC** from the **actual historical shape** (skewness included) and choose **n** to hit practical risk targets.
 
-> **Note.** For **attributes** plans with **Ac = 0**, the OC curve depends **only** on the **true defective rate** \(p = P(X<\mathrm{LSL})\) and on \(n\) — i.e., \(P_a(p) = (1-p)^n\).  
-> The historical distribution is therefore used to **contextualize** \(p\), not to calibrate \(P_a(p)\) beyond its definition.
+> **Note.** For attributes plans with Ac = 0, the OC curve depends only on the true defective rate  
+> $p = P(X < \mathrm{LSL})$ and on $n$ — i.e. $P_a(p) = (1 - p)^n$.  
+> The historical distribution is therefore used to contextualize $p$, not to calibrate $P_a(p)$ beyond its definition.
 
 &nbsp;
 
