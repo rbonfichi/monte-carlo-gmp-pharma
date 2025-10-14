@@ -11,6 +11,8 @@ The target assay is **100.0%** with specifications:
 - **LSL = 98.0%**  
 - **USL = 102.0%**
 
+&nbsp;
+
 ---
 
 ## 📥 Step 1 – Define Inputs and Distributions
@@ -25,6 +27,8 @@ Based on historical data and expert estimates:
 
 *Note: “API Label Claim” refers to the **declared API content (mg)**, not the total tablet mass.*
 
+&nbsp;
+
 ---
 
 ## 🔗 Step 2 – Define the Transfer Equation
@@ -33,9 +37,9 @@ The assay is calculated using the ratio of API weight to API label claim, multip
 
 Assay(%) = (`API_weight` / `API_LabelClaim`) * `Purity` * 100
 
+&nbsp;
+
 ---
-*Note: “API Label Claim” represents the declared API content per tablet (mg), 
-used as the denominator in the transfer equation. It does not refer to the total tablet mass.*
 
 ## 💻 Step 3 – Run the Simulation in R
 
@@ -98,6 +102,8 @@ Cpk <- min((USL - mean_assay) / (3 * sd_assay),
 list(mean_assay = mean_assay, sd_assay = sd_assay, p_out = p_out, Cpk = Cpk)
 ```
 
+&nbsp;
+
 ---
 
 ## 📊 Step 4 – Example Output
@@ -124,6 +130,9 @@ list(mean_assay = mean_assay, sd_assay = sd_assay, p_out = p_out, Cpk = Cpk)
 
 These values indicate a process with **excessive variability** and a **non-negligible risk** of producing batches outside specifications.
 
+In this Monte Carlo framework, the estimated probability of OOS (p_out) represents a **quantitative risk of non-compliance**, 
+providing a direct numerical view of process capability under GMP.
+
 > **Note:** This dataset was chosen **deliberately** to illustrate how Monte Carlo simulations can reveal a process that is **not in control**.  
 > In a real GMP context, results like these would trigger a root cause investigation and corrective actions to reduce variability and improve process centering.
 
@@ -134,6 +143,8 @@ These values indicate a process with **excessive variability** and a **non-negli
 <p align="center"> <img src="../images/case_study1_ecdf.png" alt="Case Study ECDF" width="500"> </p>
 
 <p align="center"> <img src="../images/case_study1_qq.png" alt="Case Study QQ Plot" width="500"> </p>
+
+&nbsp;
 
 ---
 
@@ -168,6 +179,8 @@ This approach can be extended to future case studies, such as:
 
 This quantitative approach supports risk-based decision-making and can be documented in validation or continued process verification reports.
 
+&nbsp;
+
 ---
 
 ## 🔄 Step 6 – What-if Scenario (Process Improvement)
@@ -201,11 +214,15 @@ providing objective evidence that process improvements **significantly** reduce 
 > and can support documentation in **Process Validation Stage 3 (Continued Process Verification)**  
 > as recommended in FDA and EMA guidelines.
 
+&nbsp;
+
 ---
 These results illustrate how Monte Carlo simulation provides not only descriptive statistics, but also **probabilistic evidence of compliance risk**,  
 which can be directly incorporated into GMP decision-making and regulatory documentation.
 
-*In the next chapter, we expand this perspective by showing how simulation results can systematically support decision-making and risk management in GMP contexts.*
+In the next chapter, we expand this quantitative perspective by linking Monte Carlo outputs 
+to systematic decision-making and risk management strategies in GMP environments.
 
+&nbsp;
 
-[← Previous: Analysis of Results](chapter06_analysis.md) | [▲ back to top](../#table-of-contents) | [Next → Case Study 2 — Dissolution with Noyes–Whitney Law](chapter08_case-study2.md)
+[← Previous: Analysis of Results](chapter06_analysis.md) | [▲ Back to top](../#table-of-contents) | [Next → Case Study 2 — Dissolution with Noyes–Whitney Law](chapter08_case-study2.md)
