@@ -54,7 +54,7 @@ This case study shows how to leverage **historical, non-normal measurement data*
    For this tutorial, we emulate a **left-skewed** historical shape using a **scaled Beta distribution on [LSL, U]** with **all values ≥ LSL (by construction)**.  
    This provides a realistic left tail while avoiding any sub-LSL values (GxP-neutral). In practice, you would estimate the shape and range from your real data.
 2. **Sampling plan(s):** consider **Ac = 0** with several candidate **n** (e.g., 32, 50, 80, 125).  
-3. **Monte Carlo OC:** for a grid of **true process states** (e.g., small shifts in the mean or in the tail proportion), simulate lots, draw samples of size size $n$, and compute $P_a(p)$ = acceptance probability vs. the true defective rate $p = P(\mathrm{CQA} < \mathrm{LSL})$.
+3. **Monte Carlo OC:** for a grid of **true process states** (e.g., small shifts in the mean or in the tail proportion), simulate lots, draw samples of size $n$, and compute $P_a(p)$ = acceptance probability vs. the true defective rate $p = P(\mathrm{CQA} < \mathrm{LSL})$.
 4. **Read off AQL/LTPD/LQ20** from the empirical OC:  
    - AQL: quality level where **Pa ≈ 0.95** (producer’s risk ~5%).  
    - LTPD: quality where **Pa ≈ 0.10** (consumer’s risk ~10%).  
@@ -76,7 +76,6 @@ This case study shows how to leverage **historical, non-normal measurement data*
    We fix **uniform axes** (x: 0–16% defectives; y: 0–0.40) and build a fine grid of \(p\) values.  
    For each $p$ and plan $(n, \mathrm{Ac}=0)$, we estimate the **empirical acceptance probability** $P_a(p)$ by Monte Carlo.  
 Y-axis zoom set to $P_a$ = 0–0.40 to focus on consumer-risk regions.
-.
 
 4. **Theory overlay.**  
    For $A_c = 0$, acceptance means “zero defectives” in the sample, so:  
