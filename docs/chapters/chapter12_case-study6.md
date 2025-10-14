@@ -11,9 +11,9 @@ This case study shows how to leverage **historical, non-normal measurement data*
 
 ## 🎯 Scenario
 
-- CQA: **Fill weight** per unit (tablets/ampoules; continuous measure).  
+- CQA (quality characteristic): **Fill weight** per unit (tablets/ampoules; continuous measure).  
 - Specification: **LSL = 98.0 mg** (lower spec only; underfill is critical).  
-- **Historical measurement data** show **left-skewness** (a heavier *low* tail), violating ISO 3951-1 normality assumptions.  
+- **Historical measurement data** show **left-skewness** (a heavier left tail), violating ISO 3951-1 normality assumptions.  
 - A conservative team would switch to **ISO 2859-1 (attributes)** with **Ac = 0**, but required **sample sizes (n)** quickly become large.  
 - **Goal:** use **Monte Carlo** to build **empirical OC curves** from the **historical distribution**, then **choose a smaller sample size n** that still gives acceptable **producer’s risk** (AQL) and **consumer’s risk** (LTPD/LQ20).
 
@@ -74,21 +74,22 @@ This case study shows how to leverage **historical, non-normal measurement data*
 2. **OC setup.**  
    We fix **uniform axes** (x: 0–16% defectives; y: 0–0.40) and build a fine grid of \(p\) values.  
    For each \(p\) and plan \((n, \mathrm{Ac}=0)\), we estimate the **empirical acceptance probability** \(P_a(p)\) by Monte Carlo.
+   YAxis zoom to Pa 0–0.40 to focus on consumer-risk regions.
 
-3. **Theory overlay.**  
+4. **Theory overlay.**  
    For **Ac = 0**, acceptance = “**zero defectives**” in the sample, so  
    \[
    P_a(p)=\Pr[K=0]=(1-p)^n,\quad K\sim\mathrm{Bin}(n,p).
    \]
    The **binomial curve** is drawn together with the **empirical dots** (they coincide up to MC noise).
 
-4. **Risk markers (closed form).**  
+5. **Risk markers (closed form).**  
    We mark **AQL/LTPD/LQ20** at the \(p\) where \(P_a(p)\approx 0.95/0.10/0.20\):  
    \[
    \text{AQL}=1-0.95^{1/n},\quad \text{LTPD}=1-0.10^{1/n},\quad \text{LQ20}=1-0.20^{1/n}.
    \]
 
-5. **Outputs.**  
+6. **Outputs.**  
    We produce **one historical plot** and **four separate OC plots** (for \(n=32,50,80,125\)), plus a **compact summary table** (percent and counts per 1,000,000) — ready for reporting and comparison across plans.
 
 &nbsp;
@@ -353,4 +354,5 @@ Reading AQL/LTPD/LQ20 directly from simulation ensures traceable risk management
 
 &nbsp;
 
-[← Previous: Case Study 5 — Predictive Stability with Monte Carlo](chapter11_case-study5.md) | [Next: Decision & Risk →](chapter13_decision-risk.md)
+[← Previous: Case Study 5 — Predictive Stability with Monte Carlo](chapter11_case-study5.md) | [▲ Back to top](../#table-of-contents) | [Next: Decision & Risk →](chapter13_decision-risk.md)
+
