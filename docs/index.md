@@ -44,16 +44,27 @@ The goal is to provide **practical statistical tools** that can be applied immed
 
 12. [Chapter 12 – Case Study 6: Monte Carlo Sampling Plans and Empirical OC Curves](chapters/chapter12_case-study6.md)
 
-13. [Chapter 13 – Decision and Risk](chapters/chapter13_decision-risk.md)
+13. [Chapter 13 – Case Study 7: Microbiological Counts – Quantifying Overdispersion via Monte Carlo Simulation](chapters/chapter13_case-study7.md)
 
-14. [Chapter 14 – Conclusions and Next Steps](chapters/chapter14_conclusions-nextsteps.md)
+14. [Chapter 14 – Decision and Risk](chapters/chapter14_decision-risk.md)
 
-15. [Chapter 15 – References](chapters/chapter15_references.md)
+15. [Chapter 15 – Conclusions and Next Steps](chapters/chapter15_conclusions-nextsteps.md)
 
-16. [Chapter 16 – Glossary](chapters/chapter16_glossary.md)
+16. [Chapter 16 – References](chapters/chapter16_references.md)
+
+17. [Chapter 17 – Glossary](chapters/chapter17_glossary.md)
 
 ---
 
+
+
+
+
+
+
+
+
+---
 ## 🚀 Next Steps
 
 This eBook is a living project and will continue to evolve over time.
