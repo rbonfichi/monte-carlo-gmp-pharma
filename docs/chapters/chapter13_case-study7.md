@@ -49,12 +49,12 @@ represent true process excursions or just normal statistical variability.
 
 ### (a) Poisson model — homogeneous process
 
-\[
-X \sim \text{Poisson}(\lambda), \qquad E[X] = Var[X] = \lambda
-\]
+$$
+X \sim \mathrm{Poisson}(\lambda),\quad \mathbb{E}[X]=\mathrm{Var}[X]=\lambda
+$$
 
-All sampling points share the same contamination intensity (\(\lambda\)).  
-Variance equals the mean (\(\operatorname{Var}(X)=\mathbb{E}[X]=\lambda\)): randomness alone explains observed variation.  
+All sampling points share the same contamination intensity ($\lambda$).  
+Variance equals the mean ($\mathrm{Var}(X)=\mathbb{E}[X]=\lambda$): randomness alone explains observed variation.
 This model fits clean, well-controlled systems (e.g., WFI, cleanrooms).
 
 &nbsp;
@@ -63,14 +63,14 @@ This model fits clean, well-controlled systems (e.g., WFI, cleanrooms).
 
 ### (b) Negative Binomial model — heterogeneous process
 
-\[
-X \sim \text{NegBin}(\mu, k), \qquad E[X] = \mu, \qquad Var[X] = \mu + \frac{\mu^2}{k}
-\]
+$$
+X \sim \mathrm{NegBin}(\mu, k),\quad \mathbb{E}[X]=\mu,\quad \mathrm{Var}[X]=\mu+\frac{\mu^2}{k}
+$$
 
-> **Parameterization note.** We use the mean–dispersion parameterization \((\mu, k)\).  
-> Some software reports Negative Binomial as \((\text{size}=k, \text{prob}=p)\).  
-> In our convention: \(E[X]=\mu\), \(\operatorname{Var}(X)=\mu+\mu^2/k\),  
-> and the Poisson–Gamma mixture uses \(\lambda \sim \mathrm{Gamma}(\text{shape}=k,\ \text{scale}=\mu/k)\).
+> **Parameterization note.** We use the mean–dispersion parameterization ($\mu, k$).  
+Some software reports Negative Binomial as ($\mathrm{size}=k$, $\mathrm{prob}=p$).  
+In our convention: $\mathbb{E}[X]=\mu$, $\mathrm{Var}(X)=\mu+\mu^2/k$,  
+and the Poisson–Gamma mixture uses $\lambda \sim \mathrm{Gamma}(\mathrm{shape}=k,\ \mathrm{scale}=\mu/k)$.
 
 
 Here \(k\) is the **dispersion parameter**:
@@ -79,10 +79,10 @@ Here \(k\) is the **dispersion parameter**:
 
 The Negative Binomial can be seen as a **Poisson–Gamma mixture**:
 
-\[
-X|\lambda \sim \text{Poisson}(\lambda), \quad 
-\lambda \sim \text{Gamma}(\text{shape}=k, \text{scale}=\mu/k)
-\]
+$$
+X \mid \lambda \sim \mathrm{Poisson}(\lambda),\quad 
+\lambda \sim \mathrm{Gamma}(\mathrm{shape}=k,\ \mathrm{scale}=\mu/k)
+$$
 
 This means that the *rate of contamination (λ)* itself varies among samples —  
 reflecting real heterogeneity in space or time.
@@ -93,9 +93,9 @@ reflecting real heterogeneity in space or time.
 
 ### (c) Relationship between the two
 
-\[
-\lim_{k \to \infty} \text{NegBin}(\mu,k) = \text{Poisson}(\mu)
-\]
+$$
+\lim_{k \to \infty} \mathrm{NegBin}(\mu,k) = \mathrm{Poisson}(\mu)
+$$
 
 The Poisson model is thus a special case of the Negative Binomial, valid only when the environment is uniform.
 
@@ -110,7 +110,7 @@ The Poisson model is thus a special case of the Negative Binomial, valid only wh
 > | Aspect | Poisson | Negative Binomial |
 > |:--|:--|:--|
 > | Variability | Random (homogeneous) | Structured (heterogeneous) |
-> | Variance–Mean | \(Var=\mu\) | \(Var=\mu+\mu^2/k\) |
+> | Variance–Mean | $Var=\mu$ | $Var=\mu+\mu^2/k$ |
 > | Tail behavior | Light | Heavy (higher extreme counts) |
 > | GMP implication | True OOL likely anomaly | OOL may reflect expected heterogeneity |
 
@@ -122,11 +122,11 @@ The Poisson model is thus a special case of the Negative Binomial, valid only wh
 
 A simple way to assess whether data are consistent with the Poisson model is to compute the **Index of Dispersion**:
 
-\[
+$$
 ID = \frac{s^2}{\bar{x}}
-\]
+$$
 
-where \(s^2\) is the sample variance and \(\bar{x}\) the sample mean.
+where $s^2$ is the sample variance and $\bar{x}$ the sample mean.
 
 | Interpretation | Condition | Typical model |
 |----------------|------------|----------------|
@@ -171,7 +171,7 @@ This is <b>not</b> the manufacturing “production campaign”.
 
 A Monte Carlo simulation over thousands of hypothetical sampling campaigns allows one to estimate:
 
-- \( P(\text{any sample} > \text{limit}) \): probability of at least one out-of-limit plate,  
+- $P(\mathrm{any\ sample} > \mathrm{limit})$: probability of at least one out-of-limit plate,  
 - distribution of total CFU counts per campaign,  
 - frequency of “false alarms” under each model.
 
@@ -334,7 +334,7 @@ print(ID_df)
 | NegBin  | 2.00  | 6.02     | 3.02 |
 
 *Table 13.2 – Index of Dispersion (ID) calculated on **raw per-sample counts** (all samples across all campaigns).  
-Consistent with theory: Poisson → \(ID \approx 1\); Negative Binomial → \(ID \approx 3\) (overdispersion).*
+Consistent with theory: Poisson → $ID \approx 1$; Negative Binomial → $ID \approx 3$ (overdispersion).*
 
 *Empirical ID confirms theoretical expectations: Poisson ≈ 1, NegBin ≫ 1.*
 
