@@ -334,7 +334,7 @@ print(ID_df)
 | NegBin  | 2.00  | 6.02     | 3.02 |
 
 *Table 13.2 – Index of Dispersion (ID) calculated on **raw per-sample counts** (all samples across all campaigns).  
-Consistent with theory: Poisson → $ID \approx 1$; Negative Binomial → $ID \approx 3$ (overdispersion).*
+Consistent with theory: Poisson → ID ≈ 1; Negative Binomial → ID ≈ 3 (overdispersion).*
 
 *Empirical ID confirms theoretical expectations: Poisson ≈ 1, NegBin ≫ 1.*
 
