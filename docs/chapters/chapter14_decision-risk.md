@@ -154,5 +154,5 @@ This modular design allows an organization to gradually build a **library of ris
 
 *The next chapter consolidates these insights, summarizing the main conclusions and outlining practical next steps.*
 
-[← Previous: Case Study 6 — Monte Carlo Sampling Plans and Empirical OC Curves](chapter12_case-study6.md) | [Next: Conclusions and Next Steps →](chapter14_conclusions-nextsteps.md)
+[← Previous: Chapter 13 — Case Study 7 — Microbiological Counts](chapter13_case-study7.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 15 — Tolerance Intervals →](chapter15_tolerance-intervals.md)
 
