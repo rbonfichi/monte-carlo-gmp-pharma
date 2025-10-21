@@ -154,4 +154,4 @@ This modular design allows an organization to gradually build a **library of ris
 
 *The next chapter consolidates these insights, summarizing the main conclusions and outlining practical next steps.*
 
-[← Previous: Chapter 13 — Case Study 7 — Microbiological Counts](chapter13_case-study7.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 15 — Conclusions & Next Steps →](conclusions-nextsteps.md)
+[← Previous: Chapter 13 — Case Study 7 — Microbiological Counts](chapter13_case-study7.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 15 — Conclusions & Next Steps →](chapter15_conclusions-nextsteps.md)
