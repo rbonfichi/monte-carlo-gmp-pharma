@@ -5,6 +5,8 @@
 Before diving into model selection, here is a quick overview of the chapter structure:
 
 > 🗺️ **Chapter roadmap**
+>
+> 
 > 1️⃣ Conceptual background — when and why overdispersion arises  
 > 2️⃣ Monte Carlo perspective — from single-sample to campaign-level risk  
 > 3️⃣ Practical example (R) — simulation and visualization  
