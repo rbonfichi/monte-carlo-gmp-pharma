@@ -83,6 +83,5 @@ This glossary will be progressively expanded as new chapters are added
 
 ---
 
-[← Previous: Chapter 16 — References](chapter16_references.md) | [▲ Back to top](https://rbonfichi.github.io/monte-carlo-gmp-pharma/#table-of-contents)
-
+[← Previous: Chapter 17 — References](chapter17_references.md) | [▲ Back to top](../#table-of-contents)
 
