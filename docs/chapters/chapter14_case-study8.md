@@ -436,4 +436,4 @@ Percentile-based capability:
 
 ---
 
-[← Previous: Case Study 7 — Microbiological Counts](chapter13_case-study7.md)  [▲ Back to top](../#table-of-contents)  [Next: Case Study 9 — Measurement Uncertainty & Risk of Non-Compliance →]
+[← Previous: Case Study 7 — Microbiological Counts](chapter13_case-study7.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 15 — Decision & Risk →](chapter15_decision-risk.md)
