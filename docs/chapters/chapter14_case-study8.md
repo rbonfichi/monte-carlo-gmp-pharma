@@ -150,27 +150,25 @@ but here they are taken directly from:
 
 ### (a) Upper percentile-based capability
 
-\[
-C_{p,u}^{(p)} = 
-\frac{USL - \mathrm{median}}{q_{99.865} - q_{50}}
-\]
+$$
+C_{p,u}^{(p)} = \frac{USL - \mathrm{median}}{q_{99.865} - q_{50}}
+$$
 
 &nbsp;
 
 ### (b) Lower percentile-based capability
 
-\[
-C_{p,l}^{(p)} = 
-\frac{\mathrm{median} - LSL}{q_{50} - q_{0.135}}
-\]
+$$
+C_{p,l}^{(p)} = \frac{\mathrm{median} - LSL}{q_{50} - q_{0.135}}
+$$
 
 &nbsp;
 
 ### (c) Two-sided percentile capability
 
-\[
+$$
 C_{pk}^{(p)} = \min(C_{p,u}^{(p)}, C_{p,l}^{(p)})
-\]
+$$
 
 These definitions:
 - require no assumption of normality,  
