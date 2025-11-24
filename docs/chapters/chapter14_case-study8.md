@@ -74,10 +74,10 @@ This approach is fully aligned with USP <1210>, <1220>, ICH Q14, and the GxP foc
 
 For a two-sided specification (LSL, USL):
 
-\[
-Cp = \frac{USL - LSL}{6\sigma}, \qquad 
+$$
+Cp = \frac{USL - LSL}{6\sigma}, \qquad
 Cpk = \min\left( \frac{USL - \mu}{3\sigma}, \frac{\mu - LSL}{3\sigma}\right)
-\]
+$$
 
 These formulas presuppose:
 1. Normality  
