@@ -403,4 +403,6 @@ This transforms subjective notions of “rare” or “unexpected” events into
 
 ---
 
-[← Previous: Case Study 6 — Monte Carlo Sampling Plans and Empirical OC Curves](chapter12_case-study6.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 14 — Decision & Risk →](chapter14_decision-risk.md)
+[← Previous: Case Study 6 — Monte Carlo Sampling Plans and Empirical OC Curves](chapter12_case-study6.md) |
+[▲ Back to top](../#table-of-contents) |
+[Next: Case Study 8 — Percentile-Based Capability for Non-Normal Data →](chapter14_case-study8.md)
