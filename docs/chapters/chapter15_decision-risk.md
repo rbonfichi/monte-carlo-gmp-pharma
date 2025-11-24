@@ -154,4 +154,4 @@ This modular design allows an organization to gradually build a **library of ris
 
 *The next chapter consolidates these insights, summarizing the main conclusions and outlining practical next steps.*
 
-[← Previous: Chapter 13 — Case Study 7 — Microbiological Counts](chapter13_case-study7.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 15 — Conclusions & Next Steps →](chapter15_conclusions-nextsteps.md)
+[← Previous: Case Study 8 — Monte Carlo Percentile-Based Capability for Non-Normal Data](chapter14_case-study8.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 16 — Conclusions and Next Steps →](chapter16_conclusions-nextsteps.md)
