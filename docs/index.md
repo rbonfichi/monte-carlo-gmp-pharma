@@ -46,13 +46,15 @@ The goal is to provide **practical statistical tools** that can be applied immed
 
 13. [Chapter 13 – Case Study 7: Microbiological Counts – Quantifying Overdispersion via Monte Carlo Simulation](chapters/chapter13_case-study7.md)
 
-14. [Chapter 14 – Decision and Risk](chapters/chapter14_decision-risk.md)
+14. [Chapter 14 – Case Study 8: Percentile-Based Capability Indices for Non-Normal Data](chapters/chapter14_case-study8.md)
 
-15. [Chapter 15 – Conclusions and Next Steps](chapters/chapter15_conclusions-nextsteps.md)
+15. [Chapter 15 – Decision and Risk](chapters/chapter15_decision-risk.md)
 
-16. [Chapter 16 – References](chapters/chapter16_references.md)
+16. [Chapter 16 – Conclusions and Next Steps](chapters/chapter16_conclusions-nextsteps.md)
 
-17. [Chapter 17 – Glossary](chapters/chapter17_glossary.md)
+17. [Chapter 17 – References](chapters/chapter17_references.md)
+
+18. [Chapter 18 – Glossary](chapters/chapter18_glossary.md)
 
 ---
 
