@@ -85,4 +85,5 @@ For regulatory context, see 💊 **Pharmaceutical & Regulatory Guidance**.
 
 ---
 
-[← Previous: Chapter 15 — Conclusions & Next Steps](chapter15_conclusions-nextsteps.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 17 — Glossary →](chapter17_glossary.md)
+[← Previous: Chapter 16 — Conclusions and Next Steps](chapter16_conclusions-nextsteps.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 18 — Glossary →](chapter18_glossary.md)
+
