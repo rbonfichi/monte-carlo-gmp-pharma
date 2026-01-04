@@ -2,14 +2,20 @@
 
 &nbsp;
 
-🗺️ **Chapter roadmap**
+<div style="border:1.5px solid #228be6; background-color:#f0f7ff; padding:12px; border-radius:8px; margin-top:12px; margin-bottom:12px;">
 
-0️⃣ Monte Carlo foundation (implicit in all case studies)
-1️⃣ Why measurement uncertainty matters in GMP  
-2️⃣ True value vs measured value  
-3️⃣ Monte Carlo model: process variability + measurement uncertainty  
-4️⃣ Practical R simulation (risk of False Acceptance / False Non-Compliance)  
-5️⃣ GMP interpretation and regulatory context  
+<strong>🗺️ Chapter roadmap</strong>
+
+<ul style="margin-top:8px; margin-bottom:0; padding-left:20px;">
+  <li>0️⃣ Monte Carlo foundation (implicit in all case studies)</li>
+  <li>1️⃣ Why measurement uncertainty matters in GMP</li>
+  <li>2️⃣ True value vs measured value</li>
+  <li>3️⃣ Monte Carlo model: process variability + measurement uncertainty</li>
+  <li>4️⃣ Practical R simulation (risk of False Acceptance / False Non-Compliance)</li>
+  <li>5️⃣ GMP interpretation and regulatory context</li>
+</ul>
+
+</div>
 
 &nbsp;
 
