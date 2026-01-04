@@ -53,7 +53,7 @@ P(\mathrm{FNC}) = \frac{\mathrm{count}(X_m > \mathrm{USL} \land X_t \le \mathrm{
 $$
 
 $$
-P(\mathrm{FA}) = P\!\left(X_m \le \mathrm{USL} \mid X_t > \mathrm{USL}\right)
+P(\mathrm{FA}) = P\left(X_m \le \mathrm{USL} \mid X_t > \mathrm{USL}\right)
 $$
 
 
