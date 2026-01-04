@@ -328,7 +328,7 @@ Figure 15.1 here below  illustrates the resulting risk curves for FA and FNC acr
   Monte Carlo simulation makes this trade-off explicit and quantifiable.</em>
 </p>
 
-
+&nbsp;
 <div style='border:1.5px solid #228be6; background-color:#f0f7ff; padding:10px; border-radius:8px; margin-top:10px; margin-bottom:10px;'>
 <b>📊 Decision risks at validated MU = 0.25%</b><br><br>
 <b>False Non-Compliance (FNC)</b> = 0.06798 → <b>6.80%</b><br>
