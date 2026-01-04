@@ -58,14 +58,15 @@ Yet, whenever a batch result is close to a specification limit, MU determines:
 
 Monte Carlo simulation provides a simple and transparent way to quantify these risks using the fundamental relationship:
 
-\[
+$$
 X_m = X_t + \varepsilon
-\]
+$$
+
 where:
 
-- \(X_m\) = measured value  
-- \(X_t\) = true (unknown) batch value  
-- \(\varepsilon \sim N(0, u^2)\) = measurement uncertainty with standard uncertainty \(u\).
+- $X_m$ = measured value  
+- $X_t$ = true (unknown) batch value  
+- $\varepsilon \sim N(0, u^2)$ = measurement error with standard uncertainty $u$  
 
 <div style="background-color:#eef7ff; padding:12px; border-left:4px solid #228be6; margin:20px 0;">
 <strong>💡 Key Concept</strong><br>
