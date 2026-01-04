@@ -43,11 +43,11 @@ The following box explains how Monte Carlo integrates method uncertainty and pro
 
 
 $$
-P(\mathrm{FNC}) = \frac{\#(X_m > \mathrm{USL} \land X_t \le \mathrm{USL})}{N}
+P(\mathrm{FNC}) = \frac{\mathrm{count}(X_m > \mathrm{USL} \land X_t \le \mathrm{USL})}{N}
 $$
 
 $$
-P(\mathrm{FA}) = \frac{\#(X_m \le \mathrm{USL} \land X_t > \mathrm{USL})}{N}
+P(\mathrm{FA}) = \frac{\mathrm{count}(X_m \le \mathrm{USL} \land X_t > \mathrm{USL})}{N}
 $$
 
 
