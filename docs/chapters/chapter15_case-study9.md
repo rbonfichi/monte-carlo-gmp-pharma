@@ -320,7 +320,7 @@ legend("topleft",
 Figure 15.1 here below  illustrates the resulting risk curves for FA and FNC across different values of measurement uncertainty \(u\).
 
 <p align="center">
-  <img src="../images/case_study9_risk_vs_uncertainty.png"
+  <img src="../images/case_study9_MU_decision_risks.png"
        alt="False Acceptance and False Non-Compliance vs Measurement Uncertainty"
        width="900">
   <br>
