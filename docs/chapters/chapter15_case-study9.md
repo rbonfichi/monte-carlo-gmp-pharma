@@ -50,7 +50,6 @@ $$
 P(\mathrm{FA}) = \frac{\mathrm{count}(X_m \le \mathrm{USL} \land X_t > \mathrm{USL})}{N}
 $$
 
-
 Yet, whenever a batch result is close to a specification limit, MU determines:
 
 - the **risk of False Non-Compliance** (rejecting a good batch), and  
