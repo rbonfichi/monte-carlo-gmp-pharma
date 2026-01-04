@@ -1,4 +1,4 @@
-# Chapter 18 — Glossary
+# Chapter 19 — Glossary
 
 This glossary clarifies some key terms used throughout the eBook.  
 It will expand in future releases as new chapters and case studies are added.
