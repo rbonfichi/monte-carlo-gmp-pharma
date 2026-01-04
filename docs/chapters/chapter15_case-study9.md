@@ -38,7 +38,7 @@ The following box explains how Monte Carlo integrates method uncertainty and pro
     <li>the <b>true batch value</b> <span>X<sub>t</sub></span>, modeled from historical process variability or prior capability knowledge,</li>
     <li>the <b>measured QC value</b> <span>X<sub>m</sub> = X<sub>t</sub> + ε</span>, where the measurement error <span><i>ε ~ N(0, u²)</i></span> represents the <b>method-validated standard uncertainty</b> <span><i>u</i></span>.</li>
   </ul>
-  The simulation then estimates the two <b>decision risks</b> (formulas shown immediately below this box).
+  The simulation then estimates the two <b>decision risks</b>:
 </div>
 
 
