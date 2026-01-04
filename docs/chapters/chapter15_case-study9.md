@@ -122,7 +122,7 @@ $$
 - **False Acceptance (FA)** – The batch is *measured* as compliant, even though its *true* value is actually above the USL.
   
   $$
-  P(\text{FA})  = P(X_m \le \mathrm{USL} \mid X_t > \mathrm{USL})
+  P(\mathrm{FA}) = Pleft(X_m \le \mathrm{USL} \mid X_t > \mathrm{USL}\right)
   $$
 
 
