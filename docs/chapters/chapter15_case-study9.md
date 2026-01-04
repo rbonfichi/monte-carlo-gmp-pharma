@@ -121,10 +121,10 @@ $$
 
 A simple decision table helps visualize the two possible errors:
 
-| Decision Outcome      | \(X_t \le \mathrm{USL}\) (In spec) | \(X_t > \mathrm{USL}\) (OOE) |
+| Decision Outcome      | $X_t \le \mathrm{USL}$ (In spec) | $X_t > \mathrm{USL}$ (OOE) |
 |----------------------|----------------------------------|-----------------------------|
-| \(X_m \le \mathrm{USL}\) | Correct release                  | **False Acceptance (FA)**   |
-| \(X_m > \mathrm{USL}\)   | **False Non-Compliance (FNC)**  | Correct rejection           |
+| $X_m \le \mathrm{USL}$ | Correct release                  | **False Acceptance (FA)**   |
+| $X_m > \mathrm{USL}$   | **False Non-Compliance (FNC)**  | Correct rejection           |
 
 
 In practical GMP terms:
