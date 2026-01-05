@@ -50,13 +50,13 @@ The goal is to provide **practical statistical tools** that can be applied immed
 
 15. [Chapter 15 — Case Study 9: Monte Carlo Measurement Uncertainty & Risk of Non-Compliance](chapters/chapter15_case-study9.md)
 
-16. [Chapter 16 – Decision and Risk](chapters/chapter15_decision-risk.md)
+16. [Chapter 16 – Decision and Risk](chapters/chapter16_decision-risk.md)
 
-17. [Chapter 17 – Conclusions and Next Steps](chapters/chapter16_conclusions-nextsteps.md)
+17. [Chapter 17 – Conclusions and Next Steps](chapters/chapter17_conclusions-nextsteps.md)
 
-18. [Chapter 18 – References](chapters/chapter17_references.md)
+18. [Chapter 18 – References](chapters/chapter18_references.md)
 
-19. [Chapter 19 – Glossary](chapters/chapter18_glossary.md)
+19. [Chapter 19 – Glossary](chapters/chapter19_glossary.md)
 
 ---
 
