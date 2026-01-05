@@ -411,4 +411,4 @@ Monte Carlo simulation provides a transparent and auditable justification for de
 
 This case study shows how to combine process variability and measurement uncertainty to quantify regulatory decision risks. Monte Carlo simulation translates MU into concrete probabilities of False Acceptance and False Non-Compliance, supporting modern QRM practices and inspection-ready justification.
 
-[← Previous: Chapter 14 — Case Study 8 — Percentile-Based Capability for Non-Normal Data](../chapter14_case-study8.md) | [▲ Chapter Index](../index.md#table-of-contents) | [Next → Chapter 16 — Decision and Risk](../chapter15_decision-risk.md)
+[← Previous: Chapter 14 — Case Study 8 — Percentile-Based Capability for Non-Normal Data](chapter14_case-study8.md) | [▲ Chapter Index](../index.md#table-of-contents) | [Next → Chapter 16 — Decision and Risk](chapter15_decision-risk.md)
