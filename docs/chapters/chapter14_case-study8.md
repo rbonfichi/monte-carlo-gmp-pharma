@@ -436,4 +436,5 @@ Percentile-based capability:
 
 ---
 
-[← Previous: Case Study 7 — Microbiological Counts](../chapter13_case-study7.md) | [▲ Chapter Index](../index.md#table-of-contents) | [Next → Case Study 9](../chapter15_case-study9.md)
+[← Previous: Chapter 13 — Case Study 7 — Microbiological Counts](chapter13_case-study7.md) | [▲ Chapter Index](../index.md#table-of-contents) | [Next → Chapter 15 — Case Study 9 — Monte Carlo Measurement Uncertainty & Risk of Non-Compliance](chapter15_case-study9.md)
+
