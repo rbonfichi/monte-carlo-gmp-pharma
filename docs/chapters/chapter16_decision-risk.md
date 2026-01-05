@@ -154,4 +154,4 @@ This modular design allows an organization to gradually build a **library of ris
 
 *The next chapter consolidates these insights, summarizing the main conclusions and outlining practical next steps.*
 
-[← Previous: Case Study 8 — Monte Carlo Percentile-Based Capability for Non-Normal Data](chapter14_case-study8.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 16 — Conclusions and Next Steps →](chapter16_conclusions-nextsteps.md)
+[← Previous: Chapter 15 — Case Study 9 — Monte Carlo Measurement Uncertainty & Risk of Non-Compliance](../chapter15_case-study9.md) | [▲ Chapter Index](../index.md#table-of-contents) | [Next → Chapter 17 — Conclusions and Next Steps](../chapter16_conclusions-nextsteps.md)
