@@ -436,4 +436,4 @@ Percentile-based capability:
 
 ---
 
-[← Previous: Case Study 7 — Microbiological Counts](chapter13_case-study7.md) | [▲ Back to top](../#table-of-contents) | [Next: Chapter 15 — Decision & Risk →](chapter15_decision-risk.md)
+[← Previous: Case Study 7 — Microbiological Counts](../chapter13_case-study7.md) | [▲ Chapter Index](../index.md#table-of-contents) | [Next → Case Study 9](../chapter15_case-study9.md)
