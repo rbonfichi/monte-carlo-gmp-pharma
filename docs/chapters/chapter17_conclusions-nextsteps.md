@@ -54,4 +54,4 @@ evidence-based, and proactive Quality Assurance.
 
 ---
 
-[← Previous: Chapter 16 — Decision and Risk](chapter15_decision-risk.md) | [▲ Chapter Index](../index.md#table-of-contents) | [Next → Chapter 18 — References](chapter17_references.md)
+[← Previous: Chapter 16 — Decision and Risk](chapter16_decision-risk.md) | [▲ Chapter Index](../index.md#table-of-contents) | [Next → Chapter 18 — References](chapter18_references.md)
