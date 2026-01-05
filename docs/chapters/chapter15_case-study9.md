@@ -121,9 +121,9 @@ $$
 
 - **False Acceptance (FA)** – The batch is *measured* as compliant, even though its *true* value is actually above the USL.
   
-  $$
-  P(\mathrm{FA}) = Pleft(X_m \le \mathrm{USL} \mid X_t > \mathrm{USL}\right)
-  $$
+$$
+P(\mathrm{FA}) = P\left(X_m \le \mathrm{USL} \mid X_t > \mathrm{USL}\right)
+$$
 
 
 A simple decision table helps visualize the two possible errors:
@@ -194,9 +194,9 @@ To illustrate how Monte Carlo integrates process behavior and measurement uncert
 The manufacturing process is assumed to be centred slightly below the upper specification limit (USL) and to show moderate batch-to-batch variability.  
 Thus, the **true value** for the batch is modelled as:
 
-\[
+$$
 X_t \sim N(99.5,\; 0.40^2)
-\]
+$$
 
 This distribution represents all plausible true assay values *before* measurement error is applied.
 
