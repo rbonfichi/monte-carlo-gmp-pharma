@@ -83,5 +83,4 @@ This glossary will be progressively expanded as new chapters are added
 
 ---
 
-[← Previous: Chapter 17 — References](chapter17_references.md) | [▲ Back to top](../#table-of-contents)
-
+[← Previous: Chapter 18 — References](../chapter17_references.md) | [▲ Chapter Index](../index.md#table-of-contents) | [End of eBook]
