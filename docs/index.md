@@ -20,10 +20,6 @@ Quantitative Tools for Understanding Variability, Uncertainty, and Risk in Pharm
 ---
 
 ## 📖 Introduction
-
----
-
-## 📖 Introduction
 This project is a practical, industry-focused **eBook** introducing **Monte Carlo methods** for professionals working in **pharmaceutical manufacturing, quality control, and GMP operations**.  
 
 It is not a purely theoretical treatise — the emphasis is on **real-world applications** where Monte Carlo simulation can support decision-making, process understanding, and risk assessment.  
