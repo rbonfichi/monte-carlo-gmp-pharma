@@ -1,6 +1,26 @@
 # 📘 Monte Carlo Methods for GMP & Pharma Operations  
 _Statistical Simulation Tools for Pharmaceutical Quality and GMP Decision-Making_
 
+## 📕 Forthcoming book
+
+<img src="images/book-cover.jpg"
+     alt="Practical Monte Carlo Simulation in GMP Manufacturing and Control"
+     width="180"
+     align="right">
+
+An expanded and revised treatment of these topics will be published by **Chapman & Hall/CRC, part of Taylor & Francis Group**, with publication currently expected in **December 2026**.
+
+***Practical Monte Carlo Simulation in GMP Manufacturing and Control:  
+Quantitative Tools for Understanding Variability, Uncertainty, and Risk in Pharmaceutical Production and Testing***
+
+[**View the official Routledge book page**](https://www.routledge.com/Practical-Monte-Carlo-Simulation-in-GMP-Manufacturing-and-Control-Quantitative-Tools-for-Understanding-Variability-Uncertainty-and-Risk-in-P/Bonfichi/p/book/9781041362609)
+
+<br clear="right">
+
+---
+
+## 📖 Introduction
+
 ---
 
 ## 📖 Introduction
